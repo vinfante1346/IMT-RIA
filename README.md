@@ -5,7 +5,7 @@ November 12, 2025 - Payment Processing Analysis
 ## 📊 Live Dashboard
 
 ### **[🎯 November 12 Report](https://vinfante1346.github.io/tabapay-analytics/nov12_presentation.html)**
-Clean, professional presentation - 11 slides
+Clean, professional presentation - 12 slides
 
 ## 🎯 Key Metrics (November 12, 2025)
 
@@ -18,7 +18,7 @@ Clean, professional presentation - 11 slides
 
 ## 📈 Presentation Overview
 
-### **11-Slide Interactive Deck:**
+### **12-Slide Interactive Deck:**
 
 1. **Title Slide** - Executive summary with key stats
 2. **Performance Overview** - Core KPIs and metrics
@@ -27,10 +27,11 @@ Clean, professional presentation - 11 slides
 5. **Card Type Performance** - Debit (85.7%), Prepaid (63.74%), Credit (46.15%)
 6. **Transaction Sizes** - Distribution analysis ($10-$50 sweet spot)
 7. **Traffic Patterns** - Hourly breakdown (11 PM peak with 444 txns)
-8. **Top Issuers** - Community Federal (47.7%), BofA (12.2%), Wells Fargo (4.5%)
-9. **Error Analysis** - Top 5 error codes with solutions
-10. **Strategic Recommendations** - 90-day action plan
-11. **Key Takeaways** - Summary and next steps
+8. **Geographic Distribution** - Top 10 states with success rates
+9. **Top Issuers** - Community Federal (47.7%), BofA (12.2%), Wells Fargo (4.5%)
+10. **Error Analysis** - Top 5 error codes with solutions
+11. **Strategic Recommendations** - 90-day action plan
+12. **Key Takeaways** - Summary and next steps
 
 ## 🔍 Deep Insights
 
@@ -60,6 +61,25 @@ Clean, professional presentation - 11 slides
 - **Peak Hour:** 11 PM with 444 transactions (24.9% of daily volume)
 - **Evening Activity:** Heavy usage 7 PM - midnight
 - **Business Hours:** Minimal activity 9 AM - 3 PM
+
+### Geographic Distribution
+- **Top State:** Florida with 295 transactions (17.5%)
+- **Sunbelt Concentration:** FL & TX account for 30.7% (547 transactions)
+- **Best Performance:** Georgia at 98.61% success rate
+- **Needs Attention:** Illinois at 73.13% success rate
+- **Coverage:** 94.8% of transactions have state data (1,689 of 1,782)
+
+#### Top 10 States:
+1. Florida (FL): 295 txns - 78.98% success
+2. Texas (TX): 252 txns - 81.75% success
+3. New York (NY): 163 txns - 77.30% success
+4. California (CA): 158 txns - 87.97% success
+5. North Carolina (NC): 79 txns - 89.87% success
+6. New Jersey (NJ): 72 txns - 83.33% success
+7. Georgia (GA): 72 txns - 98.61% success ⭐
+8. Illinois (IL): 67 txns - 73.13% success ⚠️
+9. Ohio (OH): 54 txns - 83.33% success
+10. Tennessee (TN): 41 txns - 97.56% success
 
 ### Top Issuing Banks
 1. **Community Federal Savings Bank:** 850 (47.7%)
