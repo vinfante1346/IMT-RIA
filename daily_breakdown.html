@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabaPay Daily Breakdown - November 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0066FF;
+            --primary-dark: #0052CC;
+            --secondary: #00C853;
+            --error: #FF3B30;
+            --warning: #FF9500;
+            --purple: #9C27B0;
+            --background: #F7F9FC;
+            --surface: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-secondary: #666666;
+            --border: #E5E7EB;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 102, 255, 0.2);
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        .comparison-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .day-card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 12px var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .day-card.day-1 {
+            border-top: 4px solid var(--primary);
+        }
+
+        .day-card.day-2 {
+            border-top: 4px solid var(--secondary);
+        }
+
+        .day-header {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .day-card.day-1 .day-header {
+            color: var(--primary);
+        }
+
+        .day-card.day-2 .day-header {
+            color: var(--secondary);
+        }
+
+        .day-date {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .metric-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .metric-value.success {
+            color: var(--secondary);
+        }
+
+        .metric-value.error {
+            color: var(--error);
+        }
+
+        .section {
+            background: var(--surface);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px var(--shadow);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .trend-card {
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .trend-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .trend-comparison {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .trend-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .trend-change {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 700;
+        }
+
+        .trend-change.up {
+            background: rgba(0, 200, 83, 0.1);
+            color: var(--secondary);
+        }
+
+        .trend-change.down {
+            background: rgba(255, 59, 48, 0.1);
+            color: var(--error);
+        }
+
+        .chart-section {
+            margin-top: 2rem;
+        }
+
+        .bar-chart-dual {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bar-dual-row {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .bar-dual-label {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .bar-dual-tracks {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .bar-dual-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bar-dual-day {
+            min-width: 80px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .bar-dual-track {
+            flex: 1;
+            background: var(--background);
+            height: 32px;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar-dual-fill {
+            height: 100%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 0.75rem;
+            color: white;
+            font-weight: 700;
+            font-size: 0.875rem;
+            transition: width 1.5s ease-out;
+        }
+
+        .bar-dual-fill.day-1 {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+        }
+
+        .bar-dual-fill.day-2 {
+            background: linear-gradient(90deg, var(--secondary), #00A142);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 200, 83, 0.05));
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .insight-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .insight-list li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .insight-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-mini {
+            background: var(--background);
+            padding: 1.25rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-mini-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-mini-value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+            .comparison-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .day-card {
+                padding: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .bar-dual-day {
+                min-width: 60px;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TabaPay Daily Breakdown</h1>
+            <div class="subtitle">Day-by-Day Performance Analysis</div>
+            <div class="nav-links">
+                <a href="index.html">← Overview Report</a>
+                <a href="tabapay_product_analysis.html">Full Analysis</a>
+            </div>
+        </header>
+
+        <!-- Daily Comparison Cards -->
+        <div class="comparison-section">
+            <!-- November 12, 2025 -->
+            <div class="day-card day-1">
+                <div class="day-header">November 12</div>
+                <div class="day-date">Tuesday, 2025</div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Total Transactions</div>
+                    <div class="metric-value">1,782</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Success Rate</div>
+                    <div class="metric-value">82.27%</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Completed</div>
+                    <div class="metric-value success">1,466</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Errors</div>
+                    <div class="metric-value error">309</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Total Volume</div>
+                    <div class="metric-value">$168.4K</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Avg Transaction</div>
+                    <div class="metric-value">$114.88</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">TabaPay Fees</div>
+                    <div class="metric-value">$146.60</div>
+                </div>
+            </div>
+
+            <!-- November 13, 2025 -->
+            <div class="day-card day-2">
+                <div class="day-header">November 13</div>
+                <div class="day-date">Wednesday, 2025</div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Total Transactions</div>
+                    <div class="metric-value">812</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Success Rate</div>
+                    <div class="metric-value success">89.29%</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Completed</div>
+                    <div class="metric-value success">725</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Errors</div>
+                    <div class="metric-value error">87</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Total Volume</div>
+                    <div class="metric-value">$77.1K</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">Avg Transaction</div>
+                    <div class="metric-value">$106.28</div>
+                </div>
+
+                <div class="metric-row">
+                    <div class="metric-label">TabaPay Fees</div>
+                    <div class="metric-value">$72.45</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Trends Section -->
+        <div class="section">
+            <h2 class="section-title">Day-over-Day Trends</h2>
+
+            <div class="trend-grid">
+                <div class="trend-card">
+                    <div class="trend-label">Success Rate Improvement</div>
+                    <div class="trend-comparison">
+                        <div class="trend-value">89.29%</div>
+                        <div class="trend-change up">↑ 7.02pp</div>
+                    </div>
+                    <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-secondary);">
+                        Significant improvement from 82.27% to 89.29%
+                    </p>
+                </div>
+
+                <div class="trend-card" style="border-left-color: var(--error);">
+                    <div class="trend-label">Transaction Volume</div>
+                    <div class="trend-comparison">
+                        <div class="trend-value">812</div>
+                        <div class="trend-change down">↓ 54.4%</div>
+                    </div>
+                    <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-secondary);">
+                        Lower volume but higher quality on Nov 13
+                    </p>
+                </div>
+
+                <div class="trend-card" style="border-left-color: var(--secondary);">
+                    <div class="trend-label">Error Rate Reduction</div>
+                    <div class="trend-comparison">
+                        <div class="trend-value">10.71%</div>
+                        <div class="trend-change up">↓ 46%</div>
+                    </div>
+                    <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-secondary);">
+                        Errors dropped from 17.3% to 10.7%
+                    </p>
+                </div>
+
+                <div class="trend-card" style="border-left-color: var(--warning);">
+                    <div class="trend-label">Average Transaction</div>
+                    <div class="trend-comparison">
+                        <div class="trend-value">$106.28</div>
+                        <div class="trend-change down">↓ 7.5%</div>
+                    </div>
+                    <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-secondary);">
+                        Slightly lower from $114.88 to $106.28
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparative Charts -->
+        <div class="section">
+            <h2 class="section-title">Transaction Type Comparison</h2>
+
+            <div class="bar-chart-dual">
+                <div class="bar-dual-row">
+                    <div class="bar-dual-label">Disbursements</div>
+                    <div class="bar-dual-tracks">
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 12</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-1" style="width: 58.4%;">761</div>
+                            </div>
+                        </div>
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 13</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-2" style="width: 100%;">542</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bar-dual-row">
+                    <div class="bar-dual-label">Purchases</div>
+                    <div class="bar-dual-tracks">
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 12</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-1" style="width: 100%;">1,021</div>
+                            </div>
+                        </div>
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 13</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-2" style="width: 26.3%;">269</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 2rem;">
+                <div class="highlight-title">Transaction Mix Shift</div>
+                <ul class="insight-list">
+                    <li><strong>Nov 12:</strong> More purchase-heavy (1,021 purchases vs 761 disbursements) - 57.3% purchases</li>
+                    <li><strong>Nov 13:</strong> Shifted to disbursement-heavy (542 disbursements vs 269 purchases) - 66.7% disbursements</li>
+                    <li><strong>Insight:</strong> Platform behavior changed from consumer spending focus to payout/disbursement focus</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Network Performance -->
+        <div class="section">
+            <h2 class="section-title">Network Performance by Day</h2>
+
+            <div class="bar-chart-dual">
+                <div class="bar-dual-row">
+                    <div class="bar-dual-label">Visa</div>
+                    <div class="bar-dual-tracks">
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 12</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-1" style="width: 100%;">1,458 (81.8%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 13</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-2" style="width: 96.3%;">744 (91.6%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bar-dual-row">
+                    <div class="bar-dual-label">Mastercard</div>
+                    <div class="bar-dual-tracks">
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 12</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-1" style="width: 100%;">316 (17.7%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 13</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-2" style="width: 19.6%;">62 (7.6%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bar-dual-row">
+                    <div class="bar-dual-label">Discover</div>
+                    <div class="bar-dual-tracks">
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 12</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-1" style="width: 100%;">8 (0.4%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-dual-item">
+                            <div class="bar-dual-day">Nov 13</div>
+                            <div class="bar-dual-track">
+                                <div class="bar-dual-fill day-2" style="width: 62.5%;">5 (0.6%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Analysis by Day -->
+        <div class="section">
+            <h2 class="section-title">Error Analysis by Day</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">November 12 - Top Errors</h3>
+                    <div class="stats-grid" style="grid-template-columns: 1fr;">
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 51 (Insufficient Funds)</div>
+                            <div class="stat-mini-value" style="color: var(--error);">153</div>
+                        </div>
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 59 (Suspected Fraud)</div>
+                            <div class="stat-mini-value" style="color: var(--error);">43</div>
+                        </div>
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 05 (Do Not Honor)</div>
+                            <div class="stat-mini-value" style="color: var(--warning);">27</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: var(--secondary);">November 13 - Top Errors</h3>
+                    <div class="stats-grid" style="grid-template-columns: 1fr;">
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 51 (Insufficient Funds)</div>
+                            <div class="stat-mini-value" style="color: var(--error);">43</div>
+                        </div>
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 59 (Suspected Fraud)</div>
+                            <div class="stat-mini-value" style="color: var(--error);">20</div>
+                        </div>
+                        <div class="stat-mini">
+                            <div class="stat-mini-label">Code 5C (AVS Mismatch)</div>
+                            <div class="stat-mini-value" style="color: var(--warning);">15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 2rem; border-color: var(--secondary);">
+                <div class="highlight-title" style="color: var(--secondary);">Error Reduction Success</div>
+                <ul class="insight-list">
+                    <li><strong>Code 51 reduction:</strong> 153 → 43 errors (72% reduction) - Better balance verification on Nov 13</li>
+                    <li><strong>Code 59 reduction:</strong> 43 → 20 errors (53% reduction) - Improved fraud detection accuracy</li>
+                    <li><strong>Overall improvement:</strong> Error rate dropped from 17.3% to 10.7% (39% improvement)</li>
+                    <li><strong>Quality over quantity:</strong> Nov 13 had fewer transactions but much higher success rate</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Financial Comparison -->
+        <div class="section">
+            <h2 class="section-title">Financial Performance Comparison</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 102, 255, 0.05));">
+                    <div class="stat-mini-label">Nov 12 Volume</div>
+                    <div class="stat-mini-value" style="color: var(--primary);">$168.4K</div>
+                    <div style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-secondary);">1,466 transactions</div>
+                </div>
+
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(0, 200, 83, 0.05));">
+                    <div class="stat-mini-label">Nov 13 Volume</div>
+                    <div class="stat-mini-value" style="color: var(--secondary);">$77.1K</div>
+                    <div style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-secondary);">725 transactions</div>
+                </div>
+
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 102, 255, 0.05));">
+                    <div class="stat-mini-label">Nov 12 Avg Txn</div>
+                    <div class="stat-mini-value" style="color: var(--primary);">$114.88</div>
+                </div>
+
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(0, 200, 83, 0.05));">
+                    <div class="stat-mini-label">Nov 13 Avg Txn</div>
+                    <div class="stat-mini-value" style="color: var(--secondary);">$106.28</div>
+                </div>
+
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 102, 255, 0.05));">
+                    <div class="stat-mini-label">Nov 12 Fees</div>
+                    <div class="stat-mini-value" style="color: var(--primary);">$146.60</div>
+                    <div style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-secondary);">0.087% fee rate</div>
+                </div>
+
+                <div class="stat-mini" style="background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(0, 200, 83, 0.05));">
+                    <div class="stat-mini-label">Nov 13 Fees</div>
+                    <div class="stat-mini-value" style="color: var(--secondary);">$72.45</div>
+                    <div style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--text-secondary);">0.094% fee rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section" style="background: linear-gradient(135deg, rgba(0, 102, 255, 0.05), rgba(0, 200, 83, 0.05)); border: 2px solid var(--primary);">
+            <h2 class="section-title">Executive Summary</h2>
+
+            <div style="display: grid; gap: 1.5rem;">
+                <div>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem;">🎯 Key Wins</h3>
+                    <ul class="insight-list">
+                        <li><strong>Success Rate Surge:</strong> 7.02 percentage point improvement (82.27% → 89.29%)</li>
+                        <li><strong>Error Reduction:</strong> 72% fewer insufficient fund errors on Nov 13</li>
+                        <li><strong>Fraud Prevention:</strong> 53% reduction in suspected fraud cases</li>
+                        <li><strong>Quality Improvement:</strong> Better transaction quality despite lower volume</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--warning); margin-bottom: 0.5rem;">📊 Notable Changes</h3>
+                    <ul class="insight-list">
+                        <li><strong>Volume Shift:</strong> 54.4% decrease in transaction count (quality over quantity)</li>
+                        <li><strong>Mix Change:</strong> From purchase-heavy (57.3%) to disbursement-heavy (66.7%)</li>
+                        <li><strong>Visa Growth:</strong> Network share increased from 81.8% to 91.6%</li>
+                        <li><strong>Average Ticket:</strong> Slight decrease from $114.88 to $106.28</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">💡 Strategic Insights</h3>
+                    <ul class="insight-list">
+                        <li><strong>Pattern:</strong> Nov 13 shows what optimal performance looks like - 89.29% success rate is achievable</li>
+                        <li><strong>Error Prevention:</strong> Whatever was different on Nov 13 should be replicated daily</li>
+                        <li><strong>Transaction Mix:</strong> Monitor disbursement/purchase balance for platform health</li>
+                        <li><strong>Target:</strong> Maintain Nov 13's error rate while scaling back to Nov 12's volume</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>TabaPay Daily Breakdown Analysis</strong> | Generated: November 14, 2025</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">Data Source: 3846_20251113_transactions_v2-5.csv</p>
+    </footer>
+
+    <script>
+        // Animate bars on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const bars = document.querySelectorAll('.bar-dual-fill');
+            bars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
