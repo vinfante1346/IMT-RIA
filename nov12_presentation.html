@@ -966,13 +966,14 @@
             </div>
         </section>
 
-        <!-- Slide 10: Error Analysis -->
+        <!-- Slide 10: Error Analysis (Cumulative) -->
         <section class="slide">
             <div class="bg-gradient">
                 <div class="orb orb-1"></div>
             </div>
             <div class="content">
-                <h2>Error Analysis</h2>
+                <h2>Error Analysis (Cumulative)</h2>
+                <div class="subtitle" style="margin-top: -1rem; margin-bottom: 2rem; opacity: 0.7;">932 total errors across Nov 12-13</div>
 
                 <div class="chart-container">
                     <div class="chart-title">Top Error Codes</div>
@@ -980,31 +981,31 @@
                         <div class="bar-row">
                             <div class="bar-label">51 - Insufficient Funds</div>
                             <div class="bar-track">
-                                <div class="bar-fill error" style="width: 100%;">153 (49.5%)</div>
+                                <div class="bar-fill error" style="width: 100%;">442 (47.4%)</div>
                             </div>
                         </div>
                         <div class="bar-row">
                             <div class="bar-label">59 - Suspected Fraud</div>
                             <div class="bar-track">
-                                <div class="bar-fill error" style="width: 28.1%;">43 (13.9%)</div>
-                            </div>
-                        </div>
-                        <div class="bar-row">
-                            <div class="bar-label">05 - Do Not Honor</div>
-                            <div class="bar-track">
-                                <div class="bar-fill warning" style="width: 17.6%;">27 (8.7%)</div>
+                                <div class="bar-fill error" style="width: 31.2%;">138 (14.8%)</div>
                             </div>
                         </div>
                         <div class="bar-row">
                             <div class="bar-label">5C - AVS Mismatch</div>
                             <div class="bar-track">
-                                <div class="bar-fill warning" style="width: 14.4%;">22 (7.1%)</div>
+                                <div class="bar-fill warning" style="width: 15.6%;">69 (7.4%)</div>
                             </div>
                         </div>
                         <div class="bar-row">
-                            <div class="bar-label">63 - Security Violation</div>
+                            <div class="bar-label">05 - Do Not Honor</div>
                             <div class="bar-track">
-                                <div class="bar-fill warning" style="width: 8.5%;">13 (4.2%)</div>
+                                <div class="bar-fill warning" style="width: 15.2%;">67 (7.2%)</div>
+                            </div>
+                        </div>
+                        <div class="bar-row">
+                            <div class="bar-label">57 - Transaction Not Permitted</div>
+                            <div class="bar-track">
+                                <div class="bar-fill warning" style="width: 6.3%;">28 (3.0%)</div>
                             </div>
                         </div>
                     </div>
@@ -1013,16 +1014,62 @@
                 <div class="insight-box" style="background: linear-gradient(135deg, rgba(255, 59, 48, 0.1), rgba(255, 59, 48, 0.05)); border-left-color: var(--error);">
                     <div class="insight-title" style="color: var(--error);">Error Reduction Strategy</div>
                     <ul class="insight-list">
-                        <li><strong>Code 51 (49.5%):</strong> Implement real-time balance verification before initiating transactions</li>
-                        <li><strong>Code 59 (13.9%):</strong> Review and optimize fraud detection rules to reduce false positives</li>
-                        <li><strong>Code 5C (7.1%):</strong> Improve address verification UI and provide clearer user guidance</li>
-                        <li><strong>Potential Impact:</strong> Addressing top 3 errors could improve success rate to 90%+</li>
+                        <li><strong>Code 51 (47.4%):</strong> 442 insufficient funds errors - implement real-time balance verification before initiating transactions</li>
+                        <li><strong>Code 59 (14.8%):</strong> 138 suspected fraud flags - review and optimize fraud detection rules to reduce false positives</li>
+                        <li><strong>Code 5C (7.4%):</strong> 69 AVS mismatches - improve address verification UI and provide clearer user guidance</li>
+                        <li><strong>Potential Impact:</strong> Addressing top 3 errors (716 total) could improve success rate from 83.0% to 95.6%</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 11: Recommendations -->
+        <!-- Slide 11: Growth & Key Insights -->
+        <section class="slide">
+            <div class="bg-gradient">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+            <div class="content">
+                <h2>Growth & Key Insights</h2>
+                <div class="subtitle" style="margin-top: -1rem; margin-bottom: 2rem; opacity: 0.7;">Performance highlights from Nov 12-13</div>
+
+                <div class="chart-container">
+                    <div style="display: grid; gap: 2rem;">
+                        <div class="insight-box" style="margin: 0; background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(0, 200, 83, 0.05)); border-left-color: var(--secondary);">
+                            <div class="insight-title" style="color: var(--secondary);">Explosive Day-over-Day Growth</div>
+                            <ul class="insight-list">
+                                <li><strong>Transaction Volume:</strong> +119% increase from Nov 12 (1,782 txns) to Nov 13 (3,900 txns)</li>
+                                <li><strong>Dollar Volume:</strong> +122% growth from $168.4K to $373.6K in one day</li>
+                                <li><strong>Success Rate Improvement:</strong> From 82.3% to 83.4% (+1.1 percentage points)</li>
+                                <li><strong>Consistent Average:</strong> $114.88 per transaction maintained across both days</li>
+                            </ul>
+                        </div>
+
+                        <div class="insight-box" style="margin: 0;">
+                            <div class="insight-title">Platform Health Indicators</div>
+                            <ul class="insight-list">
+                                <li><strong>Purchase-Heavy Flow:</strong> 57.9% purchases vs 42.1% disbursements (+898 net inflow)</li>
+                                <li><strong>Visa Network Dominance:</strong> 85.5% of transactions on Visa, showing strong partner relationship</li>
+                                <li><strong>Debit Card Preference:</strong> 90.3% using debit cards (low-risk, high-success transactions)</li>
+                                <li><strong>Prepaid & Credit:</strong> 5.4% prepaid, 4.4% credit cards expanding payment options</li>
+                            </ul>
+                        </div>
+
+                        <div class="insight-box" style="margin: 0; background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 102, 255, 0.05)); border-left-color: var(--primary);">
+                            <div class="insight-title" style="color: var(--primary);">Revenue Performance</div>
+                            <ul class="insight-list">
+                                <li><strong>Total Fees Collected:</strong> $1,744.78 across 5,682 transactions</li>
+                                <li><strong>Effective Fee Rate:</strong> 0.32% of transaction volume ($542K)</li>
+                                <li><strong>Fee Breakdown:</strong> TabaPay ($472), Network ($463), Interchange ($810)</li>
+                                <li><strong>Scaling Efficiency:</strong> 10x daily volume growth with maintained fee structure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: Recommendations -->
         <section class="slide">
             <div class="bg-gradient">
                 <div class="orb orb-1"></div>
@@ -1036,9 +1083,9 @@
                         <div class="insight-box" style="margin: 0;">
                             <div class="insight-title">Immediate Actions (Week 1)</div>
                             <ul class="insight-list">
-                                <li>Deploy real-time balance verification to prevent 153 insufficient fund errors</li>
-                                <li>Review fraud detection rules causing 43 suspected fraud flags</li>
-                                <li>Improve address verification process to reduce AVS mismatches</li>
+                                <li>Deploy real-time balance verification to prevent 442 insufficient fund errors (47.4% of all errors)</li>
+                                <li>Review fraud detection rules causing 138 suspected fraud flags (14.8% of errors)</li>
+                                <li>Improve address verification process to reduce 69 AVS mismatches (7.4% of errors)</li>
                             </ul>
                         </div>
 
@@ -1066,41 +1113,43 @@
             </div>
         </section>
 
-        <!-- Slide 12: Summary -->
+        <!-- Slide 13: Summary -->
         <section class="slide title-slide">
             <div class="content">
                 <h1>Key Takeaways</h1>
-                <div class="subtitle">November 12, 2025 Performance</div>
+                <div class="subtitle">November 12-13, 2025 Cumulative Performance</div>
 
                 <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 24px; padding: 3rem; margin-top: 3rem; text-align: left;">
                     <div style="display: grid; gap: 2.5rem;">
                         <div>
                             <div style="font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">✅ Strengths</div>
                             <ul style="list-style: none; padding: 0; font-size: 1.15rem; line-height: 2;">
-                                <li>→ 1,782 transactions with 82.27% success rate</li>
-                                <li>→ $168.4K in transaction volume processed</li>
-                                <li>→ Debit cards at 85.7% success with 89.1% market share</li>
-                                <li>→ Competitive 0.087% platform fee rate</li>
+                                <li>→ 5,682 transactions with 83.0% success rate (4,718 completed)</li>
+                                <li>→ $542K in transaction volume processed across 2 days</li>
+                                <li>→ Explosive growth: +119% transaction volume day-over-day</li>
+                                <li>→ Debit cards dominate: 90.3% market share with strong success</li>
+                                <li>→ Revenue generation: $1,744.78 in fees at 0.32% effective rate</li>
                             </ul>
                         </div>
 
                         <div>
                             <div style="font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">🎯 Opportunities</div>
                             <ul style="list-style: none; padding: 0; font-size: 1.15rem; line-height: 2;">
-                                <li>→ 153 insufficient fund errors (49.5%) - Easy fix with validation</li>
-                                <li>→ Credit card performance at 46.15% - Major improvement potential</li>
-                                <li>→ Fraud rules optimization - Reduce 43 false positives</li>
-                                <li>→ Path to 90%+ success rate is clear and achievable</li>
+                                <li>→ 442 insufficient fund errors (47.4%) - Deploy real-time balance validation</li>
+                                <li>→ 138 suspected fraud flags (14.8%) - Optimize fraud detection rules</li>
+                                <li>→ 69 AVS mismatches (7.4%) - Improve address verification UX</li>
+                                <li>→ Addressing top 3 errors can boost success rate from 83% to 95.6%</li>
                             </ul>
                         </div>
 
                         <div>
                             <div style="font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">🚀 Next Steps</div>
                             <ul style="list-style: none; padding: 0; font-size: 1.15rem; line-height: 2;">
-                                <li>→ Deploy balance verification immediately</li>
-                                <li>→ Optimize fraud detection rules this week</li>
-                                <li>→ Target 90% success rate within 30 days</li>
-                                <li>→ Scale to 3,000+ daily transactions by Q1 2026</li>
+                                <li>→ Deploy balance verification immediately to prevent 442 errors</li>
+                                <li>→ Review and optimize fraud detection rules this week</li>
+                                <li>→ Target 90%+ success rate within 30 days</li>
+                                <li>→ Sustain rapid growth: Scale to 10K+ daily transactions by Q1 2026</li>
+                                <li>→ Expand network diversity: Grow Mastercard and Discover share</li>
                             </ul>
                         </div>
                     </div>
