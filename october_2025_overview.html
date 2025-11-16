@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBambu Business Overview - October 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        .slides-container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            scroll-snap-align: start;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 60px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .stat-value.primary {
+            color: #ffd700;
+        }
+
+        .stat-description {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .product-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .product-header {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product-icon {
+            font-size: 2.5rem;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .title-stats {
+            display: flex;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .title-stat {
+            text-align: center;
+        }
+
+        .title-stat-value {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #ffd700;
+        }
+
+        .title-stat-label {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            .stat-value { font-size: 2rem; }
+            .title-stats { flex-direction: column; gap: 30px; }
+            .comparison-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="slides-container">
+
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <h1>MyBambu<br>Business Overview</h1>
+            <div class="subtitle">Product Portfolio Performance</div>
+            <div class="date">October 2025</div>
+
+            <div class="title-stats">
+                <div class="title-stat">
+                    <div class="title-stat-value">56K+</div>
+                    <div class="title-stat-label">P2P Transactions</div>
+                </div>
+                <div class="title-stat">
+                    <div class="title-stat-value">$7M+</div>
+                    <div class="title-stat-label">P2P Volume</div>
+                </div>
+                <div class="title-stat">
+                    <div class="title-stat-value">19K+</div>
+                    <div class="title-stat-label">Active Users</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: P2P Transfers -->
+        <div class="slide">
+            <h2>💸 P2P Transfers</h2>
+            <div class="subtitle">Peer-to-Peer Money Movement</div>
+
+            <div class="product-section">
+                <div class="metric-row">
+                    <div class="metric-label">Total Transactions</div>
+                    <div class="metric-value">56,170</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Unique Active Users</div>
+                    <div class="metric-value">19,057</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Total Volume</div>
+                    <div class="metric-value primary">$6,976,355.84</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Average Transaction</div>
+                    <div class="metric-value">$124.20</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Transactions per User</div>
+                    <div class="metric-value">2.9</div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Strong User Engagement</h3>
+                <p>Nearly 20K users actively using P2P transfers, with an average of 3 transactions per user showing healthy repeat usage.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: TabaPay Analysis -->
+        <div class="slide">
+            <h2>🆕 TabaPay Card Processing</h2>
+            <div class="subtitle">New Product - Pre-Launch Testing (October)</div>
+
+            <div class="product-section">
+                <div class="metric-row">
+                    <div class="metric-label">Test Transactions</div>
+                    <div class="metric-value">218</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Test Users</div>
+                    <div class="metric-value">25</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Test Volume</div>
+                    <div class="metric-value">$4,512.00</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Average Transaction</div>
+                    <div class="metric-value">$20.70</div>
+                </div>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Official Launch</div>
+                    <div class="stat-value primary">Nov 12</div>
+                    <div class="stat-description">2025</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Launch Performance</div>
+                    <div class="stat-value primary">1,358</div>
+                    <div class="stat-description">Users in first 4 days</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Launch Volume</div>
+                    <div class="stat-value primary">$1.09M</div>
+                    <div class="stat-description">Nov 12-15 total</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: TabaPay Launch Success -->
+        <div class="slide">
+            <h2>📈 TabaPay Launch Metrics</h2>
+            <div class="subtitle">November 12-15, 2025 (First 4 Days)</div>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Nov 12 (Launch Day)</div>
+                    <div class="stat-value">298</div>
+                    <div class="stat-description">Users, 1,799 transactions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Nov 13 (Day 2)</div>
+                    <div class="stat-value">537</div>
+                    <div class="stat-description">Users, 3,838 transactions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Nov 14 (Day 3)</div>
+                    <div class="stat-value">681</div>
+                    <div class="stat-description">Users, 4,592 transactions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Nov 15 (Day 4)</div>
+                    <div class="stat-value">112</div>
+                    <div class="stat-description">Users, 954 transactions</div>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <div class="metric-row">
+                    <div class="metric-label">Total Unique Opt-Ins</div>
+                    <div class="metric-value primary">1,358</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Total Transactions</div>
+                    <div class="metric-value">11,183</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Success Rate</div>
+                    <div class="metric-value">82.2%</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">Total Revenue (Fees)</div>
+                    <div class="metric-value primary">$4,645.05</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Product Comparison -->
+        <div class="slide">
+            <h2>📊 October vs November Launch</h2>
+            <div class="subtitle">Comparing Products</div>
+
+            <div class="comparison-grid">
+                <div class="product-section">
+                    <div class="product-header">
+                        <span class="product-icon">💸</span>
+                        <span>P2P Transfers</span>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">October Volume</div>
+                        <div class="metric-value">$7.0M</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">October Users</div>
+                        <div class="metric-value">19,057</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Product Age</div>
+                        <div class="metric-value">Mature</div>
+                    </div>
+                </div>
+
+                <div class="product-section">
+                    <div class="product-header">
+                        <span class="product-icon">🆕</span>
+                        <span>TabaPay</span>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Launch Volume (4 days)</div>
+                        <div class="metric-value primary">$1.09M</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Launch Users (4 days)</div>
+                        <div class="metric-value primary">1,358</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-label">Product Age</div>
+                        <div class="metric-value">Brand New</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Strong Launch Performance</h3>
+                <p>TabaPay achieved $1M+ in volume within just 4 days, showing significant early adoption and strong market demand for card-based payment processing.</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Key Insights -->
+        <div class="slide">
+            <h2>💡 Key Insights</h2>
+            <div class="subtitle">October-November 2025</div>
+
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-label">P2P Market Leadership</div>
+                    <div class="stat-value">19K+</div>
+                    <div class="stat-description">Active monthly users in P2P</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">New Product Success</div>
+                    <div class="stat-value primary">1,358</div>
+                    <div class="stat-description">TabaPay opt-ins in 4 days</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Transaction Volume</div>
+                    <div class="stat-value">$8M+</div>
+                    <div class="stat-description">Combined Oct-Nov volume</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Product Diversity</div>
+                    <div class="stat-value">Growing</div>
+                    <div class="stat-description">Multiple revenue streams</div>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <h3 style="margin-bottom: 30px;">Strategic Highlights</h3>
+                <div class="metric-row">
+                    <div class="metric-label">✅ P2P performing strongly with consistent usage</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">✅ TabaPay launched successfully with strong adoption</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">✅ All TabaPay users are internal (Bambu customers)</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">✅ 82% success rate on TabaPay transactions</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">✅ Revenue generation through transaction fees</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Next Steps -->
+        <div class="slide">
+            <h2>🚀 Recommendations</h2>
+            <div class="subtitle">Strategic Actions</div>
+
+            <div class="product-section">
+                <div class="metric-row">
+                    <div class="metric-label">1. Monitor TabaPay Growth</div>
+                    <div class="metric-value">Daily tracking of adoption rate</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">2. Optimize Success Rate</div>
+                    <div class="metric-value">Target 85%+ from current 82%</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">3. Expand Marketing</div>
+                    <div class="metric-value">Promote TabaPay to customer base</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">4. Add Analytics</div>
+                    <div class="metric-value">Complete product portfolio tracking</div>
+                </div>
+                <div class="metric-row">
+                    <div class="metric-label">5. Revenue Analysis</div>
+                    <div class="metric-value">Project annual TabaPay revenue</div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Focus Areas</h3>
+                <p>Maintain P2P leadership while scaling TabaPay adoption. Add complete analytics for all product categories including International Transfers, Cash Load, and ACH.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
