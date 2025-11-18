@@ -746,33 +746,6 @@ If we reduce churn to 15%:
 
 ---
 
-## 📞 RECOMMENDED MEETING
-
-**Who:** CEO, CFO, Head of Product, Head of Marketing
-**When:** This week
-**Duration:** 90 minutes
-**Agenda:**
-1. Review TRUE economics (15 min) - Profitable, not losing money!
-2. Explain FX vs fee revenue dynamics (15 min)
-3. Present churn crisis and impact on growth (20 min)
-4. Review retention-first strategy (25 min)
-5. Approve budget and next steps (15 min)
-
-**Required Decisions:**
-1. ✅ Approve $370K/year retention investment
-2. ✅ Hire Retention Manager immediately
-3. ✅ Launch Month 1 campaigns in 14 days
-4. ✅ Delay pricing changes until churn is controlled
-5. ✅ Set Q1 churn target: 15%
-
----
-
-**Status:** ⚠️ URGENT - 25.4% churn is preventing growth
-**Priority:** 🔴 P0 - Retention must be addressed immediately
-**Confidence Level:** 95% (based on actual October 2025 data)
-
----
-
 *This analysis is based on:*
 - *28,551 customers*
 - *106,408 completed transactions*
