@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TabaPay Performance Report - Nov 14-16, 2025</title>
+    <title>TabaPay Performance Report - Nov 12-16, 2025</title>
     <style>
         * {
             margin: 0;
@@ -189,6 +189,16 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .period-badge {
+            display: inline-block;
+            background: rgba(79, 172, 254, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            border: 1px solid rgba(79, 172, 254, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -209,18 +219,18 @@
     <section class="section">
         <div class="container">
             <h1 class="animate-in">TabaPay Performance Report</h1>
-            <div class="subtitle animate-in">November 14-16, 2025 (EST)</div>
+            <div class="subtitle animate-in">November 12-16, 2025 (EST)</div>
             <div class="stats-grid">
                 <div class="stat-card animate-in">
-                    <div class="stat-value">8,377</div>
+                    <div class="stat-value">21,731</div>
                     <div class="stat-label">Total Transactions</div>
                 </div>
                 <div class="stat-card animate-in">
-                    <div class="stat-value">81.6%</div>
+                    <div class="stat-value">82.0%</div>
                     <div class="stat-label">Success Rate</div>
                 </div>
                 <div class="stat-card animate-in">
-                    <div class="stat-value">$954K</div>
+                    <div class="stat-value">$2.21M</div>
                     <div class="stat-label">Total Volume</div>
                 </div>
             </div>
@@ -233,25 +243,59 @@
             <h2 class="animate-in">Platform Achievements</h2>
             <div class="stats-grid">
                 <div class="stat-card animate-in">
-                    <div class="stat-value">$140</div>
+                    <div class="stat-value">$124</div>
                     <div class="stat-label">Avg Transaction Value</div>
                 </div>
                 <div class="stat-card animate-in">
-                    <div class="stat-value">6,835</div>
+                    <div class="stat-value">17,812</div>
                     <div class="stat-label">Successful Transactions</div>
                 </div>
                 <div class="stat-card animate-in">
-                    <div class="stat-value">$722</div>
+                    <div class="stat-value">$5,367</div>
                     <div class="stat-label">Platform Revenue</div>
+                    <div class="period-badge">0.24% avg fee rate</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Transaction Mix -->
+    <!-- Section 3: Period Comparison -->
+    <section class="section">
+        <div class="container">
+            <h2 class="animate-in">Performance by Period</h2>
+            <div class="stats-grid">
+                <div class="stat-card animate-in">
+                    <div class="stat-label" style="margin-bottom: 20px; opacity: 0.8;">Nov 12-15</div>
+                    <div class="stat-value" style="font-size: 2.5em;">13,354</div>
+                    <div class="stat-label">Transactions</div>
+                    <div style="margin-top: 15px; font-size: 1.1em;">
+                        <div>$1.26M Volume</div>
+                        <div style="margin-top: 5px;">82.2% Success</div>
+                    </div>
+                </div>
+                <div class="stat-card animate-in">
+                    <div class="stat-label" style="margin-bottom: 20px; opacity: 0.8;">Nov 14-16</div>
+                    <div class="stat-value" style="font-size: 2.5em;">8,377</div>
+                    <div class="stat-label">Transactions</div>
+                    <div style="margin-top: 15px; font-size: 1.1em;">
+                        <div>$954K Volume</div>
+                        <div style="margin-top: 5px;">81.6% Success</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="insights-list animate-in">
+                <li>5-day cumulative performance: <span class="highlight">21,731 transactions</span></li>
+                <li>Consistent success rate across periods: <span class="highlight">~82%</span></li>
+                <li>Average daily volume: <span class="highlight">$443K</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 4: Transaction Mix -->
     <section class="section">
         <div class="container">
             <h2 class="animate-in">Transaction Mix</h2>
+            <div class="period-badge animate-in" style="display: block; text-align: center; margin-bottom: 30px;">Based on Nov 14-16 detailed data</div>
             <div class="bar-chart animate-in">
                 <div class="bar-item">
                     <div class="bar-label">
@@ -279,7 +323,7 @@
         </div>
     </section>
 
-    <!-- Section 4: Network Distribution -->
+    <!-- Section 5: Network Distribution -->
     <section class="section">
         <div class="container">
             <h2 class="animate-in">Network Distribution</h2>
@@ -315,7 +359,7 @@
         </div>
     </section>
 
-    <!-- Section 5: Card Type Performance -->
+    <!-- Section 6: Card Type Performance -->
     <section class="section">
         <div class="container">
             <h2 class="animate-in">Card Type Performance</h2>
@@ -323,23 +367,27 @@
                 <div class="stat-card animate-in">
                     <div class="stat-value">83.3%</div>
                     <div class="stat-label">Debit Success Rate</div>
-                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">92.9% of volume</div>
+                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">7,512 transactions</div>
                 </div>
                 <div class="stat-card animate-in">
                     <div class="stat-value">69.5%</div>
                     <div class="stat-label">Credit Success Rate</div>
-                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">2.9% of volume</div>
+                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">380 transactions</div>
                 </div>
                 <div class="stat-card animate-in">
                     <div class="stat-value">65.2%</div>
                     <div class="stat-label">Prepaid Success Rate</div>
-                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">4.1% of volume</div>
+                    <div style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">485 transactions</div>
                 </div>
             </div>
+            <ul class="insights-list animate-in">
+                <li>Debit cards dominate platform usage at <span class="highlight">90%+ of transactions</span></li>
+                <li>Credit card success rate needs improvement at <span class="highlight">69.5%</span></li>
+            </ul>
         </div>
     </section>
 
-    <!-- Section 6: Transaction Size Distribution -->
+    <!-- Section 7: Transaction Size Distribution -->
     <section class="section">
         <div class="container">
             <h2 class="animate-in">Transaction Size Distribution</h2>
@@ -399,67 +447,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section 7: Hourly Patterns -->
-    <section class="section">
-        <div class="container">
-            <h2 class="animate-in">Hourly Transaction Patterns</h2>
-            <div class="stat-card animate-in" style="max-width: 500px; margin: 0 auto 40px;">
-                <div class="stat-value">11 PM</div>
-                <div class="stat-label">Peak Hour - 577 Transactions</div>
-            </div>
-            <div class="bar-chart animate-in">
-                <div class="bar-item">
-                    <div class="bar-label">
-                        <span>11 PM</span>
-                        <span>577</span>
-                    </div>
-                    <div class="bar-bg">
-                        <div class="bar-fill" data-width="100"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="bar-label">
-                        <span>10 PM</span>
-                        <span>539</span>
-                    </div>
-                    <div class="bar-bg">
-                        <div class="bar-fill" data-width="93.4"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="bar-label">
-                        <span>1 AM</span>
-                        <span>535</span>
-                    </div>
-                    <div class="bar-bg">
-                        <div class="bar-fill" data-width="92.7"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="bar-label">
-                        <span>12 AM</span>
-                        <span>498</span>
-                    </div>
-                    <div class="bar-bg">
-                        <div class="bar-fill" data-width="86.3"></div>
-                    </div>
-                </div>
-                <div class="bar-item">
-                    <div class="bar-label">
-                        <span>9 PM</span>
-                        <span>470</span>
-                    </div>
-                    <div class="bar-bg">
-                        <div class="bar-fill" data-width="81.5"></div>
-                    </div>
-                </div>
-            </div>
             <ul class="insights-list animate-in">
-                <li>Heavy evening usage pattern from <span class="highlight">9 PM to 1 AM</span></li>
-                <li>Late-night activity indicates user preference for evening transactions</li>
+                <li>Over half of transactions under $50: <span class="highlight">55.4%</span></li>
+                <li>High-value transactions ($500+) represent <span class="highlight">6.8%</span> of volume</li>
             </ul>
         </div>
     </section>
@@ -525,8 +515,9 @@
                 </div>
             </div>
             <ul class="insights-list animate-in">
-                <li>Top 3 states account for <span class="highlight">35.6% of all transactions</span></li>
+                <li>Top 3 states account for <span class="highlight">35.6% of transactions</span></li>
                 <li>California leads in success rate at <span class="highlight">88.1%</span></li>
+                <li>Illinois shows opportunity for improvement at <span class="highlight">64.2%</span> success</li>
             </ul>
         </div>
     </section>
@@ -551,10 +542,10 @@
                         <div class="bar-item">
                             <div class="bar-label">
                                 <span>Bank of America</span>
-                                <span>6.2%</span>
+                                <span>11.4%</span>
                             </div>
                             <div class="bar-bg">
-                                <div class="bar-fill" data-width="6.2"></div>
+                                <div class="bar-fill" data-width="11.4"></div>
                             </div>
                         </div>
                         <div class="bar-item">
@@ -566,14 +557,23 @@
                                 <div class="bar-fill" data-width="5.8"></div>
                             </div>
                         </div>
+                        <div class="bar-item">
+                            <div class="bar-label">
+                                <span>Wells Fargo</span>
+                                <span>4.7%</span>
+                            </div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" data-width="4.7"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="animate-in">
-                    <h3 style="text-align: center; margin-bottom: 20px; font-size: 1.5em;">Error Codes (1,529 errors)</h3>
+                    <h3 style="text-align: center; margin-bottom: 20px; font-size: 1.5em;">Error Codes</h3>
                     <div class="bar-chart">
                         <div class="bar-item">
                             <div class="bar-label">
-                                <span>Code 51 (Insufficient Funds)</span>
+                                <span>51 (Insufficient Funds)</span>
                                 <span>44.1%</span>
                             </div>
                             <div class="bar-bg">
@@ -582,7 +582,7 @@
                         </div>
                         <div class="bar-item">
                             <div class="bar-label">
-                                <span>Code 59 (Suspected Fraud)</span>
+                                <span>59 (Suspected Fraud)</span>
                                 <span>14.5%</span>
                             </div>
                             <div class="bar-bg">
@@ -591,11 +591,20 @@
                         </div>
                         <div class="bar-item">
                             <div class="bar-label">
-                                <span>Code 61 (Withdrawal Limit)</span>
+                                <span>61 (Withdrawal Limit)</span>
                                 <span>9.5%</span>
                             </div>
                             <div class="bar-bg">
                                 <div class="bar-fill" data-width="9.5"></div>
+                            </div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">
+                                <span>57 (Transaction Not Permitted)</span>
+                                <span>6.9%</span>
+                            </div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" data-width="6.9"></div>
                             </div>
                         </div>
                     </div>
@@ -603,8 +612,9 @@
             </div>
             <ul class="insights-list animate-in">
                 <li>Community Federal dominates with <span class="highlight">46% of all transactions</span></li>
-                <li>Top 3 error codes account for <span class="highlight">68.1% of failures</span></li>
-                <li>Insufficient funds remains the primary failure reason</li>
+                <li>Top 4 error codes account for <span class="highlight">75% of failures</span></li>
+                <li>Insufficient funds remains primary failure at <span class="highlight">44.1%</span></li>
+                <li>3,919 total errors across the 5-day period (<span class="highlight">18% failure rate</span>)</li>
             </ul>
         </div>
     </section>
