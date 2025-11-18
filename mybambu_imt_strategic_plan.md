@@ -5,26 +5,28 @@
 
 ## 🎯 EXECUTIVE SUMMARY
 
-**Current State:** The IMT (International Money Transfer) product is **PROFITABLE with a +$266,149 monthly margin** (50.5% margin) with a **25.4% monthly churn rate**.
+**Current State:** The IMT (International Money Transfer) product is **PROFITABLE with a +$112,817 monthly margin** (30.2% margin) with a **25.4% monthly churn rate**.
 
 **Critical Discovery:**
-- **FX Spread was 1.5%, not 0.75%** - This doubles FX revenue to $309K/month
-- **Rail costs from Spectrum Exhibit A** - Actual costs are $261K/month (not $412K)
-- **Transaction fees barely cover rail costs** - The FX spread is the profit engine
+- **FX Spread is 1.5%** but only ~50% of transactions have FX conversion → $156K/month
+- **Rail costs from Spectrum Exhibit A** - Actual costs are $261K/month
+- **Transaction fees DO NOT cover rail costs** - FX spread is the ONLY profit source
 
 **The Real Problem:**
 - **25.4% churn rate** limits growth and customer lifetime value
 - Customer lifetime is only **3.9 months**
-- **Customer LTV margin of $36.70** limits CAC to ~$11
-- This prevents aggressive growth and marketing spend
+- **Customer LTV margin of $15.60** limits CAC to ~$4.68
+- This SEVERELY constrains growth and marketing spend
+- Margins are tight (30.2%) - retention is CRITICAL
 
 **Recommended Strategy:**
-- **FOCUS ON RETENTION** - Reduce churn from 25% to <15%
-- Optimize pricing for profitability while staying competitive
+- **RETENTION IS LIFE OR DEATH** - Reduce churn from 25% to <15%
+- Protect FX revenue at all costs - it's the only profit source
+- Optimize transaction fees to reduce gap with rail costs
 - Negotiate better rail costs where possible (especially Mexico)
-- Expand high-margin corridors
+- Expand high-margin corridors (Nicaragua, Honduras)
 
-**Expected Impact:** Reduce churn to 15% → Increase LTV from $36.70 to $70+ → Enable $20+ CAC for aggressive growth
+**Expected Impact:** Reduce churn to 15% → Increase LTV from $15.60 to $26+ → Enable $7-8 CAC for measured growth
 
 ---
 
@@ -55,49 +57,60 @@
 **October 2025 Results:**
 ```
 Revenue:
-  FX Revenue (1.5% × $20.6M)              $309,332  (58% of revenue)
+  FX Revenue (1.5% × $10.4M FX vol)       $156,000  (42% of revenue)
   Bank Fees (28,541 × $0.85)               $24,260
   Cash Fees (77,814 × $2.49)              $193,757
   Delivery Fees (54 × $0.85)                    $46
   ─────────────────────────────────────────────────
-  TOTAL REVENUE                           $527,395  (100%)
+  TOTAL REVENUE                           $374,063  (100%)
 
 Costs:
   Rail Costs to Spectrum (by country)    -$261,246
   ─────────────────────────────────────────────────
 
-  ✅ GROSS MARGIN                         $266,149  (50.5% margin!)
+  ⚠️  GROSS MARGIN                        $112,817  (30.2% margin)
+
+NOTE: Only ~50% of transaction volume has FX conversion. Countries like
+Panama and Ecuador use USD, so no FX spread revenue from those corridors.
 ```
 
 ### Unit Economics
 
 **Per Transaction:**
-- Revenue: **$4.96**
+- Revenue: **$3.52**
 - Rail Cost: **$2.46**
-- **Gross Margin: $2.50** ✅
+- **Gross Margin: $1.06** ⚠️
 
 **Per Customer (Monthly):**
-- Revenue: **$18.47**
+- Revenue: **$13.11**
 - Rail Cost: **$9.15**
-- **Gross Margin: $9.32** ✅
+- **Gross Margin: $3.96** ⚠️
 
 **Lifetime Value:**
 - Customer Lifetime: **3.9 months** (25.4% churn)
-- LTV Revenue: **$72.72**
-- **LTV Margin: $36.70** ✅
-- **Max Justifiable CAC: ~$11** (30% of LTV margin)
+- LTV Revenue: **$51.70**
+- **LTV Margin: $15.60** ⚠️
+- **Max Justifiable CAC: ~$4.68** (30% of LTV margin)
 
-### Critical Insight: FX is the Profit Engine
+**Critical Note:** With only $1.06 margin per transaction and $3.96 per customer/month,
+retention is absolutely critical. We cannot afford to lose customers at 25.4% churn.
+
+### Critical Insight: FX is the ONLY Profit Source
 
 **Revenue Breakdown:**
-- FX Revenue: $309K (58% of revenue) → **Primary profit driver**
-- Transaction Fees: $218K (42% of revenue) → Only covers 83% of rail costs
+- FX Revenue: $156K (42% of revenue) → **ONLY profit source**
+- Transaction Fees: $218K (58% of revenue) → Covers only 83% of rail costs
 
 **The Business Model:**
 - Transaction fees ($218K) < Rail costs ($261K) = **-$43K loss on fees**
-- FX revenue ($309K) more than covers the gap = **Net +$266K margin**
+- FX revenue ($156K) barely covers the gap = **Net +$113K margin**
+- **Margin is thin (30.2%)** - Any misstep kills profitability
 
-**This means:** The business is profitable BECAUSE of FX spread, not transaction fees. Any pricing strategy must protect the FX revenue while optimizing transaction fees.
+**This means:**
+1. **FX revenue is EVERYTHING** - We cannot afford to lose FX-eligible transactions
+2. Transaction fees need optimization to reduce the -$43K loss
+3. Rail cost negotiations are critical (especially Mexico at 28% of volume)
+4. **Retention is life or death** - With $3.96/customer/month margin, churn kills us
 
 ---
 
@@ -114,7 +127,8 @@ Costs:
 - Losing **1 in 4 customers every month**
 - Average customer lifetime: **3.9 months**
 - Need to acquire 7,096+ new users monthly just to maintain flat growth
-- **LTV margin of only $36.70 limits CAC to ~$11**
+- **LTV margin of only $15.60 limits CAC to ~$4.68**
+- **This is a CRISIS** - Cannot afford meaningful customer acquisition
 
 ### October User Breakdown
 - 🆕 New Users: 3,193 (11.2%)
@@ -127,16 +141,19 @@ Costs:
 ### Why Churn is the Critical Problem
 
 With current economics:
-- Monthly margin per customer: $9.32
+- Monthly margin per customer: **$3.96**
 - Customer lifetime: 3.9 months
-- **LTV margin: $36.70**
-- Affordable CAC (30% of LTV): **$11**
+- **LTV margin: $15.60**
+- Affordable CAC (30% of LTV): **$4.68**
+
+**This is unsustainable.** With CAC of $4.68, we can barely acquire any customers.
 
 If we reduce churn to 15%:
 - Customer lifetime would increase to 6.7 months
-- **LTV margin would increase to $62+**
-- Affordable CAC would increase to **$18-20**
-- This enables 80%+ increase in marketing budget!
+- **LTV margin would increase to $26.53**
+- Affordable CAC would increase to **$7-8**
+- This enables 70%+ increase in marketing budget
+- More importantly: **Keeps the business alive**
 
 ---
 
@@ -185,10 +202,11 @@ If we reduce churn to 15%:
 **Goal:** Reduce churn from 25.4% to <15% in 3 months
 
 **Why This Matters Most:**
-- 15% churn = 6.7 month lifetime = $62+ LTV margin
-- Enables $18-20 CAC (vs current $11)
-- **80% increase in affordable marketing spend**
-- Compounds growth through higher customer lifetime value
+- 15% churn = 6.7 month lifetime = $26.53 LTV margin
+- Enables $7-8 CAC (vs current $4.68)
+- **70% increase in affordable marketing spend**
+- More critically: **Makes the business viable for growth**
+- Without retention improvements, business cannot scale
 
 **Retention Tactics:**
 
@@ -210,8 +228,8 @@ If we reduce churn to 15%:
 - Offer: $5 credit for referrer + $5 for new user
 - Target: 5,000 referrals in Q1 2026
 - Cost: $50K
-- Expected Return: 5,000 users × $36.70 LTV = $183.5K
-- **ROI: 267%**
+- Expected Return: 5,000 users × $15.60 LTV = $78K
+- **ROI: 56%** (Positive but modest - need retention first!)
 
 **4. VIP Program for Power Users** (Month 2-3)
 - Target: Top 10% users (2,855 users)
@@ -390,12 +408,13 @@ If we reduce churn to 15%:
 
 | Month | Users | Churn | Revenue | Margin | Status |
 |-------|-------|-------|---------|--------|--------|
-| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
-| Nov 2025 | 24,648 | 25.4% | $455K | $230K | -$36K |
-| Dec 2025 | 21,294 | 25.4% | $393K | $199K | -$31K |
-| Jan 2026 | 18,399 | 25.4% | $340K | $172K | -$27K |
+| Oct 2025 | 28,551 | 25.4% | $374K | $113K | Baseline |
+| Nov 2025 | 21,300 | 25.4% | $279K | $84K | -$29K |
+| Dec 2025 | 15,900 | 25.4% | $208K | $63K | -$21K |
+| Jan 2026 | 11,900 | 25.4% | $156K | $47K | -$16K |
 
-**Result:** Product shrinks to 18K users (-36%), margin drops to $172K (-35%)
+**Result:** Product shrinks to 12K users (-58%), margin drops to $47K (-58%)
+**Conclusion: DO NOTHING = DEATH SPIRAL**
 
 ---
 
@@ -403,20 +422,22 @@ If we reduce churn to 15%:
 
 | Month | Users | Churn | Revenue | Margin | Churn Impact |
 |-------|-------|-------|---------|--------|-------------|
-| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
-| Nov 2025 | 28,000 | 22.0% | $517K | $261K | -2% churn |
-| Dec 2025 | 29,500 | 18.0% | $545K | $275K | -4% churn |
-| Jan 2026 | 31,500 | 15.0% | $582K | $294K | -3% churn |
+| Oct 2025 | 28,551 | 25.4% | $374K | $113K | Baseline |
+| Nov 2025 | 26,000 | 22.0% | $341K | $103K | -3.4% churn |
+| Dec 2025 | 26,500 | 18.0% | $347K | $105K | -4% churn |
+| Jan 2026 | 28,000 | 15.0% | $367K | $111K | -3% churn |
 
 **Q1 2026 Result:**
-- Users: 31,500 (+10%)
-- Monthly Margin: $294K (+11%)
-- **New LTV Margin: $62.40** (vs $36.70 = +70%!)
+- Users: 28,000 (-2% vs baseline, but stabilizing!)
+- Monthly Margin: $111K (-2%)
+- **New LTV Margin: $26.53** (vs $15.60 = +70%!)
+- **Affordable CAC: $7-8** (vs $4.68 = +70%!)
 
 **Annual Impact:**
-- Previous trajectory: Declining to $172K margin/month
-- New trajectory: Growing to $294K+ margin/month
-- **Swing: +$122K monthly = +$1.46M annually**
+- Previous trajectory: Declining to $47K margin/month (DEATH)
+- New trajectory: Stable at $111K+ margin/month (ALIVE)
+- **Swing: +$64K monthly = +$768K annually**
+- More importantly: **Business becomes viable for growth**
 
 ---
 
@@ -424,18 +445,21 @@ If we reduce churn to 15%:
 
 | Month | Users | Churn | Revenue | Margin | Changes |
 |-------|-------|-------|---------|--------|---------|
-| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
-| Nov 2025 | 28,000 | 22.0% | $527K | $266K | Retention focus |
-| Dec 2025 | 29,500 | 18.0% | $565K | $289K | +Bank fee to $1.25 |
-| Jan 2026 | 31,500 | 15.0% | $605K | $309K | Optimize + grow |
+| Oct 2025 | 28,551 | 25.4% | $374K | $113K | Baseline |
+| Nov 2025 | 26,000 | 22.0% | $341K | $103K | Retention focus |
+| Dec 2025 | 26,500 | 18.0% | $358K | $116K | +Bank fee to $1.25 |
+| Jan 2026 | 28,000 | 15.0% | $378K | $122K | Optimize + grow |
 
 **Q1 2026 Result:**
-- Users: 31,500 (+10%)
-- Monthly Margin: $309K (+16%)
-- **New LTV Margin: $68.73**
+- Users: 28,000 (-2% but stable)
+- Monthly Margin: $122K (+8%)
+- **New LTV Margin: $29.11** (+87% vs baseline)
 
 **Annual Impact:**
-- Swing vs baseline: +$137K monthly = +$1.64M annually
+- Previous trajectory: Declining to $47K margin/month (DEATH)
+- New trajectory: Growing to $122K+ margin/month (THRIVING)
+- **Swing: +$75K monthly = +$900K annually**
+- Enables $8-9 CAC for sustainable growth
 
 **Risk:** Price increase during retention push could backfire. Recommend waiting until Month 3.
 
@@ -445,19 +469,19 @@ If we reduce churn to 15%:
 
 | Month | Users | Churn | Revenue | Costs | Margin | Changes |
 |-------|-------|-------|---------|-------|--------|---------|
-| Oct 2025 | 28,551 | 25.4% | $527K | $261K | $266K | Baseline |
-| Dec 2025 | 29,500 | 18.0% | $545K | $275K | $270K | Retention |
-| Feb 2026 | 32,000 | 15.0% | $591K | $286K | $305K | +Rails negotiated |
-| Apr 2026 | 35,000 | 15.0% | $647K | $305K | $342K | +Growth |
+| Oct 2025 | 28,551 | 25.4% | $374K | $261K | $113K | Baseline |
+| Dec 2025 | 26,500 | 18.0% | $347K | $241K | $106K | Retention |
+| Feb 2026 | 28,000 | 15.0% | $367K | $241K | $126K | +Rails negotiated -8% |
+| Apr 2026 | 31,000 | 15.0% | $406K | $254K | $152K | +Growth + price opt |
 
 **Q2 2026 Result:**
-- Users: 35,000 (+23%)
-- Monthly Margin: $342K (+29%)
-- LTV Margin: $76+ (with rail savings)
+- Users: 31,000 (+9%)
+- Monthly Margin: $152K (+35%)
+- LTV Margin: $33+ (with rail savings + retention)
 
 **Annual Run Rate:**
-- Monthly Margin: $342K
-- **Annual Profit: $4.10M** (vs current $3.19M = +$910K)
+- Monthly Margin: $152K
+- **Annual Profit: $1.82M** (vs current trajectory of $564K = +$1.26M)
 
 ---
 
@@ -485,10 +509,10 @@ If we reduce churn to 15%:
 ### Tier 2: Important (Monitor Weekly)
 
 4. **Customer LTV Margin**
-   - Current: $36.70
-   - Month 1 Target: $42+ (with 22% churn)
-   - Month 2 Target: $50+ (with 18% churn)
-   - **Month 3 Target: $62+ (with 15% churn)**
+   - Current: $15.60
+   - Month 1 Target: $18+ (with 22% churn)
+   - Month 2 Target: $22+ (with 18% churn)
+   - **Month 3 Target: $26+ (with 15% churn)**
 
 5. **New User Acquisition**
    - Current: 3,193/month
@@ -505,8 +529,8 @@ If we reduce churn to 15%:
 ### Tier 3: Supporting (Monitor Monthly)
 
 7. **Gross Margin %**
-   - Current: 50.5%
-   - Maintain: >48%
+   - Current: 30.2%
+   - Target: >32% (with retention + optimization)
    - Monitor by country/corridor
 
 8. **Average Transactions per User**
@@ -514,12 +538,12 @@ If we reduce churn to 15%:
    - Target: 4.5+ txns (with retention improvements)
 
 9. **Revenue per Customer**
-   - Current: $18.47/month
-   - Target: Maintain or improve with volume
+   - Current: $13.11/month
+   - Target: Maintain or improve with volume + price optimization
 
 10. **CAC Payback Period**
-    - Current: Can afford $11 CAC = 1.2 months payback
-    - Target: $18-20 CAC = <2 months payback (with better LTV)
+    - Current: Can afford $4.68 CAC = 1.2 months payback
+    - Target: $7-8 CAC = <2 months payback (with better LTV)
 
 ---
 
@@ -705,18 +729,20 @@ If we reduce churn to 15%:
 **By Q4 2026:**
 - **Monthly Churn:** <12%
 - **Customer Lifetime:** 8.3 months (vs 3.9 today)
-- **LTV Margin:** $77+ (vs $36.70 today)
-- **Affordable CAC:** $23+ (vs $11 today)
-- **Active Users:** 40,000+ (vs 28,551 today)
-- **Monthly Margin:** $400K+ (vs $266K today)
-- **Annual Profit:** $4.8M+ (vs $3.19M today)
+- **LTV Margin:** $33+ (vs $15.60 today)
+- **Affordable CAC:** $10+ (vs $4.68 today)
+- **Active Users:** 35,000+ (vs 28,551 today)
+- **Monthly Margin:** $175K+ (vs $113K today)
+- **Annual Profit:** $2.1M+ (vs $1.36M today)
 
 **This unlocks:**
-- Aggressive marketing spend ($23 CAC)
-- Geographic expansion
+- Sustainable marketing spend ($10 CAC)
+- Measured geographic expansion
 - Product innovations (instant transfers, bill pay)
 - B2B remittance services
 - Strategic partnerships
+
+**Critical Note:** With thin margins (30%), growth must be disciplined and retention-focused.
 
 ---
 

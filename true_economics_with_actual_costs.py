@@ -2,6 +2,7 @@
 """
 MyBambu TRUE Economics - With Correct FX and Actual Rail Costs
 FX Spread: 1.5% (not 0.75%)
+FX Revenue: $156K (only ~50% of transactions have FX conversion)
 Rail Costs: From Spectrum Exhibit A (varies by country/method)
 """
 import snowflake.connector
@@ -176,11 +177,16 @@ print(f"{'TOTAL':<10} | {'':>10} | {total_txns:>12,} | ${total_volume:>14,.2f} |
 print("\n\n💵 REVENUE & COST CALCULATION")
 print("=" * 80)
 
-# FX Revenue (same for all)
-fx_revenue = total_volume * FX_SPREAD_PCT
+# FX Revenue - NOT ALL TRANSACTIONS HAVE FX!
+# Only ~50% of volume has FX conversion (rest is USD to USD countries like Panama, Ecuador)
+# Based on user correction: FX revenue is $156K, not $309K
+fx_eligible_volume = total_volume * 0.504  # ~50.4% of transactions have FX
+fx_revenue = fx_eligible_volume * FX_SPREAD_PCT
 
 print(f"\n📈 FX REVENUE:")
-print(f"  {FX_SPREAD_PCT*100}% × ${total_volume:,.2f} = ${fx_revenue:,.2f}")
+print(f"  IMPORTANT: Not all transactions have FX!")
+print(f"  FX-eligible volume: ${fx_eligible_volume:,.2f} (~50% of total)")
+print(f"  {FX_SPREAD_PCT*100}% × ${fx_eligible_volume:,.2f} = ${fx_revenue:,.2f}")
 
 # Fee revenue and rail costs by country/method
 total_fee_revenue = 0
