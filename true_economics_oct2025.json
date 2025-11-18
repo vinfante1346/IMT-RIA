@@ -1,0 +1,235 @@
+{
+  "economics_model": {
+    "fx_spread_pct": 0.015,
+    "customer_bank_fee": 0.85,
+    "customer_cash_fee": 2.49
+  },
+  "revenue": {
+    "fx_revenue": 309332.27,
+    "fee_revenue": 218062.61,
+    "total_revenue": 527394.88
+  },
+  "costs": {
+    "rail_costs": 261245.9
+  },
+  "profitability": {
+    "gross_margin": 266148.98,
+    "margin_pct": 50.46,
+    "revenue_per_txn": 4.96,
+    "cost_per_txn": 2.46,
+    "margin_per_txn": 2.5,
+    "revenue_per_customer": 18.47,
+    "margin_per_customer": 9.32
+  },
+  "ltv": {
+    "avg_lifetime_months": 3.9,
+    "ltv_revenue": 72.72,
+    "ltv_margin": 36.7
+  },
+  "country_breakdown": [
+    {
+      "country": "MX",
+      "payment_type": "Credit",
+      "txn_count": 23322,
+      "volume": 4825123.83
+    },
+    {
+      "country": "NI",
+      "payment_type": "Credit",
+      "txn_count": 8348,
+      "volume": 2210599.66
+    },
+    {
+      "country": "HN",
+      "payment_type": "Credit",
+      "txn_count": 9378,
+      "volume": 2161703.58
+    },
+    {
+      "country": "CO",
+      "payment_type": "Credit",
+      "txn_count": 8369,
+      "volume": 1726225.62
+    },
+    {
+      "country": "HN",
+      "payment_type": "Cash",
+      "txn_count": 9313,
+      "volume": 1558398.45
+    },
+    {
+      "country": "NI",
+      "payment_type": "Cash",
+      "txn_count": 7823,
+      "volume": 1508427.38
+    },
+    {
+      "country": "EC",
+      "payment_type": "Credit",
+      "txn_count": 4937,
+      "volume": 1349206.45
+    },
+    {
+      "country": "MX",
+      "payment_type": "Cash",
+      "txn_count": 4692,
+      "volume": 949848.79
+    },
+    {
+      "country": "VE",
+      "payment_type": "Credit",
+      "txn_count": 12445,
+      "volume": 895754.37
+    },
+    {
+      "country": "GT",
+      "payment_type": "Credit",
+      "txn_count": 4473,
+      "volume": 803594.14
+    },
+    {
+      "country": "SV",
+      "payment_type": "Credit",
+      "txn_count": 2713,
+      "volume": 612621.91
+    },
+    {
+      "country": "DO",
+      "payment_type": "Credit",
+      "txn_count": 2415,
+      "volume": 498848.5
+    },
+    {
+      "country": "GT",
+      "payment_type": "Cash",
+      "txn_count": 2774,
+      "volume": 480296.93
+    },
+    {
+      "country": "SV",
+      "payment_type": "Cash",
+      "txn_count": 1514,
+      "volume": 275217.5
+    },
+    {
+      "country": "CR",
+      "payment_type": "Credit",
+      "txn_count": 461,
+      "volume": 125360.65
+    },
+    {
+      "country": "DO",
+      "payment_type": "Cash",
+      "txn_count": 761,
+      "volume": 111506.48
+    },
+    {
+      "country": "PE",
+      "payment_type": "Credit",
+      "txn_count": 508,
+      "volume": 98747.2
+    },
+    {
+      "country": "HT",
+      "payment_type": "Cash",
+      "txn_count": 527,
+      "volume": 84778.19
+    },
+    {
+      "country": "EC",
+      "payment_type": "Cash",
+      "txn_count": 350,
+      "volume": 84330.5
+    },
+    {
+      "country": "CO",
+      "payment_type": "Cash",
+      "txn_count": 338,
+      "volume": 65015.29
+    },
+    {
+      "country": "CL",
+      "payment_type": "Credit",
+      "txn_count": 281,
+      "volume": 58493.46
+    },
+    {
+      "country": "PE",
+      "payment_type": "Cash",
+      "txn_count": 194,
+      "volume": 34487.0
+    },
+    {
+      "country": "CR",
+      "payment_type": "Cash",
+      "txn_count": 151,
+      "volume": 25965.0
+    },
+    {
+      "country": "HT",
+      "payment_type": "Credit",
+      "txn_count": 55,
+      "volume": 21436.0
+    },
+    {
+      "country": "BR",
+      "payment_type": "Credit",
+      "txn_count": 65,
+      "volume": 15306.0
+    },
+    {
+      "country": "PA",
+      "payment_type": "Cash",
+      "txn_count": 48,
+      "volume": 12267.0
+    },
+    {
+      "country": "VE",
+      "payment_type": "Cash",
+      "txn_count": 51,
+      "volume": 11313.55
+    },
+    {
+      "country": "DO",
+      "payment_type": "Delivery",
+      "txn_count": 54,
+      "volume": 9712.01
+    },
+    {
+      "country": "AR",
+      "payment_type": "Credit",
+      "txn_count": 40,
+      "volume": 5662.0
+    },
+    {
+      "country": "BO",
+      "payment_type": "Credit",
+      "txn_count": 3,
+      "volume": 830.0
+    },
+    {
+      "country": "PY",
+      "payment_type": "Cash",
+      "txn_count": 3,
+      "volume": 654.0
+    },
+    {
+      "country": "UY",
+      "payment_type": "Credit",
+      "txn_count": 1,
+      "volume": 220.0
+    },
+    {
+      "country": "CL",
+      "payment_type": "Cash",
+      "txn_count": 1,
+      "volume": 100.0
+    },
+    {
+      "country": "UY",
+      "payment_type": "Cash",
+      "txn_count": 1,
+      "volume": 100.0
+    }
+  ]
+}

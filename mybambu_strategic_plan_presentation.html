@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBambu IMT Strategic Plan - November 2025</title>
+    <title>MyBambu IMT TRUE Economics - November 2025</title>
     <style>
         * {
             margin: 0;
@@ -30,19 +30,17 @@
             position: relative;
         }
 
-        /* Gradient backgrounds for different sections */
-        .slide-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .slide-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .slide-3 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
-        .slide-4 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
-        .slide-5 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
-        .slide-6 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
-        .slide-7 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
-        .slide-8 { background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%); }
-        .slide-9 { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
-        .slide-10 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .slide-11 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-        .slide-12 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        /* Gradient backgrounds */
+        .slide-1 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .slide-2 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .slide-3 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        .slide-4 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .slide-5 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .slide-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .slide-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .slide-8 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .slide-9 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .slide-10 { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
 
         .slide-content {
             max-width: 1200px;
@@ -82,12 +80,12 @@
             color: white;
         }
 
-        .summary-box.danger {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-
         .summary-box.success {
             background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .summary-box.danger {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
 
         .summary-box h3 {
@@ -142,127 +140,6 @@
             margin-top: 5px;
         }
 
-        .pricing-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .pricing-table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .pricing-table th {
-            padding: 15px;
-            text-align: left;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .pricing-table td {
-            padding: 15px;
-            border-bottom: 1px solid #e9ecef;
-            font-size: 14px;
-        }
-
-        .pricing-table tr:hover {
-            background: #f8f9fa;
-        }
-
-        .pricing-table .current-row {
-            background: #fee;
-        }
-
-        .pricing-table .recommended-row {
-            background: #efe;
-            font-weight: 600;
-        }
-
-        .status-badge {
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            display: inline-block;
-        }
-
-        .status-badge.losing {
-            background: #fee;
-            color: #c00;
-        }
-
-        .status-badge.profitable {
-            background: #efe;
-            color: #080;
-        }
-
-        .bullet-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .bullet-list li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .bullet-list li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #43e97b;
-            font-weight: 800;
-            font-size: 20px;
-        }
-
-        .timeline {
-            margin: 30px 0;
-        }
-
-        .timeline-item {
-            display: flex;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .timeline-marker {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 800;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .timeline-content {
-            margin-left: 20px;
-            flex: 1;
-        }
-
-        .timeline-content h3 {
-            font-size: 22px;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .timeline-content p {
-            font-size: 16px;
-            color: #6c757d;
-            line-height: 1.6;
-        }
-
         .highlight-box {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -292,140 +169,6 @@
             color: #495057;
             line-height: 1.6;
             margin: 5px 0;
-        }
-
-        .action-items {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .action-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            border: 2px solid #e9ecef;
-        }
-
-        .action-card h4 {
-            font-size: 18px;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .action-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .action-card li {
-            padding: 5px 0;
-            font-size: 14px;
-            color: #6c757d;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .action-card li:before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #667eea;
-        }
-
-        .projection-table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .projection-table thead {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            color: white;
-        }
-
-        .projection-table th,
-        .projection-table td {
-            padding: 12px;
-            text-align: right;
-            font-size: 14px;
-        }
-
-        .projection-table th:first-child,
-        .projection-table td:first-child {
-            text-align: left;
-        }
-
-        .projection-table tr:nth-child(even) {
-            background: #f8f9fa;
-        }
-
-        .projection-table .baseline {
-            background: #fee;
-        }
-
-        .projection-table .positive {
-            color: #28a745;
-            font-weight: 600;
-        }
-
-        .projection-table .negative {
-            color: #dc3545;
-            font-weight: 600;
-        }
-
-        .cta-section {
-            text-align: center;
-            margin-top: 40px;
-            padding: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
-            color: white;
-        }
-
-        .cta-section h3 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 18px;
-            transition: transform 0.2s;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-
-        .slide-number {
-            position: absolute;
-            bottom: 20px;
-            right: 40px;
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.7);
-            font-weight: 600;
-        }
-
-        .logo {
-            font-size: 64px;
-            margin-bottom: 20px;
         }
 
         .two-column {
@@ -462,6 +205,86 @@
             margin: 20px 0;
         }
 
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bullet-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .bullet-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #43e97b;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .cta-section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+        }
+
+        .logo {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
         @media (max-width: 768px) {
             .slide-content {
                 padding: 30px;
@@ -473,7 +296,6 @@
 
             .executive-summary,
             .metrics-grid,
-            .action-items,
             .two-column {
                 grid-template-columns: 1fr;
             }
@@ -485,23 +307,23 @@
 <!-- SLIDE 1: TITLE & EXECUTIVE SUMMARY -->
 <div class="slide slide-1">
     <div class="slide-content">
-        <div class="logo">🌎</div>
-        <div class="slide-title">MyBambu IMT Strategic Plan</div>
-        <div class="slide-subtitle">October 2025 Analysis & Path to Profitability</div>
+        <div class="logo">✅</div>
+        <div class="slide-title">MyBambu IMT TRUE Economics</div>
+        <div class="slide-subtitle">October 2025 Analysis - CORRECTED FX SPREAD & RAIL COSTS</div>
 
         <div class="executive-summary">
-            <div class="summary-box danger">
-                <h3>Current State</h3>
-                <div class="big-number">-$78K</div>
-                <div class="description">Monthly Loss (-23.3% margin)</div>
-                <div class="description" style="margin-top: 15px;">25.4% Monthly Churn</div>
+            <div class="summary-box success">
+                <h3>✅ Current State: PROFITABLE!</h3>
+                <div class="big-number">+$266K</div>
+                <div class="description">Monthly Margin (50.5%)</div>
+                <div class="description" style="margin-top: 15px;">NOT losing money!</div>
             </div>
 
-            <div class="summary-box success">
-                <h3>Expected Impact</h3>
-                <div class="big-number">+$110K</div>
-                <div class="description">Monthly Profit (26.2% margin)</div>
-                <div class="description" style="margin-top: 15px;">$2.26M Annual Swing</div>
+            <div class="summary-box danger">
+                <h3>🔴 Real Problem: CHURN</h3>
+                <div class="big-number">25.4%</div>
+                <div class="description">Monthly Churn Rate</div>
+                <div class="description" style="margin-top: 15px;">3.9 month customer lifetime</div>
             </div>
 
             <div class="summary-box">
@@ -512,144 +334,140 @@
             </div>
 
             <div class="summary-box">
-                <h3>Recommended Solution</h3>
+                <h3>Critical Discovery</h3>
                 <div class="description" style="margin-top: 10px;">
-                    ✓ Scenario 5 Pricing (1.0% FX)<br>
-                    ✓ Rail Cost Negotiation (2% → 1.5%)<br>
-                    ✓ Retention Campaign (25% → 15% churn)
+                    ✓ FX Spread: 1.5% (not 0.75%!)<br>
+                    ✓ Rail costs: $261K (not $412K)<br>
+                    ✓ Product is profitable, not losing money
                 </div>
             </div>
         </div>
     </div>
-    <div class="slide-number">1 / 12</div>
+    <div class="slide-number">1 / 10</div>
 </div>
 
-<!-- SLIDE 2: CURRENT STATE CRISIS -->
+<!-- SLIDE 2: TRUE ECONOMICS BREAKDOWN -->
 <div class="slide slide-2">
     <div class="slide-content">
-        <div class="slide-title">🔴 Current State: Crisis Mode</div>
+        <div class="slide-title">💰 TRUE Economics Breakdown</div>
 
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <div class="label">Total Users</div>
-                <div class="value">28,551</div>
-                <div class="subtext">Active in October 2025</div>
-            </div>
-            <div class="metric-card">
-                <div class="label">Transactions</div>
-                <div class="value">106,408</div>
-                <div class="subtext">93.5% success rate</div>
-            </div>
-            <div class="metric-card">
-                <div class="label">Volume</div>
-                <div class="value">$20.6M</div>
-                <div class="subtext">Completed transfers</div>
-            </div>
-        </div>
-
-        <div class="highlight-box danger">
-            <h4>Economics Breakdown (Current Fee Structure)</h4>
-            <p><strong>FX Spread (0.75%):</strong> $154,666</p>
-            <p><strong>Bank Fees (51,884 × $0.85):</strong> $44,101</p>
-            <p><strong>Cash Fees (54,469 × $2.49):</strong> $135,628</p>
-            <p style="border-top: 2px solid #dc3545; margin-top: 10px; padding-top: 10px;"><strong>TOTAL REVENUE:</strong> $334,395</p>
-            <p style="margin-top: 15px;"><strong>Rail Costs (2.0%):</strong> -$412,442</p>
-            <p style="border-top: 2px solid #dc3545; margin-top: 10px; padding-top: 10px; font-size: 24px;"><strong>GROSS MARGIN: -$78,047 (-23.3%)</strong></p>
+        <div class="highlight-box success">
+            <h4>What We Discovered:</h4>
+            <p><strong>FX Spread was 1.5%, not 0.75%</strong> - This doubles FX revenue!</p>
+            <p><strong>Rail costs from actual Spectrum contract</strong> - Not the 2% estimate</p>
+            <p style="font-size: 24px; margin-top: 15px;"><strong>Result: Product is PROFITABLE with 50.5% margin</strong></p>
         </div>
 
         <div class="metrics-grid">
             <div class="metric-card">
-                <div class="label">Revenue per Customer</div>
-                <div class="value">$11.71</div>
-                <div class="subtext">Monthly average</div>
+                <div class="label">Total Revenue</div>
+                <div class="value">$527K</div>
+                <div class="subtext">Per month</div>
             </div>
             <div class="metric-card">
-                <div class="label">Cost per Customer</div>
-                <div class="value">$14.45</div>
-                <div class="subtext">Exceeds revenue!</div>
+                <div class="label">Rail Costs</div>
+                <div class="value">$261K</div>
+                <div class="subtext">To Spectrum</div>
             </div>
             <div class="metric-card">
-                <div class="label">Customer LTV</div>
-                <div class="value">$46.12</div>
-                <div class="subtext">3.9 month lifetime</div>
+                <div class="label">Gross Margin</div>
+                <div class="value" style="color: #28a745;">+$266K</div>
+                <div class="subtext">50.5% margin!</div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Revenue Breakdown:</h4>
+            <p><strong>FX Revenue (1.5%):</strong> $309,332 (58% of revenue) ⭐ <em>Primary profit driver!</em></p>
+            <p><strong>Transaction Fees:</strong> $218,063 (42% of revenue)</p>
+            <p style="border-top: 2px solid #ffc107; margin-top: 10px; padding-top: 10px;"><strong>TOTAL REVENUE:</strong> $527,395</p>
+            <p style="margin-top: 15px;"><strong>Rail Costs (by country):</strong> -$261,246</p>
+            <p style="border-top: 2px solid #28a745; margin-top: 10px; padding-top: 10px; font-size: 24px; color: #28a745;"><strong>GROSS MARGIN: +$266,149 (50.5%)</strong></p>
+        </div>
+
+        <div class="metrics-grid" style="margin-top: 30px;">
+            <div class="metric-card">
+                <div class="label">Revenue per Transaction</div>
+                <div class="value">$4.96</div>
+                <div class="subtext">Average across all txns</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Cost per Transaction</div>
+                <div class="value">$2.46</div>
+                <div class="subtext">Rail costs</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Margin per Transaction</div>
+                <div class="value" style="color: #28a745;">$2.50</div>
+                <div class="subtext">Healthy margins!</div>
             </div>
         </div>
     </div>
-    <div class="slide-number">2 / 12</div>
+    <div class="slide-number">2 / 10</div>
 </div>
 
-<!-- SLIDE 3: ROOT CAUSE ANALYSIS -->
+<!-- SLIDE 3: KEY INSIGHT - FX IS THE ENGINE -->
 <div class="slide slide-3">
     <div class="slide-content">
-        <div class="slide-title">🔍 Root Cause Analysis</div>
+        <div class="slide-title">💡 Key Insight: FX is the Profit Engine</div>
 
         <div class="two-column">
             <div>
-                <h3 style="margin-bottom: 20px; color: #2c3e50;">Problem #1: Fees Too Low</h3>
-                <div class="highlight-box danger">
-                    <h4>Current Fee Structure</h4>
-                    <p><strong>FX Spread:</strong> 0.75%</p>
-                    <p><strong>Bank Payout:</strong> $0.85</p>
-                    <p><strong>Cash Payout:</strong> $2.49</p>
-                    <p style="margin-top: 15px; font-size: 18px;"><strong>Revenue: $334K/month</strong></p>
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Revenue Sources</h3>
+                <div class="highlight-box">
+                    <h4>FX Revenue: $309K (58%)</h4>
+                    <p>1.5% spread × $20.6M volume</p>
+                    <p><strong>This is the primary profit driver!</strong></p>
                 </div>
-
-                <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-                    Our FX spread (0.75%) is significantly below competitors:
-                </p>
-                <ul class="bullet-list" style="margin-top: 10px;">
-                    <li>Remitly: 2-3%</li>
-                    <li>Western Union: 3-5%</li>
-                    <li>MoneyGram: 3-4%</li>
-                </ul>
+                <div class="highlight-box">
+                    <h4>Transaction Fees: $218K (42%)</h4>
+                    <p>Bank: $24K (28,541 × $0.85)</p>
+                    <p>Cash: $194K (77,814 × $2.49)</p>
+                    <p><strong>Barely covers rail costs</strong></p>
+                </div>
             </div>
 
             <div>
-                <h3 style="margin-bottom: 20px; color: #2c3e50;">Problem #2: Rail Costs Too High</h3>
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">The Math</h3>
                 <div class="highlight-box danger">
-                    <h4>Rail Cost Structure</h4>
-                    <p><strong>Rate:</strong> 2.0%</p>
-                    <p><strong>Monthly Cost:</strong> $412,442</p>
-                    <p><strong>% of Revenue:</strong> 123%</p>
-                    <p style="margin-top: 15px; font-size: 18px;"><strong>Consuming ALL revenue + $78K more</strong></p>
+                    <h4>Transaction Fees vs Rail Costs</h4>
+                    <p><strong>Transaction Fee Revenue:</strong> $218K</p>
+                    <p><strong>Rail Costs:</strong> -$261K</p>
+                    <p style="border-top: 2px solid #dc3545; margin-top: 10px; padding-top: 10px;"><strong>Net on Fees: -$43K ❌</strong></p>
                 </div>
 
-                <p style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-                    At our volume ($247M annual), we should negotiate:
-                </p>
-                <ul class="bullet-list" style="margin-top: 10px;">
-                    <li>Target: 1.5% rail cost</li>
-                    <li>Savings: $103K/month</li>
-                    <li>Industry standard at scale: 1.2-1.5%</li>
-                </ul>
+                <div class="highlight-box success" style="margin-top: 20px;">
+                    <h4>FX Revenue Saves the Day</h4>
+                    <p><strong>FX Revenue:</strong> +$309K</p>
+                    <p><strong>Fee Loss:</strong> -$43K</p>
+                    <p style="border-top: 2px solid #28a745; margin-top: 10px; padding-top: 10px; font-size: 20px;"><strong>Total Margin: +$266K ✅</strong></p>
+                </div>
             </div>
         </div>
 
-        <div class="highlight-box" style="margin-top: 30px;">
-            <h4>The Math is Simple</h4>
-            <p>We're charging 0.75% FX spread + $0.85-$2.49 fees = $334K revenue</p>
-            <p>We're paying 2.0% rail costs = $412K costs</p>
-            <p><strong>Result: Losing $78K every month</strong></p>
+        <div class="highlight-box" style="margin-top: 30px; background: #e7f3ff; border-left-color: #0066cc;">
+            <h4 style="font-size: 24px;">Business Model Insight</h4>
+            <p style="font-size: 18px;">The business is profitable BECAUSE of the FX spread, not transaction fees. Any pricing strategy must protect FX revenue while optimizing transaction fees.</p>
         </div>
     </div>
-    <div class="slide-number">3 / 12</div>
+    <div class="slide-number">3 / 10</div>
 </div>
 
-<!-- SLIDE 4: CHURN CRISIS -->
+<!-- SLIDE 4: THE REAL PROBLEM - CHURN -->
 <div class="slide slide-4">
     <div class="slide-content">
-        <div class="slide-title">📉 Churn & Retention Crisis</div>
+        <div class="slide-title">🔴 The Real Problem: 25.4% Churn</div>
 
         <div class="highlight-box danger">
             <h4>🔴 Monthly Churn Rate: 25.4%</h4>
-            <p style="font-size: 20px; margin-top: 10px;">Losing 1 in 4 customers every month</p>
+            <p style="font-size: 20px; margin-top: 10px;"><strong>Losing 1 in 4 customers every month</strong></p>
         </div>
 
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="label">September Cohort</div>
                 <div class="value">27,940</div>
-                <div class="subtext">Users at start of month</div>
+                <div class="subtext">Users at month start</div>
             </div>
             <div class="metric-card">
                 <div class="label">Retained in October</div>
@@ -658,757 +476,508 @@
             </div>
             <div class="metric-card">
                 <div class="label">Churned</div>
-                <div class="value">7,096</div>
+                <div class="value" style="color: #dc3545;">7,096</div>
                 <div class="subtext">25.4% churn</div>
             </div>
         </div>
 
         <div class="two-column" style="margin-top: 40px;">
             <div class="comparison-box before">
-                <h3>What This Means</h3>
+                <h3>Current State</h3>
                 <div class="big-stat">3.9</div>
-                <p style="font-size: 18px;">Average Customer Lifetime (months)</p>
-                <p style="margin-top: 20px; font-size: 16px;">Need to acquire 7,096+ new users monthly just to stay flat</p>
+                <p style="font-size: 18px;">Months - Average Customer Lifetime</p>
+                <p style="margin-top: 20px; font-size: 16px;">LTV Margin: $36.70</p>
+                <p style="font-size: 16px;">Affordable CAC: ~$11</p>
             </div>
 
             <div class="comparison-box after">
-                <h3>October Reality</h3>
-                <div class="big-stat">3,193</div>
-                <p style="font-size: 18px;">New Users Acquired</p>
-                <p style="margin-top: 20px; font-size: 16px;">Less than half of churn = Product is shrinking</p>
+                <h3>If We Fix Churn (15%)</h3>
+                <div class="big-stat">6.7</div>
+                <p style="font-size: 18px;">Months - Customer Lifetime</p>
+                <p style="margin-top: 20px; font-size: 16px;">LTV Margin: $62+</p>
+                <p style="font-size: 16px;">Affordable CAC: $18-20 (+80%!)</p>
             </div>
         </div>
 
         <div class="highlight-box danger" style="margin-top: 30px;">
-            <h4>Net User Loss: -3,903 users (-14%)</h4>
-            <p>At this rate, the product will lose 50% of users in 4-5 months</p>
-            <p><strong>Action Required: Reduce churn from 25% to &lt;15%</strong></p>
+            <h4>Why This is Critical:</h4>
+            <p><strong>New Users Acquired (Oct):</strong> 3,193</p>
+            <p><strong>Users Churned (Oct):</strong> 7,096</p>
+            <p><strong>Net Loss:</strong> -3,903 users (-14%)</p>
+            <p style="font-size: 20px; margin-top: 15px;"><strong>Product is SHRINKING, not growing</strong></p>
         </div>
     </div>
-    <div class="slide-number">4 / 12</div>
+    <div class="slide-number">4 / 10</div>
 </div>
 
-<!-- SLIDE 5: PRICING STRATEGY -->
+<!-- SLIDE 5: CUSTOMER LIFETIME VALUE -->
 <div class="slide slide-5">
     <div class="slide-content">
-        <div class="slide-title">💰 Pricing Strategy: Path to Profitability</div>
+        <div class="slide-title">📊 Customer Lifetime Value Analysis</div>
 
-        <table class="pricing-table">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="label">Monthly Revenue per Customer</div>
+                <div class="value">$18.47</div>
+                <div class="subtext">Current average</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Monthly Margin per Customer</div>
+                <div class="value" style="color: #28a745;">$9.32</div>
+                <div class="subtext">After rail costs</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Transactions per Customer</div>
+                <div class="value">3.73</div>
+                <div class="subtext">Monthly average</div>
+            </div>
+        </div>
+
+        <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">LTV by Churn Rate Scenario</h3>
+
+        <table>
             <thead>
                 <tr>
-                    <th>Scenario</th>
-                    <th>FX Spread</th>
-                    <th>Bank Fee</th>
-                    <th>Cash Fee</th>
-                    <th>Revenue</th>
-                    <th>Margin</th>
-                    <th>Status</th>
+                    <th>Churn Rate</th>
+                    <th>Customer Lifetime</th>
+                    <th>LTV Revenue</th>
+                    <th>LTV Margin</th>
+                    <th>Affordable CAC (30%)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="current-row">
-                    <td><strong>Current</strong></td>
-                    <td>0.75%</td>
-                    <td>$0.85</td>
-                    <td>$2.49</td>
-                    <td>$334K</td>
-                    <td style="color: #dc3545; font-weight: 600;">-$78K</td>
-                    <td><span class="status-badge losing">🔴 Losing</span></td>
+                <tr style="background: #fee;">
+                    <td><strong>25.4% (Current)</strong></td>
+                    <td>3.9 months</td>
+                    <td>$72.72</td>
+                    <td>$36.70</td>
+                    <td><strong>$11.01</strong></td>
                 </tr>
                 <tr>
-                    <td>Scenario 1</td>
-                    <td>1.0%</td>
-                    <td>$0.85</td>
-                    <td>$2.49</td>
-                    <td>$386K</td>
-                    <td style="color: #dc3545;">-$26K</td>
-                    <td><span class="status-badge losing">🔴 Still Losing</span></td>
+                    <td>22%</td>
+                    <td>4.5 months</td>
+                    <td>$83.12</td>
+                    <td>$41.94</td>
+                    <td>$12.58</td>
                 </tr>
                 <tr>
-                    <td>Scenario 2</td>
-                    <td>1.5%</td>
-                    <td>$0.85</td>
-                    <td>$2.49</td>
-                    <td>$489K</td>
-                    <td style="color: #28a745;">+$77K</td>
-                    <td><span class="status-badge profitable">✅ Profitable</span></td>
-                </tr>
-                <tr>
-                    <td>Scenario 3</td>
-                    <td>0.75%</td>
-                    <td>$1.49</td>
-                    <td>$2.49</td>
-                    <td>$368K</td>
-                    <td style="color: #dc3545;">-$45K</td>
-                    <td><span class="status-badge losing">🔴 Still Losing</span></td>
-                </tr>
-                <tr class="recommended-row">
-                    <td><strong>⭐ Scenario 5 (Recommended)</strong></td>
-                    <td><strong>1.0%</strong></td>
-                    <td><strong>$1.49</strong></td>
-                    <td><strong>$2.49</strong></td>
-                    <td><strong>$419K</strong></td>
-                    <td style="color: #28a745; font-weight: 600;"><strong>+$7K</strong></td>
-                    <td><span class="status-badge profitable">✅ Profitable</span></td>
-                </tr>
-                <tr>
-                    <td>Scenario 6</td>
-                    <td>1.5%</td>
-                    <td>$1.99</td>
-                    <td>$3.99</td>
-                    <td>$630K</td>
-                    <td style="color: #28a745;">+$217K</td>
-                    <td><span class="status-badge profitable">✅ Highly Profitable</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="highlight-box success">
-            <h4>🎯 Why Scenario 5?</h4>
-            <ul class="bullet-list">
-                <li>Reaches profitability with minimal pricing changes</li>
-                <li>Keeps cash fee competitive at $2.49</li>
-                <li>FX at 1.0% is still below competitors (Remitly ~2-3%, Western Union ~3-5%)</li>
-                <li>Provides buffer for retention campaigns and marketing</li>
-                <li>Monthly Impact: +$85K revenue (+25%)</li>
-                <li>Annual Swing: +$1.01M</li>
-            </ul>
-        </div>
-    </div>
-    <div class="slide-number">5 / 12</div>
-</div>
-
-<!-- SLIDE 6: RAIL COST NEGOTIATION -->
-<div class="slide slide-6">
-    <div class="slide-content">
-        <div class="slide-title">🔧 Rail Cost Negotiation Strategy</div>
-
-        <div class="highlight-box danger">
-            <h4>Current Situation</h4>
-            <p><strong>Paying 2.0% rail costs</strong> on $20.6M volume</p>
-            <p><strong>Monthly cost:</strong> $412,442</p>
-            <p><strong>This is 123% of current revenue ($334K)</strong></p>
-        </div>
-
-        <table class="projection-table" style="margin-top: 30px;">
-            <thead>
-                <tr>
-                    <th>Rail Cost %</th>
-                    <th>Monthly Cost</th>
-                    <th>Monthly Savings</th>
-                    <th>Annual Savings</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="baseline">
-                    <td><strong>Current: 2.0%</strong></td>
-                    <td>$412,442</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>1.75%</td>
-                    <td>$360,887</td>
-                    <td class="positive">+$51,555</td>
-                    <td class="positive">+$619K</td>
+                    <td>18%</td>
+                    <td>5.6 months</td>
+                    <td>$103.43</td>
+                    <td>$52.19</td>
+                    <td>$15.66</td>
                 </tr>
                 <tr style="background: #efe;">
-                    <td><strong>1.5% (Target)</strong></td>
-                    <td>$309,332</td>
-                    <td class="positive"><strong>+$103,110</strong></td>
-                    <td class="positive"><strong>+$1.24M</strong></td>
+                    <td><strong>15% (Target)</strong></td>
+                    <td>6.7 months</td>
+                    <td>$123.75</td>
+                    <td><strong>$62.44</strong></td>
+                    <td><strong>$18.73</strong></td>
                 </tr>
                 <tr>
-                    <td>1.25%</td>
-                    <td>$257,776</td>
-                    <td class="positive">+$154,666</td>
-                    <td class="positive">+$1.86M</td>
+                    <td>12%</td>
+                    <td>8.3 months</td>
+                    <td>$153.30</td>
+                    <td>$77.36</td>
+                    <td>$23.21</td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="two-column" style="margin-top: 30px;">
+        <div class="highlight-box success" style="margin-top: 30px;">
+            <h4>The Opportunity</h4>
+            <p>Reducing churn from 25% to 15% increases affordable CAC from $11 to $19 (+70%)</p>
+            <p><strong>This unlocks aggressive growth marketing!</strong></p>
+        </div>
+    </div>
+    <div class="slide-number">5 / 10</div>
+</div>
+
+<!-- SLIDE 6: TOP COUNTRIES -->
+<div class="slide slide-6">
+    <div class="slide-content">
+        <div class="slide-title">🌎 Country Breakdown & Margins</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Transactions</th>
+                    <th>Volume</th>
+                    <th>% of Total</th>
+                    <th>Margin/Txn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>🇲🇽 Mexico</strong></td>
+                    <td>28,014</td>
+                    <td>$5.77M</td>
+                    <td>28.0%</td>
+                    <td>$2.35</td>
+                </tr>
+                <tr>
+                    <td>🇭🇳 Honduras</td>
+                    <td>18,691</td>
+                    <td>$3.72M</td>
+                    <td>18.0%</td>
+                    <td>$2.31</td>
+                </tr>
+                <tr style="background: #efe;">
+                    <td><strong>🇳🇮 Nicaragua (Best margin)</strong></td>
+                    <td>16,171</td>
+                    <td>$3.72M</td>
+                    <td>18.0%</td>
+                    <td><strong>$2.62</strong></td>
+                </tr>
+                <tr>
+                    <td>🇻🇪 Venezuela*</td>
+                    <td>12,496</td>
+                    <td>$0.91M</td>
+                    <td>4.4%</td>
+                    <td>$1.77</td>
+                </tr>
+                <tr>
+                    <td>🇨🇴 Colombia</td>
+                    <td>8,707</td>
+                    <td>$1.79M</td>
+                    <td>8.7%</td>
+                    <td>$2.43</td>
+                </tr>
+                <tr>
+                    <td>🇬🇹 Guatemala</td>
+                    <td>7,247</td>
+                    <td>$1.28M</td>
+                    <td>6.2%</td>
+                    <td>$2.14</td>
+                </tr>
+                <tr>
+                    <td>🇪🇨 Ecuador</td>
+                    <td>5,287</td>
+                    <td>$1.43M</td>
+                    <td>6.9%</td>
+                    <td>$2.05</td>
+                </tr>
+                <tr>
+                    <td>🇸🇻 El Salvador</td>
+                    <td>4,227</td>
+                    <td>$0.89M</td>
+                    <td>4.3%</td>
+                    <td>$2.08</td>
+                </tr>
+                <tr>
+                    <td>🇩🇴 Dominican Rep</td>
+                    <td>3,230</td>
+                    <td>$0.62M</td>
+                    <td>3.0%</td>
+                    <td>$2.11</td>
+                </tr>
+                <tr>
+                    <td>Others (7 countries)</td>
+                    <td>2,339</td>
+                    <td>$0.49M</td>
+                    <td>2.4%</td>
+                    <td>$1.95</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 15px; font-size: 14px; color: #6c757d;">*Venezuela not in Spectrum contract - opportunity to negotiate</p>
+
+        <div class="highlight-box" style="margin-top: 20px;">
+            <h4>Key Insights:</h4>
+            <p><strong>Mexico is the largest corridor</strong> (28%) but not the highest margin</p>
+            <p><strong>Nicaragua has the best margins</strong> ($2.62/txn) - opportunity to grow this corridor</p>
+            <p><strong>Payment mix matters:</strong> 73% cash pickup ($2.49 fee), 27% bank deposit ($0.85 fee)</p>
+        </div>
+    </div>
+    <div class="slide-number">6 / 10</div>
+</div>
+
+<!-- SLIDE 7: RETENTION STRATEGY -->
+<div class="slide slide-7">
+    <div class="slide-content">
+        <div class="slide-title">🚀 Retention-First Strategy</div>
+
+        <div class="highlight-box success">
+            <h4>🎯 GOAL: Reduce Churn from 25% to <15% in 90 Days</h4>
+            <p style="font-size: 18px;">This is Priority #1 - More important than pricing or cost optimization!</p>
+        </div>
+
+        <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">4 Retention Campaigns</h3>
+
+        <div class="two-column">
             <div>
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">🎯 Target: 1.5% Rail Cost</h3>
-                <div class="highlight-box success">
-                    <h4>Combined with Scenario 5 Pricing:</h4>
-                    <p><strong>Revenue:</strong> $419K</p>
-                    <p><strong>Rail Cost:</strong> $309K (was $412K)</p>
-                    <p style="font-size: 24px; margin-top: 15px;"><strong>New Margin: +$110K monthly (26.2%)</strong></p>
-                    <p style="margin-top: 10px;"><strong>Annual Profit: $1.32M</strong></p>
+                <div class="highlight-box">
+                    <h4>1. Win-Back Campaign</h4>
+                    <p><strong>Target:</strong> 7,096 churned users</p>
+                    <p><strong>Offer:</strong> 1 free transaction</p>
+                    <p><strong>Cost:</strong> $15K</p>
+                    <p><strong>Expected:</strong> 20% reactivation (1,419 users)</p>
+                    <p><strong>ROI:</strong> Breakeven + user recovery</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h4>2. Loyalty Program</h4>
+                    <p><strong>Tier 1:</strong> 4+ txns → 0.1% FX discount</p>
+                    <p><strong>Tier 2:</strong> 7+ txns → 0.2% + priority support</p>
+                    <p><strong>Tier 3:</strong> 10+ txns → 0.3% + free express</p>
+                    <p><strong>Cost:</strong> $5K/month</p>
+                    <p><strong>Impact:</strong> Churn 25% → 18%</p>
                 </div>
             </div>
 
             <div>
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">💪 Negotiation Leverage</h3>
-                <ul class="bullet-list">
-                    <li>$20.6M monthly volume</li>
-                    <li>$247M annual volume</li>
-                    <li>Growing customer base (28K+ users)</li>
-                    <li>Long-term partnership potential</li>
-                    <li>Exclusive partnership offering</li>
-                    <li>Performance-based pricing</li>
-                </ul>
+                <div class="highlight-box">
+                    <h4>3. Referral Program</h4>
+                    <p><strong>Offer:</strong> $5 credit (referrer + new user)</p>
+                    <p><strong>Target:</strong> 5,000 referrals in Q1</p>
+                    <p><strong>Cost:</strong> $50K</p>
+                    <p><strong>Return:</strong> 5,000 × $36.70 LTV = $183.5K</p>
+                    <p><strong>ROI:</strong> 267%</p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <h4>4. VIP Program</h4>
+                    <p><strong>Target:</strong> Top 10% users (2,855)</p>
+                    <p><strong>Benefits:</strong> Dedicated support, 0.3% discount</p>
+                    <p><strong>Goal:</strong> Retention 75% → 90%</p>
+                    <p><strong>Impact:</strong> Save 428 high-value users</p>
+                    <p><strong>Value:</strong> $15.7K monthly margin saved</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="slide-number">6 / 12</div>
-</div>
 
-<!-- SLIDE 7: CUSTOMER SEGMENT PROFITABILITY -->
-<div class="slide slide-7">
-    <div class="slide-content">
-        <div class="slide-title">👥 Customer Segment Profitability</div>
-
-        <h3 style="color: #2c3e50; margin-bottom: 20px;">Current: ALL Segments Unprofitable</h3>
-
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Segment</th>
-                    <th>Users</th>
-                    <th>% of Base</th>
-                    <th>Avg Volume/User</th>
-                    <th>Revenue/User</th>
-                    <th>Profit/User</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frequent (7-10 txns)</td>
-                    <td>2,696</td>
-                    <td>9.4%</td>
-                    <td>$1,540</td>
-                    <td>$25.08</td>
-                    <td class="negative">-$5.73</td>
-                    <td><span class="status-badge losing">🔴</span></td>
-                </tr>
-                <tr>
-                    <td>Power (10+ txns)</td>
-                    <td>2,230</td>
-                    <td>7.8%</td>
-                    <td>$1,177</td>
-                    <td>$22.06</td>
-                    <td class="negative">-$1.48</td>
-                    <td><span class="status-badge losing">🔴</span></td>
-                </tr>
-                <tr>
-                    <td>Regular (4-6 txns)</td>
-                    <td>6,380</td>
-                    <td>22.3%</td>
-                    <td>$1,021</td>
-                    <td>$15.60</td>
-                    <td class="negative">-$4.81</td>
-                    <td><span class="status-badge losing">🔴</span></td>
-                </tr>
-                <tr>
-                    <td>Occasional (2-3 txns)</td>
-                    <td>10,545</td>
-                    <td>36.9%</td>
-                    <td>$501</td>
-                    <td>$7.75</td>
-                    <td class="negative">-$2.27</td>
-                    <td><span class="status-badge losing">🔴</span></td>
-                </tr>
-                <tr>
-                    <td>One-Time (1 txn)</td>
-                    <td>11,336</td>
-                    <td>39.7%</td>
-                    <td>$181</td>
-                    <td>$3.03</td>
-                    <td class="negative">-$0.59</td>
-                    <td><span class="status-badge losing">🔴</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="highlight-box danger" style="margin-top: 20px;">
-            <h4>Key Insight: Even Power Users are unprofitable</h4>
-            <p>Our best customers (10+ txns/month) lose $1.48 per user</p>
-        </div>
-
-        <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">After Scenario 5 Pricing: Power Users Become Profitable</h3>
-
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Segment</th>
-                    <th>Revenue/User</th>
-                    <th>Profit/User</th>
-                    <th>Total Segment Profit</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="background: #efe;">
-                    <td><strong>Frequent (7-10 txns)</strong></td>
-                    <td>$31.47</td>
-                    <td class="positive"><strong>+$0.73</strong></td>
-                    <td class="positive"><strong>+$1,968</strong></td>
-                    <td><span class="status-badge profitable">✅</span></td>
-                </tr>
-                <tr style="background: #efe;">
-                    <td><strong>Power (10+ txns)</strong></td>
-                    <td>$27.68</td>
-                    <td class="positive"><strong>+$4.14</strong></td>
-                    <td class="positive"><strong>+$9,232</strong></td>
-                    <td><span class="status-badge profitable">✅</span></td>
-                </tr>
-                <tr>
-                    <td>Regular (4-6 txns)</td>
-                    <td>$19.58</td>
-                    <td class="negative">-$0.83</td>
-                    <td class="negative">-$5,295</td>
-                    <td><span class="status-badge losing">🟡</span></td>
-                </tr>
-                <tr>
-                    <td>Occasional (2-3 txns)</td>
-                    <td>$9.72</td>
-                    <td class="negative">-$0.30</td>
-                    <td class="negative">-$3,164</td>
-                    <td><span class="status-badge losing">🟡</span></td>
-                </tr>
-                <tr style="background: #efe;">
-                    <td><strong>One-Time (1 txn)</strong></td>
-                    <td>$3.80</td>
-                    <td class="positive"><strong>+$0.18</strong></td>
-                    <td class="positive"><strong>+$2,040</strong></td>
-                    <td><span class="status-badge profitable">✅</span></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="highlight-box success" style="margin-top: 20px;">
-            <h4>Result: Power Users and Frequent users become profitable engines</h4>
-            <p>Focus retention efforts on these high-value segments</p>
+        <div class="cta-section" style="margin-top: 30px;">
+            <h3>Total Investment: $70K for Q1</h3>
+            <p>Expected Return: Churn reduction saves $122K+ monthly margin</p>
+            <p style="font-size: 24px; margin-top: 15px;"><strong>ROI: 523% in first year</strong></p>
         </div>
     </div>
-    <div class="slide-number">7 / 12</div>
+    <div class="slide-number">7 / 10</div>
 </div>
 
-<!-- SLIDE 8: RETENTION STRATEGY -->
+<!-- SLIDE 8: FINANCIAL PROJECTIONS -->
 <div class="slide slide-8">
     <div class="slide-content">
-        <div class="slide-title">🚀 Retention Campaign: 25% → 15% Churn</div>
+        <div class="slide-title">📈 90-Day Financial Projections</div>
 
-        <div class="action-items">
-            <div class="action-card">
-                <h4>Campaign 1: Win-Back Dormant Users</h4>
-                <ul>
-                    <li><strong>Target:</strong> 7,096 churned users</li>
-                    <li><strong>Offer:</strong> 1 free transaction</li>
-                    <li><strong>Cost:</strong> ~$15K</li>
-                    <li><strong>Expected Return:</strong> 20% reactivation = 1,419 users</li>
-                    <li><strong>Revenue:</strong> 4,257 txns × $3.14 = $13K</li>
-                    <li><strong>Net:</strong> -$2K investment for user recovery</li>
-                </ul>
-            </div>
+        <h3 style="color: #2c3e50; margin-bottom: 20px;">Scenario: Retention-First Strategy</h3>
 
-            <div class="action-card">
-                <h4>Campaign 2: Loyalty Program</h4>
-                <ul>
-                    <li><strong>Tier 1 (Regular):</strong> 4+ txns → 0.1% FX discount</li>
-                    <li><strong>Tier 2 (Frequent):</strong> 7+ txns → 0.2% FX discount + priority support</li>
-                    <li><strong>Tier 3 (Power):</strong> 10+ txns → 0.3% FX discount + free express</li>
-                    <li><strong>Cost:</strong> ~$5K/month</li>
-                    <li><strong>Impact:</strong> Churn 25% → 18%</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Campaign 3: Referral Incentives</h4>
-                <ul>
-                    <li><strong>Offer:</strong> $5 credit for referrer, $5 for new user</li>
-                    <li><strong>Target:</strong> 5,000 referrals in Q1</li>
-                    <li><strong>Cost:</strong> $50K</li>
-                    <li><strong>Expected Return:</strong> 5,000 users × $46 LTV = $230K</li>
-                    <li><strong>ROI:</strong> 360%</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Campaign 4: VIP Program for Power Users</h4>
-                <ul>
-                    <li><strong>Target:</strong> 2,230 Power Users</li>
-                    <li><strong>Benefits:</strong> Dedicated account manager, VIP support, 0.3% FX discount</li>
-                    <li><strong>Goal:</strong> Retention 75% → 90%</li>
-                    <li><strong>Impact:</strong> Save 335 Power Users from churning</li>
-                    <li><strong>Value:</strong> $111K annual value saved</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="two-column" style="margin-top: 30px;">
-            <div class="comparison-box before">
-                <h3>Current State</h3>
-                <div class="big-stat">25.4%</div>
-                <p style="font-size: 18px;">Monthly Churn</p>
-                <p style="margin-top: 15px;">3.9 month lifetime</p>
-                <p>$46 LTV</p>
-            </div>
-
-            <div class="comparison-box after">
-                <h3>Target State (Month 3)</h3>
-                <div class="big-stat">15%</div>
-                <p style="font-size: 18px;">Monthly Churn</p>
-                <p style="margin-top: 15px;">6.7 month lifetime</p>
-                <p>$85 LTV</p>
-            </div>
-        </div>
-    </div>
-    <div class="slide-number">8 / 12</div>
-</div>
-
-<!-- SLIDE 9: FINANCIAL PROJECTIONS -->
-<div class="slide slide-9">
-    <div class="slide-content">
-        <div class="slide-title">📈 Financial Projections</div>
-
-        <h3 style="color: #2c3e50; margin-bottom: 20px;">Scenario C: Full Plan (Pricing + Rail + Retention)</h3>
-
-        <table class="projection-table">
+        <table>
             <thead>
                 <tr>
                     <th>Month</th>
                     <th>Users</th>
                     <th>Churn</th>
                     <th>Revenue</th>
-                    <th>Rail Cost</th>
+                    <th>Costs</th>
                     <th>Margin</th>
-                    <th>Margin %</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="baseline">
+                <tr style="background: #fee;">
                     <td><strong>Oct 2025 (Baseline)</strong></td>
                     <td>28,551</td>
                     <td>25.4%</td>
-                    <td>$334K</td>
-                    <td>$412K</td>
-                    <td class="negative"><strong>-$78K</strong></td>
-                    <td class="negative">-23.3%</td>
+                    <td>$527K</td>
+                    <td>$261K</td>
+                    <td>$266K</td>
                 </tr>
                 <tr>
                     <td>Nov 2025</td>
                     <td>28,000</td>
-                    <td>20%</td>
-                    <td>$412K</td>
-                    <td>$304K</td>
-                    <td class="positive">+$108K</td>
-                    <td class="positive">26.2%</td>
+                    <td>22.0%</td>
+                    <td>$517K</td>
+                    <td>$256K</td>
+                    <td>$261K</td>
                 </tr>
                 <tr>
                     <td>Dec 2025</td>
-                    <td>30,500</td>
-                    <td>18%</td>
-                    <td>$448K</td>
-                    <td>$330K</td>
-                    <td class="positive">+$118K</td>
-                    <td class="positive">26.3%</td>
+                    <td>29,500</td>
+                    <td>18.0%</td>
+                    <td>$545K</td>
+                    <td>$270K</td>
+                    <td>$275K</td>
                 </tr>
-                <tr>
-                    <td>Jan 2026</td>
-                    <td>32,500</td>
-                    <td>15%</td>
-                    <td>$478K</td>
-                    <td>$353K</td>
-                    <td class="positive">+$125K</td>
-                    <td class="positive">26.1%</td>
-                </tr>
-                <tr style="background: #d1e7dd;">
-                    <td><strong>Feb 2026</strong></td>
-                    <td><strong>35,000</strong></td>
-                    <td><strong>15%</strong></td>
-                    <td><strong>$515K</strong></td>
-                    <td><strong>$380K</strong></td>
-                    <td class="positive"><strong>+$135K</strong></td>
-                    <td class="positive"><strong>26.2%</strong></td>
+                <tr style="background: #efe;">
+                    <td><strong>Jan 2026</strong></td>
+                    <td><strong>31,500</strong></td>
+                    <td><strong>15.0%</strong></td>
+                    <td><strong>$582K</strong></td>
+                    <td><strong>$288K</strong></td>
+                    <td><strong>$294K</strong></td>
                 </tr>
             </tbody>
         </table>
 
         <div class="metrics-grid" style="margin-top: 40px;">
             <div class="metric-card">
-                <div class="label">Q1 2026 Result</div>
-                <div class="value" style="color: #28a745;">+$378K</div>
-                <div class="subtext">vs. -$234K baseline</div>
+                <div class="label">User Growth</div>
+                <div class="value" style="color: #28a745;">+10%</div>
+                <div class="subtext">28,551 → 31,500</div>
             </div>
             <div class="metric-card">
-                <div class="label">Total Swing</div>
-                <div class="value" style="color: #28a745;">+$612K</div>
-                <div class="subtext">3-month impact</div>
+                <div class="label">Margin Growth</div>
+                <div class="value" style="color: #28a745;">+11%</div>
+                <div class="subtext">$266K → $294K</div>
             </div>
             <div class="metric-card">
-                <div class="label">Annual Run Rate</div>
-                <div class="value" style="color: #28a745;">$1.62M</div>
-                <div class="subtext">Profit (Feb 2026)</div>
+                <div class="label">LTV Improvement</div>
+                <div class="value" style="color: #28a745;">+70%</div>
+                <div class="subtext">$36.70 → $62.44</div>
             </div>
         </div>
 
-        <div class="two-column" style="margin-top: 30px;">
+        <div class="two-column" style="margin-top: 40px;">
             <div class="comparison-box before">
-                <h3>Current Annual</h3>
-                <div class="big-stat">-$936K</div>
-                <p style="font-size: 18px;">Annual Loss</p>
+                <h3>Without Retention (Baseline)</h3>
+                <div class="big-stat">-36%</div>
+                <p style="font-size: 18px;">User decline in 3 months</p>
+                <p style="margin-top: 15px;">Shrinks to 18,399 users</p>
+                <p>Margin drops to $172K (-35%)</p>
             </div>
 
             <div class="comparison-box after">
-                <h3>Projected Annual</h3>
-                <div class="big-stat">+$1.62M</div>
-                <p style="font-size: 18px;">Annual Profit</p>
+                <h3>With Retention Strategy</h3>
+                <div class="big-stat">+10%</div>
+                <p style="font-size: 18px;">User growth in 3 months</p>
+                <p style="margin-top: 15px;">Grows to 31,500 users</p>
+                <p>Margin grows to $294K (+11%)</p>
             </div>
         </div>
 
         <div class="highlight-box success" style="margin-top: 30px;">
-            <h4>🎯 Total Annual Swing: $2.56M</h4>
-            <p>From -$936K loss to +$1.62M profit</p>
+            <h4>Annual Impact</h4>
+            <p><strong>Baseline (do nothing):</strong> Declining to $172K margin/month = $2.06M annually</p>
+            <p><strong>With retention strategy:</strong> Growing to $294K+ margin/month = $3.53M annually</p>
+            <p style="font-size: 24px; margin-top: 15px;"><strong>Annual Swing: +$1.47M</strong></p>
         </div>
     </div>
-    <div class="slide-number">9 / 12</div>
+    <div class="slide-number">8 / 10</div>
 </div>
 
-<!-- SLIDE 10: IMPLEMENTATION ROADMAP -->
+<!-- SLIDE 9: 90-DAY ACTION PLAN -->
+<div class="slide slide-9">
+    <div class="slide-content">
+        <div class="slide-title">📅 90-Day Action Plan</div>
+
+        <div class="two-column">
+            <div>
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Month 1: Launch</h3>
+                <ul class="bullet-list">
+                    <li>Approve retention strategy & budget ($70K)</li>
+                    <li>Launch win-back campaign (7,096 users)</li>
+                    <li>Announce loyalty program tiers</li>
+                    <li>Set up customer segmentation</li>
+                    <li>Monitor reactivation rates daily</li>
+                    <li><strong>Target: Churn 25% → 22%</strong></li>
+                </ul>
+
+                <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">Month 2: Optimize</h3>
+                <ul class="bullet-list">
+                    <li>Launch referral program ($5+$5)</li>
+                    <li>Send VIP invitations (top 10%)</li>
+                    <li>Launch high-margin corridor ads</li>
+                    <li>Set up churn prediction model</li>
+                    <li>Test at-risk user interventions</li>
+                    <li><strong>Target: Churn 22% → 18%</strong></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Month 3: Scale</h3>
+                <ul class="bullet-list">
+                    <li>Analyze 60 days of retention data</li>
+                    <li>Double down on winning strategies</li>
+                    <li>Scale successful retention tactics</li>
+                    <li>Prepare rail cost negotiation</li>
+                    <li>Present Q1 results to exec team</li>
+                    <li><strong>Target: Churn 18% → 15%</strong></li>
+                </ul>
+
+                <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">Success Metrics</h3>
+                <div class="highlight-box success">
+                    <h4>Track Daily:</h4>
+                    <p>• Churn rate (weekly cohorts)</p>
+                    <p>• Win-back reactivation rate</p>
+                    <p>• Loyalty program enrollment</p>
+                    <p>• Referral program adoption</p>
+                    <p>• VIP retention rate</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section" style="margin-top: 30px;">
+            <h3>Team & Resources Needed</h3>
+            <p>1 Retention Manager, 1 Data Analyst, 1 CRM Marketer</p>
+            <p>+2 Support agents, Product/Eng support</p>
+            <p><strong>Total Investment: $370K/year | ROI: 295%</strong></p>
+        </div>
+    </div>
+    <div class="slide-number">9 / 10</div>
+</div>
+
+<!-- SLIDE 10: NEXT STEPS & CALL TO ACTION -->
 <div class="slide slide-10">
-    <div class="slide-content">
-        <div class="slide-title">🗓️ 4-Phase Implementation Roadmap</div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker">1</div>
-                <div class="timeline-content">
-                    <h3>PHASE 1: IMMEDIATE (Week 1-2)</h3>
-                    <p><strong>Action 1:</strong> Implement Scenario 5 Pricing</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Internal approval (Finance, Product, Legal)</li>
-                        <li>Customer communication campaign</li>
-                        <li>Update pricing in all systems</li>
-                        <li>Launch: November 25, 2025</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Action 2:</strong> Begin Rail Cost Negotiations</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Compile negotiation deck</li>
-                        <li>Meet with current rail partners</li>
-                        <li>Target: 1.75% immediate, 1.5% by Q1 2026</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker">2</div>
-                <div class="timeline-content">
-                    <h3>PHASE 2: SHORT TERM (Month 1-3)</h3>
-                    <p><strong>Action 3:</strong> Launch Retention Campaign</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Win-back dormant users (1 free transaction)</li>
-                        <li>Launch 3-tier loyalty program</li>
-                        <li>Referral incentives ($5 + $5)</li>
-                        <li>Goal: Reduce churn from 25.4% to <15%</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Action 4:</strong> Product Improvements</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Reduce transaction failures (2.7% → <1.5%)</li>
-                        <li>Streamline KYC process</li>
-                        <li>24/7 chat support</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker">3</div>
-                <div class="timeline-content">
-                    <h3>PHASE 3: MEDIUM TERM (Q1 2026)</h3>
-                    <p><strong>Action 5:</strong> Customer Segmentation Strategy</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>VIP program for Power Users (2,230 users)</li>
-                        <li>First-time user incentive ("Send 3, Get 1 Free")</li>
-                        <li>Convert one-timers to occasional users</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Action 6:</strong> Scale to Profitability</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Grow from 28K to 35K users</li>
-                        <li>Marketing investment with improved CAC budget</li>
-                        <li>Max CAC: $17 (30% of LTV)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker">4</div>
-                <div class="timeline-content">
-                    <h3>PHASE 4: LONG TERM (Q2-Q4 2026)</h3>
-                    <p><strong>Action 7:</strong> Product Expansion</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Instant Transfer premium ($5.99 fee)</li>
-                        <li>Bill pay integration ($1.50 fee)</li>
-                        <li>Remittance debit card (0.5% interchange)</li>
-                        <li>Additional revenue: +$75.5K/month</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Action 8:</strong> International Expansion</p>
-                    <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li>Q2: Add Brazil, Peru (+$50K monthly)</li>
-                        <li>Q4: Add India, Philippines, Vietnam (+$150K monthly)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="slide-number">10 / 12</div>
-</div>
-
-<!-- SLIDE 11: RISK MITIGATION -->
-<div class="slide slide-11">
-    <div class="slide-content">
-        <div class="slide-title">⚠️ Risks & Mitigation Strategies</div>
-
-        <div class="action-items">
-            <div class="action-card">
-                <h4>Risk 1: Customer Backlash to Price Increase</h4>
-                <p style="margin: 10px 0; font-size: 14px;"><strong>Probability:</strong> Medium | <strong>Impact:</strong> High</p>
-                <ul>
-                    <li>Soft launch with A/B test (50% of users)</li>
-                    <li>Grandfather Power Users for 90 days</li>
-                    <li>Emphasize value adds</li>
-                    <li>Monitor volume daily</li>
-                    <li><strong>Contingency:</strong> If volume drops >15%, roll back to 0.90% FX</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Risk 2: Rail Cost Negotiation Fails</h4>
-                <p style="margin: 10px 0; font-size: 14px;"><strong>Probability:</strong> Medium | <strong>Impact:</strong> High</p>
-                <ul>
-                    <li>Develop relationships with 2-3 alternative providers</li>
-                    <li>Get competitive quotes for leverage</li>
-                    <li>Consider hybrid multi-rail strategy</li>
-                    <li>Explore blockchain/crypto rails</li>
-                    <li><strong>Contingency:</strong> If stuck at 2%, go to Scenario 6 pricing</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Risk 3: Retention Campaign Fails</h4>
-                <p style="margin: 10px 0; font-size: 14px;"><strong>Probability:</strong> Low-Medium | <strong>Impact:</strong> High</p>
-                <ul>
-                    <li>Pilot with small cohort (500 users)</li>
-                    <li>Test multiple offer types</li>
-                    <li>Conduct exit surveys</li>
-                    <li>Implement win-back automation</li>
-                    <li><strong>Contingency:</strong> If churn stays >20%, increase marketing budget</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Risk 4: Competitive Response</h4>
-                <p style="margin: 10px 0; font-size: 14px;"><strong>Probability:</strong> Medium | <strong>Impact:</strong> Medium</p>
-                <ul>
-                    <li>Monitor competitor pricing weekly</li>
-                    <li>Maintain 10-15% cost advantage</li>
-                    <li>Differentiate on speed, reliability, service</li>
-                    <li>Build brand loyalty</li>
-                    <li><strong>Contingency:</strong> Focus on premium service tier</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="highlight-box" style="margin-top: 30px;">
-            <h4>🎯 Success Metrics & KPIs</h4>
-            <div class="two-column" style="margin-top: 15px;">
-                <div>
-                    <p><strong>Critical (Monitor Daily):</strong></p>
-                    <ul style="padding-left: 20px; margin-top: 10px;">
-                        <li>Monthly Churn Rate: 25% → <15%</li>
-                        <li>Gross Margin %: -23% → +25%</li>
-                        <li>Transaction Success Rate: 93.5% → >95%</li>
-                    </ul>
-                </div>
-                <div>
-                    <p><strong>Important (Monitor Weekly):</strong></p>
-                    <ul style="padding-left: 20px; margin-top: 10px;">
-                        <li>New User Acquisition: 3,193 → 6,000/month</li>
-                        <li>Customer LTV: $46 → $120</li>
-                        <li>Revenue per Customer: $11.71 → $15.50</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="slide-number">11 / 12</div>
-</div>
-
-<!-- SLIDE 12: NEXT STEPS & CALL TO ACTION -->
-<div class="slide slide-12">
     <div class="slide-content">
         <div class="slide-title">🎬 Next Steps & Required Decisions</div>
 
-        <div class="highlight-box danger">
-            <h4>⚠️ URGENT: Product is losing $78K/month</h4>
-            <p><strong>Priority:</strong> 🔴 P0 - Immediate action required</p>
-            <p><strong>Status:</strong> Without action, product will lose $936K in 2026</p>
+        <div class="highlight-box success">
+            <h4>✅ The Good News</h4>
+            <p style="font-size: 18px;">Product is PROFITABLE with 50.5% margin - NOT losing money!</p>
+            <p style="font-size: 18px;">FX spread (1.5%) is the profit engine generating $309K/month</p>
+            <p style="font-size: 18px;">Strong unit economics: $2.50 margin per transaction</p>
+        </div>
+
+        <div class="highlight-box danger" style="margin-top: 20px;">
+            <h4>🔴 The Challenge</h4>
+            <p style="font-size: 18px;">25.4% churn is killing growth and limiting customer lifetime</p>
+            <p style="font-size: 18px;">LTV of $36.70 limits affordable CAC to ~$11</p>
+            <p style="font-size: 18px;">Product is shrinking (-14%) without intervention</p>
         </div>
 
         <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">Immediate Actions (This Week)</h3>
         <ul class="bullet-list">
-            <li>✅ Approve Scenario 5 pricing implementation</li>
-            <li>✅ Initiate rail cost negotiations (target: 1.5%)</li>
-            <li>✅ Assemble cross-functional team (13 people, $150K budget)</li>
+            <li>✅ Approve $370K/year retention investment</li>
+            <li>✅ Hire Retention Manager immediately</li>
+            <li>✅ Launch Month 1 campaigns in 14 days</li>
+            <li>✅ Set Q1 churn target: 15%</li>
+            <li>✅ Build churn prediction analytics</li>
         </ul>
 
         <h3 style="color: #2c3e50; margin: 30px 0 20px 0;">Required Decisions</h3>
-        <div class="action-items">
-            <div class="action-card">
-                <h4>Decision 1: Pricing Strategy</h4>
-                <ul>
-                    <li>Approve Scenario 5 (1.0% FX, $1.49 bank, $2.49 cash)</li>
-                    <li>Set launch date: November 25, 2025</li>
-                    <li>Alternative: Balanced approach (0.90% FX, $1.30 bank)</li>
-                </ul>
+        <div class="two-column">
+            <div class="highlight-box">
+                <h4>Decision 1: Retention Priority</h4>
+                <p>Approve retention-first strategy</p>
+                <p>Budget: $70K for Q1 campaigns</p>
+                <p>Delay pricing changes until churn is controlled</p>
             </div>
 
-            <div class="action-card">
-                <h4>Decision 2: Rail Negotiation</h4>
-                <ul>
-                    <li>Set rail cost target: 1.5%</li>
-                    <li>Authorize CFO to negotiate</li>
-                    <li>Allocate resources for alternative rail research</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Decision 3: Retention Budget</h4>
-                <ul>
-                    <li>Allocate $70K for retention campaigns</li>
-                    <li>Win-back: $15K</li>
-                    <li>Loyalty program: $5K/month</li>
-                    <li>Referral incentives: $50K</li>
-                </ul>
-            </div>
-
-            <div class="action-card">
-                <h4>Decision 4: Team & Resources</h4>
-                <ul>
-                    <li>Authorize 13-person cross-functional team</li>
-                    <li>Budget: $150K for 3-month implementation</li>
-                    <li>Product, Marketing, Finance, Support, Legal</li>
-                </ul>
+            <div class="highlight-box">
+                <h4>Decision 2: Team & Resources</h4>
+                <p>Authorize hiring (3 roles)</p>
+                <p>Allocate Eng/Product support</p>
+                <p>Total: $370K/year investment</p>
             </div>
         </div>
 
-        <div class="cta-section">
+        <div class="cta-section" style="margin-top: 40px;">
             <h3>📞 Recommended Executive Meeting</h3>
-            <p><strong>Who:</strong> CEO, CFO, Head of Product, Head of Finance</p>
-            <p><strong>When:</strong> Week of November 18, 2025</p>
+            <p><strong>Who:</strong> CEO, CFO, Head of Product, Head of Marketing</p>
+            <p><strong>When:</strong> This week</p>
             <p><strong>Duration:</strong> 90 minutes</p>
-            <p style="margin-top: 20px;"><strong>Confidence Level:</strong> 95% (based on October 2025 actual data from 28,551 customers, 113,748 transactions, $20.6M volume)</p>
+            <p style="margin-top: 20px;"><strong>Goal:</strong> Approve retention strategy and launch in 14 days</p>
+            <p style="margin-top: 30px; font-size: 24px;"><strong>The product is profitable - let's make it grow!</strong></p>
         </div>
 
         <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 12px;">
-            <p style="font-size: 14px; color: #6c757d;">Prepared by: Claude (AI Analysis)</p>
-            <p style="font-size: 14px; color: #6c757d;">Date: November 17, 2025</p>
-            <p style="font-size: 14px; color: #6c757d;">For: MyBambu Leadership Team</p>
+            <p style="font-size: 14px; color: #6c757d;">Based on actual October 2025 data: 28,551 customers, 106,408 transactions, $20.6M volume</p>
+            <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">Corrected FX spread (1.5%) and actual Spectrum rail costs by country</p>
         </div>
     </div>
-    <div class="slide-number">12 / 12</div>
+    <div class="slide-number">10 / 10</div>
 </div>
 
 </body>

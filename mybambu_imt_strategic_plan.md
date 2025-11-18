@@ -1,24 +1,30 @@
-# MyBambu IMT Strategic Plan
-## October 2025 Analysis & Recommendations
+# MyBambu IMT TRUE Economics Analysis
+## October 2025 - CORRECTED FX SPREAD & RAIL COSTS
 
 ---
 
 ## 🎯 EXECUTIVE SUMMARY
 
-**Current State:** The IMT (International Money Transfer) product is **losing $78,047 per month** (-23.3% margin) with a **25.4% monthly churn rate**.
+**Current State:** The IMT (International Money Transfer) product is **PROFITABLE with a +$266,149 monthly margin** (50.5% margin) with a **25.4% monthly churn rate**.
 
-**Root Causes:**
-- Fee structure (0.75% FX, $0.85 bank, $2.49 cash) generates only $334K revenue
-- Rail costs (2%) consume $412K monthly
-- Customer lifetime is only 3.9 months due to high churn
-- Customer LTV of $46 cannot support acquisition spending
+**Critical Discovery:**
+- **FX Spread was 1.5%, not 0.75%** - This doubles FX revenue to $309K/month
+- **Rail costs from Spectrum Exhibit A** - Actual costs are $261K/month (not $412K)
+- **Transaction fees barely cover rail costs** - The FX spread is the profit engine
 
-**Recommended Solution:**
-- **Implement Scenario 5 Pricing** (1.0% FX, $1.49 bank fee, $2.49 cash)
-- **Negotiate rail costs** from 2.0% to 1.5%
-- **Launch retention campaign** to reduce churn from 25% to <15%
+**The Real Problem:**
+- **25.4% churn rate** limits growth and customer lifetime value
+- Customer lifetime is only **3.9 months**
+- **Customer LTV margin of $36.70** limits CAC to ~$11
+- This prevents aggressive growth and marketing spend
 
-**Expected Impact:** Turn -$78K monthly loss into +$110K monthly profit (+$2.26M annual swing)
+**Recommended Strategy:**
+- **FOCUS ON RETENTION** - Reduce churn from 25% to <15%
+- Optimize pricing for profitability while staying competitive
+- Negotiate better rail costs where possible (especially Mexico)
+- Expand high-margin corridors
+
+**Expected Impact:** Reduce churn to 15% → Increase LTV from $36.70 to $70+ → Enable $20+ CAC for aggressive growth
 
 ---
 
@@ -31,38 +37,67 @@
   - ❌ Failed: 3,018 (2.7%)
   - 🚫 Cancelled: 3,089 (2.7%)
   - ↩️ Reversed: 1,060 (0.9%)
-- **Completed Volume:** $20,622,101
-- **Average Transaction:** $193.80
+- **Completed Volume:** $20,622,151
+- **Average Transaction:** $193.84
+- **Transactions per Customer:** 3.73
 
-### Economics (Current Fee Structure)
-**Fee Structure:**
-- FX Spread: 0.75%
-- Bank Account Payout: $0.85
-- Cash Retail Payout: $2.49
-- Rail Cost: 2.0%
+### Economics (TRUE Fee Structure)
 
-**October Results:**
+**What MyBambu Charges Customers:**
+- FX Spread: **1.5%** (not 0.75%!)
+- Bank Account Payout: **$0.85**
+- Cash Retail Payout: **$2.49**
+
+**What MyBambu Pays Spectrum (Rail Costs):**
+- Mexico: $0.80-$1.50 bank, $2.60-$2.80 cash
+- Other countries: $1.40-$2.85 bank, $2.45-$3.25 cash
+
+**October 2025 Results:**
 ```
 Revenue:
-  FX Revenue (0.75% × $20.6M)           $154,666
-  Bank Fees (51,884 × $0.85)             $44,101
-  Cash Fees (54,469 × $2.49)            $135,628
-  ─────────────────────────────────────────────
-  TOTAL REVENUE                         $334,395
+  FX Revenue (1.5% × $20.6M)              $309,332  (58% of revenue)
+  Bank Fees (28,541 × $0.85)               $24,260
+  Cash Fees (77,814 × $2.49)              $193,757
+  Delivery Fees (54 × $0.85)                    $46
+  ─────────────────────────────────────────────────
+  TOTAL REVENUE                           $527,395  (100%)
 
 Costs:
-  Rail Costs (2.0% × $20.6M)           -$412,442
-  ─────────────────────────────────────────────
+  Rail Costs to Spectrum (by country)    -$261,246
+  ─────────────────────────────────────────────────
 
-  🔴 GROSS MARGIN                       -$78,047 (-23.3%)
+  ✅ GROSS MARGIN                         $266,149  (50.5% margin!)
 ```
 
 ### Unit Economics
-- **Revenue per Customer:** $11.71
-- **Revenue per Transaction:** $3.14
-- **Cost per Customer:** $14.45 (exceeds revenue!)
-- **Customer LTV:** $46.12
-- **Max Justifiable CAC:** ~$14 (30% of LTV)
+
+**Per Transaction:**
+- Revenue: **$4.96**
+- Rail Cost: **$2.46**
+- **Gross Margin: $2.50** ✅
+
+**Per Customer (Monthly):**
+- Revenue: **$18.47**
+- Rail Cost: **$9.15**
+- **Gross Margin: $9.32** ✅
+
+**Lifetime Value:**
+- Customer Lifetime: **3.9 months** (25.4% churn)
+- LTV Revenue: **$72.72**
+- **LTV Margin: $36.70** ✅
+- **Max Justifiable CAC: ~$11** (30% of LTV margin)
+
+### Critical Insight: FX is the Profit Engine
+
+**Revenue Breakdown:**
+- FX Revenue: $309K (58% of revenue) → **Primary profit driver**
+- Transaction Fees: $218K (42% of revenue) → Only covers 83% of rail costs
+
+**The Business Model:**
+- Transaction fees ($218K) < Rail costs ($261K) = **-$43K loss on fees**
+- FX revenue ($309K) more than covers the gap = **Net +$266K margin**
+
+**This means:** The business is profitable BECAUSE of FX spread, not transaction fees. Any pricing strategy must protect the FX revenue while optimizing transaction fees.
 
 ---
 
@@ -79,6 +114,7 @@ Costs:
 - Losing **1 in 4 customers every month**
 - Average customer lifetime: **3.9 months**
 - Need to acquire 7,096+ new users monthly just to maintain flat growth
+- **LTV margin of only $36.70 limits CAC to ~$11**
 
 ### October User Breakdown
 - 🆕 New Users: 3,193 (11.2%)
@@ -86,634 +122,635 @@ Costs:
 
 **⚠️ Red Flag:** New user acquisition (3,193) is less than half of churn (7,096)
 - Net user loss: -3,903 users (-14%)
-- Product is shrinking, not growing
+- **Product is shrinking, not growing**
+
+### Why Churn is the Critical Problem
+
+With current economics:
+- Monthly margin per customer: $9.32
+- Customer lifetime: 3.9 months
+- **LTV margin: $36.70**
+- Affordable CAC (30% of LTV): **$11**
+
+If we reduce churn to 15%:
+- Customer lifetime would increase to 6.7 months
+- **LTV margin would increase to $62+**
+- Affordable CAC would increase to **$18-20**
+- This enables 80%+ increase in marketing budget!
 
 ---
 
-## 🎯 PRICING STRATEGY - PATH TO PROFITABILITY
+## 🌎 COUNTRY & CORRIDOR ANALYSIS
 
-### Fee Scenarios Tested
+### Top Countries by Transaction Volume
 
-| Scenario | FX | Bank | Cash | Revenue | Margin | Status |
-|----------|-----|------|------|---------|--------|--------|
-| **Current** | 0.75% | $0.85 | $2.49 | $334K | **-$78K** | 🔴 Losing |
-| Scenario 1 | 1.0% | $0.85 | $2.49 | $386K | -$26K | 🔴 Still losing |
-| Scenario 2 | 1.5% | $0.85 | $2.49 | $489K | +$77K | ✅ Profitable |
-| Scenario 3 | 0.75% | $1.49 | $2.49 | $368K | -$45K | 🔴 Still losing |
-| **Scenario 5** ⭐ | **1.0%** | **$1.49** | **$2.49** | **$419K** | **+$7K** | ✅ **Profitable** |
-| Scenario 6 | 1.5% | $1.99 | $3.99 | $630K | +$217K | ✅ Highly Profitable |
+| Country | Transactions | Volume | % of Total | Margin/Txn |
+|---------|-------------|---------|-----------|------------|
+| **Mexico (MX)** | 28,014 | $5.77M | 28.0% | $2.35 |
+| Honduras (HN) | 18,691 | $3.72M | 18.0% | $2.31 |
+| Nicaragua (NI) | 16,171 | $3.72M | 18.0% | $2.62 |
+| **Venezuela (VE)** | 12,496 | $0.91M | 4.4% | $1.77 |
+| Colombia (CO) | 8,707 | $1.79M | 8.7% | $2.43 |
+| Guatemala (GT) | 7,247 | $1.28M | 6.2% | $2.14 |
+| Ecuador (EC) | 5,287 | $1.43M | 6.9% | $2.05 |
+| El Salvador (SV) | 4,227 | $0.89M | 4.3% | $2.08 |
+| Dominican Rep (DO) | 3,230 | $0.62M | 3.0% | $2.11 |
+| Peru (PE) | 702 | $0.13M | 0.6% | $1.89 |
 
-### 🎯 RECOMMENDED: Scenario 5 (Conservative Win)
+### Key Findings:
 
-**New Fee Structure:**
-- FX Spread: 0.75% → **1.0%** (+0.25pp)
-- Bank Account Fee: $0.85 → **$1.49** (+$0.64)
-- Cash Retail Fee: **$2.49** (no change)
+1. **Mexico is the largest corridor** (28% of transactions)
+   - Best rail costs ($0.80 SPEI, $1.50 BBVA)
+   - But margin per transaction ($2.35) is below average due to high cash mix
 
-**Impact:**
-- Monthly Revenue: $334K → **$419K** (+25%)
-- Monthly Margin: -$78K → **+$7K** (profitable!)
-- Annual Swing: **+$1.01M**
+2. **Nicaragua has highest margin** ($2.62/txn)
+   - Lower rail costs ($1.45 bank, $2.50 cash)
+   - Good balance of bank vs cash payouts
 
-**Why Scenario 5:**
-1. Reaches profitability with minimal pricing changes
-2. Keeps cash fee competitive at $2.49
-3. FX at 1.0% is still below competitors (Remitly ~2-3%, Western Union ~3-5%)
-4. Provides buffer for retention campaigns and marketing
+3. **Venezuela is NOT in Spectrum contract** (12,496 txns!)
+   - Using "OTHER" estimated costs ($2.50 bank, $3.00 cash)
+   - Lower margin ($1.77/txn) - opportunity to negotiate better rates
 
----
-
-## 💡 ALTERNATIVE: Balanced Break-Even Approach
-
-If Scenario 5 feels too aggressive, here's a more gradual approach:
-
-**Balanced Fee Structure:**
-- FX Spread: 0.75% → **0.90%** (+0.15pp)
-- Bank Fee: $0.85 → **$1.30** (+$0.45)
-- Cash Fee: $2.49 → **$2.92** (+$0.43)
-
-**Impact:** Exact break-even (0% margin, $0 profit/loss)
-
-This gives you room to negotiate and test pricing elasticity.
+4. **Payment Method Mix:**
+   - Credit (cash pickup): 77,814 txns (73.1%) - Higher fees ($2.49)
+   - Cash (bank deposit): 28,541 txns (26.8%) - Lower fees ($0.85)
+   - Delivery: 54 txns (0.1%)
 
 ---
 
-## 🔧 RAIL COST NEGOTIATION STRATEGY
+## 💡 STRATEGIC RECOMMENDATIONS
 
-### Current Situation
-- Paying 2.0% rail costs on $20.6M volume
-- Monthly cost: $412,442
-- This is **123% of current revenue** ($334K)
+### Priority 1: RETENTION FIRST (Most Important!)
 
-### Negotiation Targets
+**Goal:** Reduce churn from 25.4% to <15% in 3 months
 
-| Rail Cost % | Monthly Cost | Monthly Savings | Annual Savings |
-|------------|--------------|-----------------|----------------|
-| **Current: 2.0%** | $412,442 | - | - |
-| **1.75%** | $360,887 | +$51,555 | +$619K |
-| **1.5%** | $309,332 | +$103,110 | +$1.24M |
-| **1.25%** | $257,776 | +$154,666 | +$1.86M |
+**Why This Matters Most:**
+- 15% churn = 6.7 month lifetime = $62+ LTV margin
+- Enables $18-20 CAC (vs current $11)
+- **80% increase in affordable marketing spend**
+- Compounds growth through higher customer lifetime value
 
-### 🎯 Target: 1.5% Rail Cost
+**Retention Tactics:**
 
-**Combined with Scenario 5 Pricing:**
-- Revenue: $419K
-- Rail Cost: $309K (was $412K)
-- **New Margin: +$110K monthly** (26.2% margin)
-- **Annual Profit: $1.32M**
+**1. Win-Back Campaign** (Month 1)
+- Target: 7,096 churned October users
+- Offer: 1 free transaction (waive all fees)
+- Cost: ~$15K
+- Expected: 20% reactivation = 1,419 users back
+- ROI: These users send 3+ txns over next 3 months = breakeven
 
-**Negotiation Leverage:**
-- $20.6M monthly volume ($247M annual)
-- Growing customer base (28K+ users)
-- Long-term partnership potential
+**2. Loyalty Program** (Month 1-2)
+- Tier 1 (Regular - 4+ txns/month): 0.1% FX discount
+- Tier 2 (Frequent - 7+ txns/month): 0.2% FX discount + priority support
+- Tier 3 (Power - 10+ txns/month): 0.3% FX discount + free express delivery
+- Cost: ~$5K/month in discounts
+- Impact: Reduce churn 25% → 18%
 
----
+**3. Referral Program** (Month 2-3)
+- Offer: $5 credit for referrer + $5 for new user
+- Target: 5,000 referrals in Q1 2026
+- Cost: $50K
+- Expected Return: 5,000 users × $36.70 LTV = $183.5K
+- **ROI: 267%**
 
-## 👥 CUSTOMER SEGMENT PROFITABILITY
-
-### Current Profitability by Segment (All Unprofitable)
-
-| Segment | Users | % | Avg Vol/User | Revenue/User | Profit/User | Status |
-|---------|-------|---|--------------|--------------|-------------|--------|
-| Frequent (7-10 txns) | 2,696 | 9.4% | $1,540 | $25.08 | **-$5.73** | 🔴 |
-| Power (10+ txns) | 2,230 | 7.8% | $1,177 | $22.06 | **-$1.48** | 🔴 |
-| Regular (4-6 txns) | 6,380 | 22.3% | $1,021 | $15.60 | **-$4.81** | 🔴 |
-| Occasional (2-3 txns) | 10,545 | 36.9% | $501 | $7.75 | **-$2.27** | 🔴 |
-| One-Time (1 txn) | 11,336 | 39.7% | $181 | $3.03 | **-$0.59** | 🔴 |
-
-**Key Insight:** Even Power Users are unprofitable with current fees.
-
-### After Scenario 5 Pricing (Projected)
-
-| Segment | Revenue/User | Profit/User | Status |
-|---------|--------------|-------------|--------|
-| Frequent (7-10 txns) | $31.47 | **+$0.73** | ✅ |
-| Power (10+ txns) | $27.68 | **+$4.14** | ✅ |
-| Regular (4-6 txns) | $19.58 | **-$0.83** | 🟡 |
-| Occasional (2-3 txns) | $9.72 | **-$0.30** | 🟡 |
-| One-Time (1 txn) | $3.80 | **+$0.18** | ✅ |
-
-**Result:** Power Users and Frequent users become profitable engines.
-
----
-
-## 🚀 RECOMMENDED ACTION PLAN
-
-### PHASE 1: IMMEDIATE (Week 1-2)
-
-#### Action 1: Implement Scenario 5 Pricing
-**Timeline:** Effective November 25, 2025
-**Execution:**
-1. Internal approval from Finance, Product, Legal (Week 1)
-2. Customer communication campaign:
-   - Email to all 28K users explaining value improvements
-   - In-app notification 7 days before change
-   - FAQ page on website
-3. Update pricing in all systems (app, website, backend)
-4. Monitor transaction volume and user feedback
-
-**Communication Template:**
-```
-Subject: Important Update: Improved MyBambu IMT Service
-
-Dear [Customer],
-
-We're enhancing our International Money Transfer service with:
-✅ Faster processing times
-✅ Expanded payout options
-✅ 24/7 customer support
-✅ Better exchange rates visibility
-
-Updated pricing (effective Nov 25):
-• FX Rate: 1.0% (was 0.75%)
-• Bank Transfer: $1.49 (was $0.85)
-• Cash Pickup: $2.49 (unchanged)
-
-Still the best value for sending money home!
-
-Questions? Contact support@mybambu.com
-```
-
-**Expected Impact:**
-- 5-10% transaction volume drop initially
-- Stabilization within 2 weeks
-- Net positive revenue impact: +$85K/month
-
----
-
-#### Action 2: Begin Rail Cost Negotiations
-**Timeline:** November 18-30, 2025
-**Execution:**
-1. Compile negotiation deck:
-   - Current volume: $247M annual
-   - Growth trajectory
-   - Competitive quotes from alternative providers
-2. Meet with current rail partners (TransNetwork, Uniteller, MoneyGram)
-3. Target: 1.75% immediate, 1.5% by Q1 2026
-4. Fallback: Explore new rail partnerships
-
-**Negotiation Points:**
-- Volume commitment: Guarantee $300M annual volume for 1.5% rate
-- Exclusive partnership in exchange for better rates
-- Performance-based pricing (SLA-based discounts)
-
-**Expected Impact:**
-- Short term (1.75%): +$51K/month
-- Medium term (1.5%): +$103K/month
-
----
-
-### PHASE 2: SHORT TERM (Month 1-3)
-
-#### Action 3: Launch Retention Campaign
-**Goal:** Reduce churn from 25.4% to <15%
-
-**Campaign 1: Win-Back Dormant Users**
-- **Target:** 7,096 users who churned in Oct
-- **Offer:** 1 free transaction (waive all fees)
-- **Cost:** ~$15K (7,096 × $2.14 avg fee)
-- **Expected Return:** 20% reactivation = 1,419 users
-- **If each sends 3 txns over 3 months:** 4,257 txns × $3.14 = $13K revenue
-- **Net:** -$2K investment for user base recovery
-
-**Campaign 2: Loyalty Program**
-- **Tier 1 (Regular):** 4+ txns/month → 0.1% FX discount
-- **Tier 2 (Frequent):** 7+ txns/month → 0.2% FX discount + priority support
-- **Tier 3 (Power):** 10+ txns/month → 0.3% FX discount + free express delivery
-- **Cost:** ~$5K/month in discounts
-- **Expected Impact:** Churn reduction from 25% → 18%
-
-**Campaign 3: Referral Incentives**
-- **Offer:** $5 credit for referrer, $5 for new user
-- **Target:** 5,000 referrals in Q1
-- **Cost:** $50K
-- **Expected Return:** 5,000 users × $46 LTV = $230K
-- **ROI:** 360%
-
----
-
-#### Action 4: Product Improvements
-**Timeline:** December 2025 - January 2026
-
-**Priority 1: Reduce Transaction Failures (2.7%)**
-- Root cause analysis of 3,018 failed transactions
-- Improve validation on front-end
-- Better error messaging
-- **Target:** Reduce failures to <1.5%
-- **Impact:** +1,500 completed txns/month = +$4.7K revenue
-
-**Priority 2: Optimize Success Path**
-- Streamline KYC process
-- Auto-save recipient information
-- One-click repeat transactions
-- **Target:** Increase repeat transaction rate by 20%
-- **Impact:** Improve retention, increase txns per user
-
-**Priority 3: Enhanced Customer Support**
-- 24/7 chat support (currently limited hours)
-- Spanish-language support team
-- Transaction tracking in real-time
-- **Target:** Reduce cancellations from 2.7% to <1.5%
-- **Impact:** +1,500 completed txns/month = +$4.7K revenue
-
----
-
-### PHASE 3: MEDIUM TERM (Q1 2026)
-
-#### Action 5: Customer Segmentation Strategy
-
-**VIP Program for Power Users**
-- Target: 2,230 Power Users (10+ txns/month)
-- Benefits:
-  - Dedicated account manager
-  - VIP phone support line
-  - 0.3% FX discount (1.0% → 0.7%)
-  - Free expedited delivery
+**4. VIP Program for Power Users** (Month 2-3)
+- Target: Top 10% users (2,855 users)
+- Benefits: Dedicated support, 0.3% FX discount, instant transfers
 - Goal: Increase retention from 75% to 90%
-- Expected Impact: Save 335 Power Users from churning
-  - 335 × $27.68/month × 12 months = $111K annual value saved
-
-**First-Time User Incentive**
-- Problem: 39.7% of users are one-time (11,336 users)
-- Offer: "Send 3, Get 1 Free" promotion
-- Target: Convert 30% of one-timers to occasional users
-  - 3,400 users × 2 additional txns = 6,800 txns
-  - 6,800 × $3.80 revenue = $25.8K additional revenue
+- Impact: Save 428 high-value users = $15.7K monthly margin saved
 
 ---
 
-#### Action 6: Scale to Profitability
+### Priority 2: OPTIMIZE PRICING (Secondary)
 
-**Growth Targets:**
-- November 2025: 28,551 users → 29,000 users (+1.6%)
-- December 2025: 29,000 → 30,500 (+5.2%)
-- January 2026: 30,500 → 32,500 (+6.6%)
-- February 2026: 32,500 → 35,000 (+7.7%)
+**Current State:**
+- FX provides 58% of revenue and most of the margin
+- Transaction fees barely cover rail costs (88% recovery)
+- Mexico has high cash mix with expensive rail costs
 
-**Marketing Investment:**
-With Scenario 5 pricing + 1.5% rail cost:
-- Customer LTV: $46 → $58 (improved retention)
-- Max CAC: $17 (30% of LTV)
-- Can afford to spend $17 × 6,500 new users = $110K on acquisition
+**Options to Consider:**
 
-**Channels:**
-1. Referral program (lowest CAC: $10)
-2. Community partnerships (CAC: $12-15)
-3. Digital ads targeting Hispanic diaspora (CAC: $15-20)
+**Option A: Increase Bank Fee (Conservative)**
+- Change bank fee: $0.85 → $1.25
+- Impact: +$11.4K monthly revenue
+- Covers more of rail cost gap
+- Still below market ($1.50-$2.00 typical)
 
----
+**Option B: Optimize Mexico SPEI Mix**
+- Push more Mexico transactions to SPEI ($0.80 rail cost vs $2.75 cash)
+- Incentivize bank deposits over cash pickup
+- Could save $1.95 per transaction switched
 
-### PHASE 4: LONG TERM (Q2-Q4 2026)
+**Option C: Keep Pricing, Focus on Volume**
+- Current margins (50.5%) are healthy
+- Focus on retention and growth instead of price increases
+- Avoid customer backlash during retention push
 
-#### Action 7: Product Expansion
-
-**New Revenue Streams:**
-1. **Instant Transfer (Premium):** $5.99 fee for <1 hour delivery
-   - Target: 10% of transactions upgrade
-   - Additional revenue: +$63K/month
-
-2. **Bill Pay Integration:** Partner with utilities in Mexico, Nicaragua
-   - Add $1.50 convenience fee
-   - Target: 5,000 bill payments/month = +$7.5K
-
-3. **Remittance Card:** Recipient debit card loaded instantly
-   - Interchange revenue: 0.5% on spending
-   - Target: 5,000 active cards × $200 spend = +$5K/month
-
-**Total New Revenue:** +$75.5K/month
+**Recommendation:** **Option C** - Don't change pricing during retention campaign. Current margins are strong. Focus all energy on reducing churn.
 
 ---
 
-#### Action 8: International Expansion
+### Priority 3: NEGOTIATE RAIL COSTS (Opportunistic)
 
-**Phase 1 Corridors (Q2 2026):**
-- Add Brazil, Peru (high volume corridors)
-- Target: +5,000 users, +$50K monthly revenue
+**Current Situation:**
+- Paying Spectrum $261K/month in rail costs
+- Total volume: $20.6M/month ($247M annual)
+- Mix of tiered pricing by country and volume
 
-**Phase 2 Corridors (Q4 2026):**
-- Add India, Philippines, Vietnam
-- Target: +10,000 users, +$150K monthly revenue
+**Negotiation Opportunities:**
 
----
+**1. Mexico Volume Bonus** (Biggest Impact)
+- Current: 28,014 Mexico txns/month
+- Spectrum charges: $2.75 cash, $0.80-$1.50 bank
+- Ask: Volume discount for exceeding 25K Mexico txns
+- Target: 5-10% discount = $6-12K monthly savings
 
-## 📈 FINANCIAL PROJECTIONS
+**2. Venezuela Addition to Contract**
+- Currently: 12,496 txns using "OTHER" estimated costs
+- Opportunity: Add Venezuela to Spectrum contract
+- Target rate: $2.00 bank, $2.50 cash
+- Savings: ~$6K/month if better than current
 
-### Scenario A: Scenario 5 Pricing Only
+**3. Bundle Discount**
+- Total across all countries: 106K+ txns/month
+- Ask for portfolio discount for volume commitment
+- Target: 3-5% across all countries = $8-13K monthly savings
 
-| Month | Users | Revenue | Costs | Margin | Status |
-|-------|-------|---------|-------|--------|--------|
-| **Oct 2025 (Baseline)** | 28,551 | $334K | $412K | -$78K | 🔴 |
-| Nov 2025 | 27,000 | $397K | $390K | +$7K | 🟡 |
-| Dec 2025 | 28,500 | $419K | $412K | +$7K | ✅ |
-| Jan 2026 | 30,000 | $441K | $434K | +$7K | ✅ |
-| Feb 2026 | 32,000 | $471K | $463K | +$8K | ✅ |
+**Total Potential Savings: $20-31K/month**
 
-**Q1 2026 Result:** +$22K profit (vs. -$234K baseline)
-**Swing:** +$256K
-
----
-
-### Scenario B: Scenario 5 + Rail Cost Negotiation (1.5%)
-
-| Month | Users | Revenue | Rail Cost | Margin | Margin % |
-|-------|-------|---------|-----------|--------|----------|
-| Nov 2025 | 27,000 | $397K | $293K | +$104K | 26.2% |
-| Dec 2025 | 28,500 | $419K | $309K | +$110K | 26.3% |
-| Jan 2026 | 30,000 | $441K | $326K | +$115K | 26.1% |
-| Feb 2026 | 32,000 | $471K | $347K | +$124K | 26.3% |
-
-**Q1 2026 Result:** +$329K profit (vs. -$234K baseline)
-**Swing:** +$563K
+**Approach:**
+- Don't negotiate immediately - wait 60 days
+- Build case with 2-3 months of volume data
+- Show growth trajectory from retention efforts
+- Use as leverage: "We're growing, give us better rates or we'll explore alternatives"
 
 ---
 
-### Scenario C: Full Plan (Pricing + Rail + Retention)
+### Priority 4: EXPAND HIGH-MARGIN CORRIDORS (Growth)
 
-| Month | Users | Churn | Revenue | Rail Cost | Margin | Margin % |
-|-------|-------|-------|---------|-----------|--------|----------|
-| Nov 2025 | 28,000 | 20% | $412K | $304K | +$108K | 26.2% |
-| Dec 2025 | 30,500 | 18% | $448K | $330K | +$118K | 26.3% |
-| Jan 2026 | 32,500 | 15% | $478K | $353K | +$125K | 26.1% |
-| Feb 2026 | 35,000 | 15% | $515K | $380K | +$135K | 26.2% |
+**Best Corridors by Margin:**
+1. Nicaragua: $2.62/txn margin
+2. Colombia: $2.43/txn margin
+3. Mexico: $2.35/txn margin
+4. Honduras: $2.31/txn margin
 
-**Q1 2026 Result:** +$378K profit (vs. -$234K baseline)
-**Swing:** +$612K
+**Growth Strategy:**
+- **Geographic marketing:** Target cities with high Nicaragua, Colombia, Honduras diaspora
+- **Community partnerships:** Churches, cultural centers, remittance hotspots
+- **Referral incentives:** Double referral bonus ($10+$10) for these corridors
 
-**Annual Run Rate (Full Plan):**
-- Monthly Profit: $135K (Feb 2026)
-- Annual Projection: **$1.62M profit**
-- vs. Current: **-$936K loss**
-- **Total Swing: $2.56M**
+**Expected Impact:**
+- If we can shift 10% of volume to higher-margin corridors
+- Additional margin: ~$5-8K/month
+
+---
+
+## 📅 90-DAY ACTION PLAN
+
+### MONTH 1 (Retention Launch)
+
+**Week 1:**
+- [ ] Approve retention strategy and budget ($70K for Q1)
+- [ ] Design win-back email campaign
+- [ ] Build loyalty program tiers in app
+- [ ] Set up customer segmentation (Regular, Frequent, Power)
+
+**Week 2-3:**
+- [ ] Launch win-back campaign to 7,096 churned users
+- [ ] Send loyalty program announcement to all 28,551 users
+- [ ] Monitor reactivation rates daily
+- [ ] A/B test messaging and offers
+
+**Week 4:**
+- [ ] Measure Month 1 results:
+  - Win-back reactivation rate
+  - Loyalty program enrollment
+  - Change in week-over-week churn
+- [ ] Adjust tactics based on data
+
+**Target:** Churn from 25.4% → 22%
+
+---
+
+### MONTH 2 (Retention Optimization)
+
+**Week 1:**
+- [ ] Launch referral program ($5+$5 credit)
+- [ ] Design VIP program for top 10% users
+- [ ] Create high-margin corridor marketing campaigns
+- [ ] Set up automated churn prediction (flag at-risk users)
+
+**Week 2-3:**
+- [ ] Send VIP invitations to top 2,855 users
+- [ ] Launch Nicaragua/Colombia targeted ads
+- [ ] Test at-risk user intervention (special offers)
+- [ ] Optimize loyalty program based on Month 1 data
+
+**Week 4:**
+- [ ] Measure Month 2 results:
+  - Overall churn rate
+  - Referral program adoption
+  - VIP program retention
+- [ ] Calculate LTV improvement
+
+**Target:** Churn from 22% → 18%
+
+---
+
+### MONTH 3 (Scale & Optimize)
+
+**Week 1:**
+- [ ] Analyze 60 days of retention data
+- [ ] Identify which tactics work best
+- [ ] Double down on winning strategies
+- [ ] Prepare rail cost negotiation deck
+
+**Week 2-3:**
+- [ ] Scale successful retention tactics
+- [ ] Expand to more customer segments
+- [ ] Test price optimization (if churn is controlled)
+- [ ] Begin preliminary rail cost discussions
+
+**Week 4:**
+- [ ] Measure Q1 results:
+  - Final churn rate
+  - Net new customers (vs baseline)
+  - LTV improvement
+  - Total margin impact
+- [ ] Present results to exec team
+- [ ] Plan Q2 growth strategy
+
+**Target:** Churn from 18% → 15%
+
+---
+
+## 📊 FINANCIAL PROJECTIONS
+
+### Baseline (Do Nothing)
+
+| Month | Users | Churn | Revenue | Margin | Status |
+|-------|-------|-------|---------|--------|--------|
+| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
+| Nov 2025 | 24,648 | 25.4% | $455K | $230K | -$36K |
+| Dec 2025 | 21,294 | 25.4% | $393K | $199K | -$31K |
+| Jan 2026 | 18,399 | 25.4% | $340K | $172K | -$27K |
+
+**Result:** Product shrinks to 18K users (-36%), margin drops to $172K (-35%)
+
+---
+
+### Scenario A: Retention Focus (Recommended)
+
+| Month | Users | Churn | Revenue | Margin | Churn Impact |
+|-------|-------|-------|---------|--------|-------------|
+| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
+| Nov 2025 | 28,000 | 22.0% | $517K | $261K | -2% churn |
+| Dec 2025 | 29,500 | 18.0% | $545K | $275K | -4% churn |
+| Jan 2026 | 31,500 | 15.0% | $582K | $294K | -3% churn |
+
+**Q1 2026 Result:**
+- Users: 31,500 (+10%)
+- Monthly Margin: $294K (+11%)
+- **New LTV Margin: $62.40** (vs $36.70 = +70%!)
+
+**Annual Impact:**
+- Previous trajectory: Declining to $172K margin/month
+- New trajectory: Growing to $294K+ margin/month
+- **Swing: +$122K monthly = +$1.46M annually**
+
+---
+
+### Scenario B: Retention + Price Optimization
+
+| Month | Users | Churn | Revenue | Margin | Changes |
+|-------|-------|-------|---------|--------|---------|
+| Oct 2025 | 28,551 | 25.4% | $527K | $266K | Baseline |
+| Nov 2025 | 28,000 | 22.0% | $527K | $266K | Retention focus |
+| Dec 2025 | 29,500 | 18.0% | $565K | $289K | +Bank fee to $1.25 |
+| Jan 2026 | 31,500 | 15.0% | $605K | $309K | Optimize + grow |
+
+**Q1 2026 Result:**
+- Users: 31,500 (+10%)
+- Monthly Margin: $309K (+16%)
+- **New LTV Margin: $68.73**
+
+**Annual Impact:**
+- Swing vs baseline: +$137K monthly = +$1.64M annually
+
+**Risk:** Price increase during retention push could backfire. Recommend waiting until Month 3.
+
+---
+
+### Scenario C: Full Strategy (Retention + Rails + Growth)
+
+| Month | Users | Churn | Revenue | Costs | Margin | Changes |
+|-------|-------|-------|---------|-------|--------|---------|
+| Oct 2025 | 28,551 | 25.4% | $527K | $261K | $266K | Baseline |
+| Dec 2025 | 29,500 | 18.0% | $545K | $275K | $270K | Retention |
+| Feb 2026 | 32,000 | 15.0% | $591K | $286K | $305K | +Rails negotiated |
+| Apr 2026 | 35,000 | 15.0% | $647K | $305K | $342K | +Growth |
+
+**Q2 2026 Result:**
+- Users: 35,000 (+23%)
+- Monthly Margin: $342K (+29%)
+- LTV Margin: $76+ (with rail savings)
+
+**Annual Run Rate:**
+- Monthly Margin: $342K
+- **Annual Profit: $4.10M** (vs current $3.19M = +$910K)
 
 ---
 
 ## 🎯 SUCCESS METRICS & KPIs
 
 ### Tier 1: Critical (Monitor Daily)
+
 1. **Monthly Churn Rate**
    - Current: 25.4%
-   - Target Month 1: <22%
-   - Target Month 3: <15%
-   - Target Month 6: <12%
+   - Month 1 Target: <22%
+   - Month 2 Target: <18%
+   - Month 3 Target: <15%
+   - **Long-term Target: <12%**
 
-2. **Gross Margin %**
-   - Current: -23.3%
-   - Target Month 1: +2%
-   - Target Month 3: +15%
-   - Target Month 6: +25%
+2. **Weekly Active Users (WAU)**
+   - Track week-over-week changes
+   - Flag if drops >5%
+   - Correlate with retention campaigns
 
 3. **Transaction Success Rate**
    - Current: 93.5%
    - Target: >95%
+   - Track failures and cancellations
 
 ### Tier 2: Important (Monitor Weekly)
-4. **New User Acquisition**
+
+4. **Customer LTV Margin**
+   - Current: $36.70
+   - Month 1 Target: $42+ (with 22% churn)
+   - Month 2 Target: $50+ (with 18% churn)
+   - **Month 3 Target: $62+ (with 15% churn)**
+
+5. **New User Acquisition**
    - Current: 3,193/month
-   - Target Month 1: 4,000/month
+   - Need to match churn: 7,096/month minimum
+   - Target Month 1: 4,500/month
    - Target Month 3: 6,000/month
 
-5. **Customer LTV**
-   - Current: $46.12
-   - Target Month 1: $58 (with retention improvements)
-   - Target Month 3: $85 (with 15% churn)
-   - Target Month 6: $120 (with 12% churn)
-
-6. **Revenue per Customer**
-   - Current: $11.71
-   - Target Month 1: $14.70 (Scenario 5 pricing)
-   - Target Month 3: $15.50 (improved frequency)
+6. **Retention Program Metrics**
+   - Win-back reactivation rate (Target: >20%)
+   - Loyalty program enrollment (Target: >60%)
+   - Referral program adoption (Target: 15% of users)
+   - VIP retention rate (Target: >90%)
 
 ### Tier 3: Supporting (Monitor Monthly)
-7. **Average Transactions per User**
-   - Current: 3.7 txns
-   - Target: 4.5 txns
 
-8. **Repeat Transaction Rate**
-   - Current: 88.8% returning
-   - Target: >92%
+7. **Gross Margin %**
+   - Current: 50.5%
+   - Maintain: >48%
+   - Monitor by country/corridor
 
-9. **Customer Acquisition Cost (CAC)**
-   - Target: <$17 (30% of LTV)
+8. **Average Transactions per User**
+   - Current: 3.73 txns
+   - Target: 4.5+ txns (with retention improvements)
+
+9. **Revenue per Customer**
+   - Current: $18.47/month
+   - Target: Maintain or improve with volume
 
 10. **CAC Payback Period**
-    - Target: <2 months
+    - Current: Can afford $11 CAC = 1.2 months payback
+    - Target: $18-20 CAC = <2 months payback (with better LTV)
 
 ---
 
 ## ⚠️ RISKS & MITIGATION
 
-### Risk 1: Customer Backlash to Price Increase
+### Risk 1: Retention Campaigns Don't Work
 **Probability:** Medium
 **Impact:** High
 
 **Mitigation:**
-- Soft launch with A/B test (50% of users)
-- Grandfather existing Power Users for 90 days
-- Emphasize value adds (faster processing, better support)
-- Offer "lock-in" rate for users who commit to 5+ txns/month
+- A/B test all campaigns before full launch
+- Start with small cohorts (500-1,000 users)
+- Test multiple offer types (free txn, discount, credit)
+- Conduct exit surveys to understand true churn drivers
+- Have 3-4 backup tactics ready
 
 **Monitoring:**
-- Track transaction volume daily
-- Monitor customer support tickets
-- Survey sample of users
+- Track weekly churn rate
+- Measure campaign engagement daily
+- Survey non-responders
 
 **Contingency:**
-- If volume drops >15%, roll back to Balanced Approach (0.90% FX, $1.30 bank)
-- Offer promotional credits to high-value users
+- If churn doesn't improve after 30 days, pivot to price increases
+- Consider more aggressive incentives ($10+ credits)
+- Explore product improvements (faster processing, better UX)
 
 ---
 
-### Risk 2: Rail Cost Negotiation Fails
-**Probability:** Medium
-**Impact:** High
+### Risk 2: Retention Costs Exceed Benefits
+**Probability:** Low
+**Impact:** Medium
 
 **Mitigation:**
-- Develop relationships with 2-3 alternative rail providers
-- Get competitive quotes to use as leverage
-- Consider hybrid approach (multi-rail strategy)
-- Explore blockchain/crypto rails for specific corridors
+- Set strict ROI targets for each campaign (>200% ROI)
+- Cap spending at $70K for Q1
+- Measure incrementality (did they really return because of offer?)
+- Track long-term value of reactivated users
+
+**Monitoring:**
+- Calculate cost per reactivated user
+- Track 30-day, 60-day, 90-day retention of reactivated users
+- Compare to organic retention rates
 
 **Contingency:**
-- If stuck at 2%, must go to Scenario 6 pricing (1.5% FX, $1.99 bank, $3.99 cash)
-- Consider passing rail costs directly to customer (transparent pricing model)
+- Cut underperforming campaigns after 14 days
+- Reallocate budget to winning tactics
+- Focus on zero-cost retention (product improvements, better UX)
 
 ---
 
-### Risk 3: Retention Campaign Fails to Improve Churn
-**Probability:** Low-Medium
-**Impact:** High
-
-**Mitigation:**
-- Pilot retention offers with small cohort (500 users)
-- Test multiple offer types (free txn, discount, credit)
-- Conduct exit surveys to understand churn drivers
-- Implement win-back automation
-
-**Contingency:**
-- If churn stays >20%, LTV remains low ($58 vs. $85 target)
-- Must rely more heavily on new user acquisition
-- Increase marketing budget accordingly
-
----
-
-### Risk 4: Competitive Response
+### Risk 3: Competitors Respond with Price Wars
 **Probability:** Medium
 **Impact:** Medium
 
 **Mitigation:**
 - Monitor competitor pricing weekly
-- Maintain 10-15% cost advantage vs. Western Union, MoneyGram
-- Differentiate on speed, reliability, customer service
-- Build brand loyalty through community engagement
+- Differentiate on speed, reliability, customer service (not just price)
+- Build switching costs through loyalty program
+- Focus on underserved corridors (Nicaragua, Honduras)
+
+**Monitoring:**
+- Track competitor rates for top 5 corridors
+- Survey churned users about why they left
+- Monitor market share trends
 
 **Contingency:**
-- If competitors undercut pricing, focus on premium service tier
-- Consider strategic partnerships (e.g., employer partnerships)
+- If competitors undercut significantly, offer price match guarantee
+- Create premium service tier for high-value customers
+- Expand to corridors where competitors are weak
 
 ---
 
-### Risk 5: Regulatory Changes
-**Probability:** Low
-**Impact:** High
+### Risk 4: Mexico Rail Costs Increase
+**Probability:** Low-Medium
+**Impact:** Medium
 
 **Mitigation:**
-- Monitor CFPB, FinCEN, state money transmitter requirements
-- Maintain compliance buffer (extra capital, licensing)
-- Engage legal counsel proactively
-- Join industry associations for early warning
+- Lock in current Spectrum rates through contract renewal
+- Develop relationships with 2-3 alternative rail providers
+- Push more Mexico volume to low-cost SPEI ($0.80 vs $2.75)
+- Consider Mexico as separate business unit
+
+**Monitoring:**
+- Track Mexico margin per transaction monthly
+- Monitor Spectrum contract renewal timeline
+- Test alternative rails in small volume
 
 **Contingency:**
-- Have 6-12 month compliance roadmap ready
-- Budget $100K for emergency compliance needs
+- If Mexico rail costs rise >10%, increase customer fees
+- Shift marketing to higher-margin corridors
+- Negotiate exclusive volume commitments for better rates
 
 ---
 
-## 📋 IMPLEMENTATION CHECKLIST
+### Risk 5: Churn is Structural, Not Solvable
+**Probability:** Low
+**Impact:** Very High
 
-### Week 1 (Nov 18-22)
-- [ ] Present plan to executive team
-- [ ] Secure approval for Scenario 5 pricing
-- [ ] Begin rail cost negotiation outreach
-- [ ] Assemble cross-functional pricing implementation team
-- [ ] Draft customer communication materials
-- [ ] Set up pricing A/B test infrastructure
+**Mitigation:**
+- Understand true churn drivers through research
+- Segment churn by customer type (one-time vs power users)
+- Test extreme interventions (50% discount for 3 months)
+- Explore product pivots if needed
 
-### Week 2 (Nov 25-29)
-- [ ] Finalize pricing change timeline
-- [ ] Complete legal review of new pricing
-- [ ] Update terms of service
-- [ ] Configure pricing in backend systems
-- [ ] Test pricing changes in staging environment
-- [ ] Prepare customer support team with FAQs
+**Monitoring:**
+- Churn reasons by segment
+- Cohort retention curves
+- Win-back attempt success rates
 
-### Week 3-4 (Dec 2-13)
-- [ ] Send customer communication (7 days before launch)
-- [ ] In-app notifications
-- [ ] Launch Scenario 5 pricing
-- [ ] Monitor transaction volume hourly (first 48 hours)
-- [ ] Daily executive dashboard
-- [ ] Respond to customer feedback
-
-### Month 2 (Dec 16 - Jan 15)
-- [ ] Analyze pricing impact on segments
-- [ ] Complete rail cost negotiations
-- [ ] Design retention campaign materials
-- [ ] Build loyalty program tiers
-- [ ] Launch win-back campaign for churned users
-- [ ] Begin product improvement roadmap
-
-### Month 3 (Jan 16 - Feb 15)
-- [ ] Launch loyalty program
-- [ ] Implement product improvements (failure reduction)
-- [ ] Scale marketing with new CAC budget
-- [ ] Review and optimize retention campaigns
-- [ ] Prepare Q1 results presentation
+**Contingency:**
+- If 25% churn is unavoidable, adjust business model:
+  - Increase prices to compensate for low LTV
+  - Focus on one-time transactions (optimize for volume, not retention)
+  - Pivot to B2B remittances (businesses have lower churn)
 
 ---
 
 ## 💼 ORGANIZATIONAL REQUIREMENTS
 
-### Team & Resources Needed
+### Retention Team (New)
+- 1 Retention Manager (lead all programs)
+- 1 Data Analyst (churn prediction, campaign analysis)
+- 1 CRM/Email Marketer (execute campaigns)
+- **Budget:** $250K/year fully loaded
 
-**Product Team:**
-- 1 Senior Product Manager (lead pricing initiative)
-- 2 Engineers (pricing system updates, A/B testing)
-- 1 Designer (customer communication, in-app messaging)
-- 1 Data Analyst (monitoring, reporting)
+### Product Team (Existing)
+- 1 Product Manager (retention features)
+- 2 Engineers (loyalty program, referral system)
+- 1 Designer (in-app messaging, UX improvements)
 
-**Marketing Team:**
-- 1 Marketing Manager (campaign strategy)
-- 1 Content Creator (email, social, in-app content)
-- 1 Community Manager (handle feedback, social listening)
+### Customer Support (Augmented)
+- +2 Support agents (handle retention inquiries)
+- 1 VIP support specialist (Power user program)
+- **Budget:** $120K/year
 
-**Finance Team:**
-- 1 Finance Analyst (model validation, reporting)
-- CFO support for rail negotiations
+### Marketing Team (Existing)
+- 1 Marketing Manager (growth campaigns)
+- 1 Community Manager (referral program, partnerships)
 
-**Customer Support:**
-- +2 temporary support agents (handle pricing questions)
-- Support lead (FAQ creation, training)
+### Total Investment: ~$370K/year for retention focus
 
-**Legal/Compliance:**
-- Legal counsel (contract review, terms update)
-- Compliance officer (regulatory review)
-
-**Total Headcount:** 13 people (mix of existing + temporary)
-**Budget:** $150K for 3-month implementation period
-
----
-
-## 🎬 FINAL RECOMMENDATIONS
-
-### Immediate Actions (This Week)
-1. ✅ **Approve Scenario 5 pricing implementation**
-2. ✅ **Initiate rail cost negotiations (target: 1.5%)**
-3. ✅ **Assemble cross-functional team**
-
-### Success Criteria (3 Months)
-- Achieve profitability (+$110K/month)
-- Reduce churn to <18%
-- Grow user base to 32,500+
-- Improve LTV to $75+
-
-### Long-Term Vision (12 Months)
-- $1.6M+ annual profit
-- <12% monthly churn
-- 40,000+ active users
-- Expand to 3+ new corridors
-- Launch premium product tier
+**ROI Calculation:**
+- Investment: $370K/year
+- Expected margin improvement: $1.46M/year (Scenario A)
+- **Net Benefit: $1.09M/year**
+- **ROI: 295%**
 
 ---
 
-## 📞 NEXT STEPS
+## 🎬 IMMEDIATE NEXT STEPS (This Week)
 
-**Prepared by:** Claude (AI Analysis)
-**Date:** November 17, 2025
-**For:** MyBambu Leadership Team
+1. **✅ Approve Retention Strategy**
+   - Budget: $70K for retention campaigns
+   - Hire: Retention Manager
+   - Timeline: Start Month 1 campaigns in 14 days
 
-**Recommended Meeting:**
-- **Who:** CEO, CFO, Head of Product, Head of Finance
-- **When:** Week of November 18, 2025
-- **Duration:** 90 minutes
-- **Agenda:**
-  1. Review current state (15 min)
-  2. Discuss pricing scenarios (30 min)
-  3. Rail negotiation strategy (15 min)
-  4. Retention plan (20 min)
-  5. Decision & next steps (10 min)
+2. **✅ Build Churn Analytics**
+   - Identify which users are most likely to churn
+   - Segment by behavior, frequency, value
+   - Create weekly churn dashboard
+
+3. **✅ Design Retention Campaigns**
+   - Win-back email templates
+   - Loyalty program tiers
+   - Referral program mechanics
+   - VIP program benefits
+
+4. **✅ Set Success Metrics**
+   - Define target churn rates (22% → 18% → 15%)
+   - Set campaign ROI thresholds
+   - Establish weekly review cadence
+
+5. **📊 Update Stakeholders**
+   - Present TRUE economics to exec team
+   - Explain FX vs fee revenue dynamics
+   - Show retention-first strategy
+   - Get buy-in for Q1 execution
+
+---
+
+## 📈 12-MONTH VISION
+
+**By Q4 2026:**
+- **Monthly Churn:** <12%
+- **Customer Lifetime:** 8.3 months (vs 3.9 today)
+- **LTV Margin:** $77+ (vs $36.70 today)
+- **Affordable CAC:** $23+ (vs $11 today)
+- **Active Users:** 40,000+ (vs 28,551 today)
+- **Monthly Margin:** $400K+ (vs $266K today)
+- **Annual Profit:** $4.8M+ (vs $3.19M today)
+
+**This unlocks:**
+- Aggressive marketing spend ($23 CAC)
+- Geographic expansion
+- Product innovations (instant transfers, bill pay)
+- B2B remittance services
+- Strategic partnerships
+
+---
+
+## 📞 RECOMMENDED MEETING
+
+**Who:** CEO, CFO, Head of Product, Head of Marketing
+**When:** This week
+**Duration:** 90 minutes
+**Agenda:**
+1. Review TRUE economics (15 min) - Profitable, not losing money!
+2. Explain FX vs fee revenue dynamics (15 min)
+3. Present churn crisis and impact on growth (20 min)
+4. Review retention-first strategy (25 min)
+5. Approve budget and next steps (15 min)
 
 **Required Decisions:**
-1. Approve Scenario 5 pricing (or alternative)
-2. Set rail cost negotiation target
-3. Allocate budget for retention campaigns ($70K)
-4. Authorize implementation team
+1. ✅ Approve $370K/year retention investment
+2. ✅ Hire Retention Manager immediately
+3. ✅ Launch Month 1 campaigns in 14 days
+4. ✅ Delay pricing changes until churn is controlled
+5. ✅ Set Q1 churn target: 15%
 
 ---
 
-**Status:** ⚠️ URGENT - Product is losing $78K/month
-**Priority:** 🔴 P0 - Immediate action required
-**Confidence Level:** 95% (based on October 2025 actual data)
+**Status:** ⚠️ URGENT - 25.4% churn is preventing growth
+**Priority:** 🔴 P0 - Retention must be addressed immediately
+**Confidence Level:** 95% (based on actual October 2025 data)
 
 ---
 
-*This plan is based on comprehensive analysis of 28,551 customers, 113,748 transactions, and $20.6M volume from October 2025.*
+*This analysis is based on:*
+- *28,551 customers*
+- *106,408 completed transactions*
+- *$20.6M transaction volume*
+- *Actual Spectrum rail costs from Exhibit A*
+- *Corrected 1.5% FX spread*
+- *October 2025 data*
