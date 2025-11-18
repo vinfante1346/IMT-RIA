@@ -22,13 +22,22 @@
 4. **BI Resources:** 1 analyst for dashboards + churn prediction
 5. **Marketing Resources:** Full team for 4 major campaigns
 
-### Expected Results (90 Days)
+### Expected Results (90 Days - Retention Only)
 - **Churn:** 25.4% → 15%
 - **LTV Margin:** $15.60 → $26.53 (+70%)
 - **Users:** Stabilize at 28K (vs death spiral to 12K)
 - **Monthly Margin:** Maintain $111K (vs decline to $47K)
 - **Affordable CAC:** $4.68 → $7.96 (+70%)
 - **ROI:** $768K annual savings from avoided death spiral
+
+### Expected Results (6 Months - Retention + Pricing)
+- **Churn:** 25.4% → 15%
+- **LTV Margin:** $15.60 → $41.07 (+163%)
+- **Monthly Margin:** $113K → $172K (+52%)
+- **Margin %:** 30.2% → 39.6%
+- **Affordable CAC:** $4.68 → $12.32 (+163%)
+- **Revenue:** +$59K/month from pricing optimization
+- **ROI:** $1.48M annual increase (retention + pricing)
 
 ---
 
@@ -596,6 +605,547 @@ Content:
 - Last-touch attribution (what drove conversion)
 
 **Output:** "Win-back email drove 1,200 transactions = $45K revenue at $9K cost = 400% ROI"
+
+---
+
+## 💵 PRICING STRATEGY - OPTIMIZE REVENUE WITHOUT KILLING RETENTION
+
+### Current Pricing Analysis
+
+#### What MyBambu Charges Customers:
+- **FX Spread:** 1.5% on foreign exchange
+- **Bank Payout Fee:** $0.85 per transaction
+- **Cash Payout Fee:** $2.49 per transaction
+
+#### What MyBambu Pays Spectrum (Rail Costs):
+- **Mexico Bank:** $0.80-$1.50 (avg ~$1.00)
+- **Mexico Cash:** $2.60-$2.80 (avg ~$2.75)
+- **Other Countries Bank:** $1.40-$2.45 (avg ~$1.85)
+- **Other Countries Cash:** $2.45-$3.25 (avg ~$2.65)
+
+#### The Problem:
+```
+Revenue Breakdown (October 2025):
+  FX Revenue:           $156,000  (42% of revenue) ← ONLY profit source
+  Transaction Fees:     $218,063  (58% of revenue)
+
+Costs:
+  Rail Costs:          -$261,246
+
+Net on Fees:           -$43,183  ← LOSING money on transaction fees
+Total Margin:          +$112,817  ← Saved only by FX revenue
+```
+
+**Key Issue:** Bank payout fee ($0.85) doesn't cover rail costs ($1.00-$2.45). We're subsidizing every bank transaction.
+
+---
+
+### Competitive Landscape (Q4 2025)
+
+#### Competitor Pricing Research:
+
+**Remitly:**
+- FX Spread: 1.8-2.5%
+- Bank Fee: $0-$3.99 (varies by corridor)
+- Cash Fee: $3.99-$4.99
+
+**WorldRemit:**
+- FX Spread: 2.0-3.0%
+- Bank Fee: $1.99-$4.99
+- Cash Fee: $4.99-$7.99
+
+**Xoom (PayPal):**
+- FX Spread: 1.5-2.0%
+- Bank Fee: $0-$4.99
+- Cash Fee: $4.99
+
+**Western Union:**
+- FX Spread: 3.0-5.0%
+- Bank Fee: $3.99-$8.99
+- Cash Fee: $5.99-$12.99
+
+**MoneyGram:**
+- FX Spread: 2.5-4.0%
+- Bank Fee: $4.99-$9.99
+- Cash Fee: $5.99-$11.99
+
+**Conclusion:** MyBambu has the LOWEST pricing in market
+- FX spread: 1.5% (best in class)
+- Bank fee: $0.85 (lowest by far)
+- Cash fee: $2.49 (lowest by far)
+
+**We have significant room to increase prices while remaining competitive.**
+
+---
+
+### Pricing Optimization Opportunities
+
+#### Opportunity 1: Increase Bank Payout Fee
+**Current:** $0.85
+**Problem:** Loses money on every transaction (rail costs $1.00-$2.45)
+**Recommendation:** $1.25-$1.50
+
+**Impact Analysis:**
+- New fee: $1.25 (+$0.40 increase)
+- Transactions affected: 28,541 per month
+- Additional revenue: $11,416/month = $137K/year
+- Still 37% cheaper than Remitly ($1.99)
+- Still 58% cheaper than Western Union ($2.99)
+
+**Customer Impact:**
+- Sending $200 to Mexico:
+  - Old cost: $0.85 + $3.00 FX = $3.85
+  - New cost: $1.25 + $3.00 FX = $4.25
+  - Increase: $0.40 (10% increase, still cheapest)
+
+**Risk Level:** LOW - still significantly cheaper than all competitors
+
+#### Opportunity 2: Corridor-Based Pricing
+**Current:** Same fee for all countries
+**Problem:** Mexico costs $1.00, Bolivia costs $2.45 - same $0.85 fee
+**Recommendation:** Dynamic pricing by corridor cost
+
+**Proposed Tiering:**
+```
+Tier 1 (Low Cost): Mexico, Brazil
+  Bank Fee: $1.15
+  Cash Fee: $2.49
+  Rail costs: $0.80-$1.10
+
+Tier 2 (Medium Cost): Honduras, Nicaragua, Colombia, DR
+  Bank Fee: $1.35
+  Cash Fee: $2.69
+  Rail costs: $1.40-$1.95
+
+Tier 3 (High Cost): Argentina, Bolivia, Peru, Ecuador
+  Bank Fee: $1.65
+  Cash Fee: $2.99
+  Rail costs: $2.00-$2.45
+```
+
+**Impact:**
+- Better aligns pricing with costs
+- Higher margin corridors subsidize lower ones less
+- Still competitive in all corridors
+- Estimated additional revenue: $18K/month
+
+**Risk Level:** MEDIUM - customers might notice differences
+
+#### Opportunity 3: Volume-Based Pricing
+**Current:** Same fee regardless of amount sent
+**Problem:** Small transactions ($50) same fee as large ($500)
+**Recommendation:** Tiered fee structure
+
+**Proposed Structure:**
+```
+Amount Sent          Bank Fee    Cash Fee
+$1 - $100           $0.99       $1.99
+$101 - $300         $1.49       $2.49
+$301 - $500         $1.99       $2.99
+$501+               $2.49       $3.49
+```
+
+**Impact:**
+- Better economics on small transactions
+- Incentivizes larger transactions (better LTV)
+- Average transaction is $194 → falls in $101-$300 tier
+- Estimated additional revenue: $22K/month
+
+**Risk Level:** MEDIUM - complex to communicate
+
+#### Opportunity 4: Premium Service Tier
+**Current:** Single service level
+**Problem:** Leaving money on table from customers willing to pay more
+**Recommendation:** Add "Express" tier
+
+**Express Tier Features:**
+- Instant transfers (vs 1-2 days standard)
+- Priority customer support
+- Higher FX discount (1.2% spread vs 1.5%)
+- Express Fee: +$2.99 per transaction
+
+**Target Audience:**
+- VIP users (top 10%)
+- Urgent transactions
+- High-value customers
+
+**Impact:**
+- 10% adoption = 10,640 txns/month
+- Additional revenue: $31.8K/month
+- May reduce churn among high-value users
+
+**Risk Level:** LOW - optional premium tier
+
+#### Opportunity 5: Increase Cash Fee (Small)
+**Current:** $2.49
+**Problem:** Cash costs $2.65-$2.75 on average
+**Recommendation:** $2.69-$2.79
+
+**Impact:**
+- Increase: $0.20-$0.30
+- Transactions: 77,814/month
+- Additional revenue: $15.6-$23.3K/month
+- Still 46% cheaper than Remitly ($4.99)
+
+**Risk Level:** VERY LOW - still significantly below market
+
+---
+
+### Recommended Pricing Strategy (90-Day Phased Approach)
+
+#### ⚠️ CRITICAL CONSTRAINT: DO NOT CHANGE PRICING UNTIL CHURN IS CONTROLLED
+
+**Why:**
+- Current churn is 25.4% - already too high
+- Price increases during retention push = disaster
+- Must fix retention FIRST, then optimize pricing
+- Loyalty program must be live (provides discounts to offset increases)
+
+#### Phase 1: Month 1-2 (NO PRICE CHANGES)
+**Focus:** Retention only
+- Launch all 4 retention campaigns
+- Get churn below 20%
+- Loyalty program gives discounts (softens future increases)
+- Monitor competitive pricing
+- Prepare pricing A/B tests
+
+**Milestone:** Churn must be <20% before moving to Phase 2
+
+#### Phase 2: Month 3 (SMALL TEST)
+**Trigger:** Churn <20% for 2 consecutive weeks
+
+**Test 1: Bank Fee Increase (A/B Test)**
+- **Control Group (50%):** $0.85 bank fee (current)
+- **Test Group (50%):** $1.25 bank fee (+$0.40)
+- **Duration:** 2 weeks
+- **Success Criteria:**
+  - Churn increase <2% in test group
+  - Transaction frequency decline <10%
+  - Customer complaints <5% increase
+
+**Expected Result:**
+- IF successful → Roll out to 100%
+- IF unsuccessful → Test $1.10 (+$0.25 smaller increase)
+
+**Revenue Impact:**
+- Test group: +$5,700/month
+- Full rollout: +$11,400/month
+
+#### Phase 3: Month 4 (ROLLOUT + SECOND TEST)
+**Trigger:** Bank fee test successful + Churn <18%
+
+**Action 1: Roll Out Bank Fee Increase**
+- Implement $1.25 bank fee for all users
+- Grandfathering: VIP users stay at $0.85 (loyalty benefit)
+- Communication: 2-week notice email
+  - Subject: "Small fee update - We're still the cheapest!"
+  - Show competitor pricing comparison
+  - Emphasize loyalty discounts
+
+**Test 2: Cash Fee Increase (A/B Test)**
+- **Control Group (50%):** $2.49 cash fee
+- **Test Group (50%):** $2.69 cash fee (+$0.20)
+- **Duration:** 2 weeks
+- **Success Criteria:** Same as Test 1
+
+**Revenue Impact:**
+- Bank fee rollout: +$11,400/month
+- Cash fee test: +$7,800/month (if successful)
+
+#### Phase 4: Month 5-6 (OPTIMIZE)
+**Trigger:** Both fee increases successful + Churn <15%
+
+**Action 1: Roll Out Cash Fee Increase**
+- Implement $2.69 cash fee for all users
+- VIP exemption (stays at $2.49)
+
+**Action 2: Test Premium Tier**
+- Launch "Express" tier (instant transfers)
+- $2.99 premium fee
+- Test with 10% of users
+
+**Action 3: Prepare Corridor Pricing**
+- Analyze churn by corridor
+- Build dynamic pricing system
+- Plan Q2 2026 rollout
+
+**Revenue Impact:**
+- Cash fee: +$15,600/month
+- Express tier: +$31,800/month (if 10% adoption)
+- **Total new monthly revenue: ~$59K**
+
+---
+
+### Pricing A/B Testing Framework
+
+#### Test Setup (BI Team)
+**Infrastructure Needed:**
+- Random 50/50 user assignment
+- Pricing variant tracking in database
+- Cohort analysis by pricing group
+- Statistical significance calculator
+
+**Metrics to Track:**
+- Churn rate (by pricing group)
+- Transaction frequency
+- Average transaction size
+- Customer complaints
+- Revenue per user
+- LTV impact
+
+**Sample Size Calculation:**
+- Need 5,000+ users per group for statistical significance
+- 2-week minimum test duration
+- 95% confidence interval
+- p-value < 0.05 for significance
+
+#### Test Communication Template
+
+**Email to Test Group:**
+```
+Subject: Important update to MyBambu fees
+
+Hi [Name],
+
+We wanted to give you a heads up that we're updating our bank transfer
+fee from $0.85 to $1.25, effective [Date - 2 weeks notice].
+
+Why? We're constantly improving our service - faster transfers, better
+support, and more payout options. This small increase helps us keep
+delivering the best experience.
+
+The good news: We're STILL the cheapest!
+- MyBambu: $1.25 ← YOU
+- Remitly: $1.99
+- Western Union: $2.99
+- MoneyGram: $4.99
+
+Plus, if you're in our Loyalty Program (you are!), you're already
+saving 0.1-0.3% on every transaction.
+
+Questions? We're here to help: [support link]
+
+Thanks for trusting MyBambu,
+The MyBambu Team
+```
+
+#### Go/No-Go Decision Criteria
+
+**GO (Roll out to 100%):**
+- ✅ Churn increase <2% in test group vs control
+- ✅ Transaction frequency decline <10%
+- ✅ Revenue increase >15%
+- ✅ Customer complaints <5% increase
+- ✅ Statistically significant (p < 0.05)
+
+**NO-GO (Revert or test lower increase):**
+- ❌ Churn increase >3%
+- ❌ Transaction frequency decline >15%
+- ❌ Customer complaints spike >10%
+- ❌ Negative social media sentiment
+
+**ADJUST (Test smaller increase):**
+- Test showed negative impact
+- Try 50% of original increase
+- Example: $1.25 failed → test $1.10
+
+---
+
+### Expected Impact (Full Strategy Implementation)
+
+#### Revenue Impact (After 6 Months)
+
+**Current State (Month 0):**
+- Total Revenue: $374,063/month
+- Transaction Fees: $218,063
+- FX Revenue: $156,000
+- Gross Margin: $112,817 (30.2%)
+
+**After Pricing Optimization (Month 6):**
+```
+Revenue Sources:
+  FX Revenue (unchanged):        $156,000
+  Bank Fees (28,541 × $1.25):     $35,676  (+$11,416)
+  Cash Fees (77,814 × $2.69):    $209,319  (+$15,562)
+  Express Tier (10% adoption):    $31,800  (new)
+  ────────────────────────────────────────
+  TOTAL TRANSACTION FEE REVENUE:  $276,795  (+$58,732)
+
+  TOTAL REVENUE:                  $432,795  (+$58,732)
+
+Costs:
+  Rail Costs (unchanged):        -$261,246
+  ────────────────────────────────────────
+
+  GROSS MARGIN:                   $171,549  (+$58,732)
+  Margin %:                        39.6%    (vs 30.2%)
+```
+
+**Improvement:**
+- Revenue: +15.7% ($374K → $433K)
+- Margin: +52.1% ($113K → $172K)
+- Margin %: +9.4 points (30.2% → 39.6%)
+
+#### LTV Impact
+
+**Current (Month 0):**
+- Monthly margin per customer: $3.96
+- Customer lifetime: 3.9 months (25.4% churn)
+- LTV margin: $15.60
+
+**After Retention + Pricing (Month 6):**
+- Monthly margin per customer: $6.13 (+$2.17)
+- Customer lifetime: 6.7 months (15% churn)
+- **LTV margin: $41.07** (+$25.47 = +163%)
+
+**Affordable CAC:**
+- Current: $4.68
+- Future: **$12.32** (+163%)
+
+**This unlocks sustainable growth!**
+
+---
+
+### Risk Management
+
+#### Risk 1: Churn Increases from Price Hike
+**Probability:** Medium
+**Impact:** High
+
+**Mitigation:**
+- ONLY increase prices after churn <20%
+- A/B test every change before rollout
+- Give 2-week notice to customers
+- VIP users exempt (loyalty reward)
+- Loyalty program discounts offset increases
+- Emphasize competitive positioning
+
+**Trigger:** If churn increases >2%, revert immediately
+
+#### Risk 2: Competitor Price War
+**Probability:** Low
+**Impact:** Medium
+
+**Mitigation:**
+- Monitor competitor pricing weekly
+- Still 37-58% cheaper even after increases
+- Strong moat with loyalty program
+- Focus on value (speed, support) not just price
+
+**Trigger:** If competitor undercuts us, adjust within 48 hours
+
+#### Risk 3: Customer Backlash
+**Probability:** Low
+**Impact:** Medium
+
+**Mitigation:**
+- Transparent communication
+- Show competitor comparison
+- Highlight improvements made
+- Offer loyalty benefits
+- Customer support ready with talking points
+
+**Trigger:** App rating drops below 4.0 = pause increases
+
+#### Risk 4: Regulatory Changes
+**Probability:** Low
+**Impact:** High
+
+**Mitigation:**
+- Legal review all pricing changes
+- Ensure compliance with remittance regulations
+- Monitor CFPB/state regulations
+- Disclose all fees clearly
+
+---
+
+### Pricing Team Responsibilities
+
+#### Marketing Team
+- Draft pricing change communications
+- Competitor pricing monitoring (weekly)
+- Customer education on value proposition
+- Handle customer complaints/questions
+- Social media sentiment monitoring
+
+#### BI Team
+- Build A/B testing framework
+- Statistical analysis of tests
+- Monitor pricing impact on churn/LTV
+- Weekly pricing metrics report
+- Cohort analysis by pricing tier
+
+#### Development Team
+- Dynamic pricing system implementation
+- A/B testing infrastructure
+- Pricing display in app
+- Express tier features (if implemented)
+- Analytics tracking
+
+#### Strategy Team
+- Competitive intelligence
+- Pricing decision recommendations
+- Go/no-go decisions on tests
+- Risk monitoring
+- Executive reporting
+
+---
+
+### Pricing Decision Calendar
+
+**Week 6 (Day 42):**
+- Review retention progress
+- Churn at target (<20%)?
+  - YES → Approve bank fee test for Month 3
+  - NO → Continue retention focus, revisit Week 8
+
+**Week 12 (Day 84):**
+- Review bank fee A/B test results
+- Make go/no-go decision on rollout
+- If successful, plan cash fee test
+
+**Week 16 (Day 112):**
+- Review cash fee A/B test results
+- Plan Express tier launch
+- Prepare corridor pricing for Q2
+
+**Week 24 (Day 168):**
+- Full pricing strategy review
+- Assess impact on LTV, churn, revenue
+- Plan year 2 pricing strategy
+
+---
+
+### Communication Guidelines
+
+#### Customer Communication Principles
+1. **Transparency:** Always explain why fees are changing
+2. **Value:** Show what they're getting for the increase
+3. **Competitive:** Prove we're still cheapest
+4. **Notice:** Minimum 2 weeks advance notice
+5. **Loyalty:** Reward long-time customers with exemptions
+
+#### Sample Messaging
+**Subject Line:** "We're still the cheapest way to send money home"
+**Key Points:**
+- Small fee update to keep improving service
+- Show exact comparison to competitors
+- Emphasize we're still 40-60% cheaper
+- Loyalty program members save even more
+- Questions? We're here to help
+
+#### Customer Support Talking Points
+**Q: Why are you raising fees?**
+A: We're constantly improving our service - faster transfers, better support, more payout options. This small increase helps us keep delivering the best experience while keeping our fees the lowest in the industry.
+
+**Q: How much are you raising fees?**
+A: Bank transfers are going from $0.85 to $1.25 - just 40 cents more. We're still 37% cheaper than Remitly ($1.99) and 58% cheaper than Western Union ($2.99).
+
+**Q: When does this take effect?**
+A: [Date - 2 weeks from announcement]. We wanted to give you advance notice.
+
+**Q: Can I avoid the increase?**
+A: Join our Loyalty Program! Members get discounts on every transaction. VIP members keep the old pricing.
 
 ---
 
