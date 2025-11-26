@@ -125,12 +125,12 @@ By implementing **market-competitive pricing**, we project revenue could increas
 
 | Cost Category | Amount | % of Total Costs | Details |
 |---------------|--------|------------------|---------|
-| **TabaPay Processing Fees** | $192,686 | 73.6% | Payment processing costs |
+| **TransNetwork Processing Fees** | $192,686 | 73.6% | Payment processing costs |
 | **Operations** | $53,212 | 20.3% | Customer support, fraud, compliance |
 | **Bank Fees** | $15,963 | 6.1% | Banking partner fees |
 | **TOTAL** | **$261,861** | **100.0%** | |
 
-### TabaPay Fee Structure
+### TransNetwork Fee Structure
 
 **Credit (Bank Deposit):**
 - Fixed: $0.25 per transaction
@@ -142,7 +142,7 @@ By implementing **market-competitive pricing**, we project revenue could increas
 - Variable: 0.75% of transaction amount
 - October Cost: $96,105
 
-**Key Insight:** TabaPay costs are the same regardless of what we charge customers - this is pure margin opportunity.
+**Key Insight:** TransNetwork costs are the same regardless of what we charge customers - this is pure margin opportunity.
 
 ---
 
@@ -165,7 +165,7 @@ By implementing **market-competitive pricing**, we project revenue could increas
 
 **Why Cash Loses Money:**
 - We charge: $2.49 per transaction
-- TabaPay charges us: $2.00 + 0.75% of amount ≈ $3.39 average
+- TransNetwork charges us: $2.00 + 0.75% of amount ≈ $3.39 average
 - Bank + Ops costs: $0.65 per transaction
 - **Total cost per cash transaction: ~$4.02**
 - **We lose $1.53 on every cash pickup transaction**
@@ -589,7 +589,7 @@ Using standard 30% LTV:CAC ratio:
 - **Expected Impact:** +1,500 new customers/month
 
 **6. Optimize Cash Pickup Network**
-- Negotiate better TabaPay rates for cash pickup (currently $2.00 + 0.75%)
+- Negotiate better TransNetwork rates for cash pickup (currently $2.00 + 0.75%)
 - Target reduction to $1.75 + 0.60%
 - **Expected Impact:** Additional $15K/month margin
 
@@ -693,7 +693,7 @@ Using standard 30% LTV:CAC ratio:
 
 ### C. Cost Analysis Detail
 
-**TabaPay Cost Breakdown:**
+**TransNetwork Cost Breakdown:**
 
 | Payment Method | Fixed Fee | Variable Fee | Oct Volume | Oct Fixed Cost | Oct Variable Cost | Total Cost |
 |----------------|-----------|--------------|------------|----------------|-------------------|------------|
