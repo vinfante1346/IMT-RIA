@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBambu Customer Stickiness - Investor Presentation</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #00052E;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .slide-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: none;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 40px 60px;
+            position: relative;
+        }
+
+        .dark-slide {
+            background: linear-gradient(135deg, #00052E 0%, #0d47a1 50%, #1565c0 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        .light-slide {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #00052E;
+        }
+
+        .green-slide {
+            background: linear-gradient(135deg, #27FB6B 0%, #00cc33 100%);
+            color: #00052E;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 24px;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 32px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .highlight-green {
+            color: #27FB6B;
+        }
+
+        .logo {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            font-size: 20px;
+            font-weight: 800;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            color: #27FB6B;
+            font-size: 32px;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: #27FB6B;
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+
+        .slide-number {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            background: rgba(39, 251, 107, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 100;
+        }
+
+        /* Customer Segment Styles */
+        .segments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1400px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .segment-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 32px;
+            border-radius: 20px;
+            border: 3px solid;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .segment-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(39, 251, 107, 0.4);
+        }
+
+        .segment-diamond {
+            border-color: #60A5FA;
+            background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(255, 255, 255, 0.95));
+        }
+
+        .segment-emerald {
+            border-color: #34D399;
+            background: linear-gradient(135deg, rgba(52, 211, 153, 0.1), rgba(255, 255, 255, 0.95));
+        }
+
+        .segment-sapphire {
+            border-color: #F87171;
+            background: linear-gradient(135deg, rgba(248, 113, 113, 0.1), rgba(255, 255, 255, 0.95));
+        }
+
+        .segment-ruby {
+            border-color: #38BDF8;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(255, 255, 255, 0.95));
+        }
+
+        .segment-pearl {
+            border-color: #4ADE80;
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(255, 255, 255, 0.95));
+        }
+
+        .segment-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: #00052E;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .segment-stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 12px 0;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 5, 46, 0.1);
+        }
+
+        .stat-label {
+            font-size: 15px;
+            color: #1e293b;
+            font-weight: 700;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: 900;
+            color: #0f172a;
+        }
+
+        /* Metrics Cards */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 28px;
+            max-width: 1400px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 40px 32px;
+            border-radius: 20px;
+            text-align: center;
+            border: 3px solid rgba(39, 251, 107, 0.3);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            animation: fadeInUp 0.8s ease both;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-12px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(39, 251, 107, 0.4);
+            border-color: #27FB6B;
+        }
+
+        .metric-number {
+            font-size: 52px;
+            font-weight: 900;
+            color: #27FB6B;
+            margin-bottom: 12px;
+        }
+
+        .metric-label {
+            font-size: 16px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 42px; }
+            h2 { font-size: 36px; }
+            .slide { padding: 100px 20px 60px; }
+            .segments-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <div class="logo">
+        <span class="logo-icon">💚</span>
+        <span>MyBambu</span>
+    </div>
+
+    <div class="slide-number" id="slideNum">Slide 1 of 8</div>
+
+    <div class="slide-container" id="slideContainer">
+
+        <!-- Slide 1: Title -->
+        <div class="slide dark-slide">
+            <div style="animation: bounce 2s ease-in-out infinite;">
+                <span style="font-size: 80px;">📊</span>
+            </div>
+            <h1 style="font-size: clamp(48px, 10vw, 96px);">
+                Customer <span class="highlight-green">Stickiness</span>
+            </h1>
+            <p class="tagline" style="font-size: clamp(20px, 4vw, 32px);">
+                Demonstrating Deep Customer Engagement & Retention
+            </p>
+            <div style="margin-top: 40px; font-size: 18px; opacity: 0.8;">
+                214,852 Active Customers | 8.37 Month Average Retention
+            </div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide light-slide">
+            <h2><span class="highlight-green">Executive</span> Summary</h2>
+            <p style="font-size: 20px; max-width: 900px; text-align: center; margin-bottom: 60px; line-height: 1.8;">
+                Our customer segmentation reveals exceptional stickiness with high-value users showing sustained engagement, strong retention, and growing revenue per customer.
+            </p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">214,852</div>
+                    <div class="metric-label">Active Customers<br/>(Past 6 Months)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">8.37</div>
+                    <div class="metric-label">Average Retention<br/>(Months)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">$9.06</div>
+                    <div class="metric-label">Average Monthly<br/>Revenue per Customer</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">14</div>
+                    <div class="metric-label">Average Monthly<br/>Transactions</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Customer Segments Overview -->
+        <div class="slide dark-slide">
+            <h2>5 Customer <span class="highlight-green">Segments</span></h2>
+            <p style="font-size: 18px; margin-bottom: 40px; opacity: 0.9;">Based on engagement, transaction frequency, and lifetime value</p>
+
+            <div class="segments-grid">
+                <!-- Diamond -->
+                <div class="segment-card segment-diamond">
+                    <div class="segment-title" style="color: #60A5FA;">💎 Diamond</div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Customers</span>
+                        <span class="stat-value">18,447 (8.58%)</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">13.51 months</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Avg Revenue</span>
+                        <span class="stat-value">$30.60/mo</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Transactions</span>
+                        <span class="stat-value">44/month</span>
+                    </div>
+                </div>
+
+                <!-- Emerald -->
+                <div class="segment-card segment-emerald">
+                    <div class="segment-title" style="color: #34D399;">💚 Emerald</div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Customers</span>
+                        <span class="stat-value">34,721 (16.16%)</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">11.35 months</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Avg Revenue</span>
+                        <span class="stat-value">$13.96/mo</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Transactions</span>
+                        <span class="stat-value">21/month</span>
+                    </div>
+                </div>
+
+                <!-- Sapphire -->
+                <div class="segment-card segment-sapphire">
+                    <div class="segment-title" style="color: #F87171;">💙 Sapphire</div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Customers</span>
+                        <span class="stat-value">49,383 (22.99%)</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">9.23 months</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Avg Revenue</span>
+                        <span class="stat-value">$6.18/mo</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Transactions</span>
+                        <span class="stat-value">11/month</span>
+                    </div>
+                </div>
+
+                <!-- Ruby -->
+                <div class="segment-card segment-ruby">
+                    <div class="segment-title" style="color: #38BDF8;">🔷 Ruby</div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Customers</span>
+                        <span class="stat-value">40,886 (19.03%)</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">7.7 months</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Avg Revenue</span>
+                        <span class="stat-value">$3.12/mo</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Transactions</span>
+                        <span class="stat-value">8/month</span>
+                    </div>
+                </div>
+
+                <!-- Pearl -->
+                <div class="segment-card segment-pearl">
+                    <div class="segment-title" style="color: #4ADE80;">⚪ Pearl</div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Customers</span>
+                        <span class="stat-value">71,415 (33.24%)</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Retention</span>
+                        <span class="stat-value">4.64 months</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Avg Revenue</span>
+                        <span class="stat-value">$2.08/mo</span>
+                    </div>
+                    <div class="segment-stat">
+                        <span class="stat-label">Transactions</span>
+                        <span class="stat-value">4/month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Diamond Tier Deep Dive -->
+        <div class="slide light-slide">
+            <h2><span class="highlight-green">Diamond Tier</span> Deep Dive</h2>
+            <p style="font-size: 20px; margin-bottom: 50px; max-width: 900px; text-align: center;">
+                Our highest-value segment: 8.58% of customers driving premium engagement
+            </p>
+
+            <div class="metrics-grid" style="max-width: 1200px;">
+                <div class="metric-card">
+                    <div class="metric-number">$1,977</div>
+                    <div class="metric-label">Avg Monthly<br/>Funding</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">$1,758</div>
+                    <div class="metric-label">Avg Monthly<br/>Spending</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">44</div>
+                    <div class="metric-label">Transactions<br/>per Month</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">$30.60</div>
+                    <div class="metric-label">Revenue<br/>per Customer</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">13.51</div>
+                    <div class="metric-label">Months<br/>Retention</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">87%</div>
+                    <div class="metric-label">Spanish<br/>Speakers</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px; background: rgba(39, 251, 107, 0.1); padding: 32px; border-radius: 20px; max-width: 900px; border: 2px solid #27FB6B;">
+                <h3 style="color: #00052E; text-align: center; margin-bottom: 20px;">💡 Key Insight</h3>
+                <p style="font-size: 18px; color: #00052E; text-align: center; line-height: 1.8;">
+                    Diamond customers stay <strong>3x longer</strong> than average and generate <strong>3.4x more revenue</strong> per month than our overall average customer.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Retention Analysis -->
+        <div class="slide dark-slide">
+            <h2>Retention <span class="highlight-green">Analysis</span></h2>
+            <p style="font-size: 18px; margin-bottom: 60px; opacity: 0.9;">Average customer stays active for 8.37 months</p>
+
+            <div style="max-width: 1200px; width: 100%;">
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 50px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
+                    <!-- Retention Chart -->
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 120px; font-weight: 700; color: #60A5FA; font-size: 18px;">Diamond</div>
+                            <div style="flex: 1; background: #e5e7eb; border-radius: 10px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #60A5FA, #3B82F6); border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                                    <span style="font-weight: 800; color: white; font-size: 16px;">13.51 months</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 120px; font-weight: 700; color: #34D399; font-size: 18px;">Emerald</div>
+                            <div style="flex: 1; background: #e5e7eb; border-radius: 10px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="width: 84%; height: 100%; background: linear-gradient(90deg, #34D399, #10B981); border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                                    <span style="font-weight: 800; color: white; font-size: 16px;">11.35 months</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 120px; font-weight: 700; color: #F87171; font-size: 18px;">Sapphire</div>
+                            <div style="flex: 1; background: #e5e7eb; border-radius: 10px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="width: 68%; height: 100%; background: linear-gradient(90deg, #F87171, #EF4444); border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                                    <span style="font-weight: 800; color: white; font-size: 16px;">9.23 months</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 120px; font-weight: 700; color: #38BDF8; font-size: 18px;">Ruby</div>
+                            <div style="flex: 1; background: #e5e7eb; border-radius: 10px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="width: 57%; height: 100%; background: linear-gradient(90deg, #38BDF8, #0EA5E9); border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                                    <span style="font-weight: 800; color: white; font-size: 16px;">7.7 months</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 120px; font-weight: 700; color: #4ADE80; font-size: 18px;">Pearl</div>
+                            <div style="flex: 1; background: #e5e7eb; border-radius: 10px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="width: 34%; height: 100%; background: linear-gradient(90deg, #4ADE80, #22C55E); border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px;">
+                                    <span style="font-weight: 800; color: white; font-size: 16px;">4.64 months</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Funding Patterns -->
+        <div class="slide light-slide">
+            <h2>Customer <span class="highlight-green">Funding</span> Patterns</h2>
+            <p style="font-size: 18px; margin-bottom: 50px; color: #666;">How customers load money into their accounts by segment</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card" style="border-color: #60A5FA;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">💎</div>
+                    <div class="segment-title" style="color: #60A5FA; font-size: 22px;">Diamond</div>
+                    <div class="metric-number" style="font-size: 42px;">$1,977</div>
+                    <div class="metric-label">Avg Monthly Funding</div>
+                    <div style="margin-top: 16px; font-size: 13px; color: #666;">
+                        Primary: Direct Deposit<br/>
+                        Secondary: Cash Load
+                    </div>
+                </div>
+
+                <div class="metric-card" style="border-color: #34D399;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">💚</div>
+                    <div class="segment-title" style="color: #34D399; font-size: 22px;">Emerald</div>
+                    <div class="metric-number" style="font-size: 42px; color: #34D399;">$789</div>
+                    <div class="metric-label">Avg Monthly Funding</div>
+                    <div style="margin-top: 16px; font-size: 13px; color: #666;">
+                        Primary: Direct Deposit<br/>
+                        Secondary: Cash Load
+                    </div>
+                </div>
+
+                <div class="metric-card" style="border-color: #F87171;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">💙</div>
+                    <div class="segment-title" style="color: #F87171; font-size: 22px;">Sapphire</div>
+                    <div class="metric-number" style="font-size: 42px; color: #F87171;">$279</div>
+                    <div class="metric-label">Avg Monthly Funding</div>
+                    <div style="margin-top: 16px; font-size: 13px; color: #666;">
+                        Primary: Cash Load<br/>
+                        Secondary: Direct Deposit
+                    </div>
+                </div>
+
+                <div class="metric-card" style="border-color: #38BDF8;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">🔷</div>
+                    <div class="segment-title" style="color: #38BDF8; font-size: 22px;">Ruby</div>
+                    <div class="metric-number" style="font-size: 42px; color: #38BDF8;">$132</div>
+                    <div class="metric-label">Avg Monthly Funding</div>
+                    <div style="margin-top: 16px; font-size: 13px; color: #666;">
+                        Primary: Cash Load<br/>
+                        Secondary: P2P
+                    </div>
+                </div>
+
+                <div class="metric-card" style="border-color: #4ADE80;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">⚪</div>
+                    <div class="segment-title" style="color: #4ADE80; font-size: 22px;">Pearl</div>
+                    <div class="metric-number" style="font-size: 42px; color: #4ADE80;">$34</div>
+                    <div class="metric-label">Avg Monthly Funding</div>
+                    <div style="margin-top: 16px; font-size: 13px; color: #666;">
+                        Primary: Cash Load<br/>
+                        Secondary: P2P
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Revenue Impact -->
+        <div class="slide dark-slide">
+            <h2>Revenue <span class="highlight-green">Impact</span></h2>
+            <p style="font-size: 18px; margin-bottom: 60px; opacity: 0.9;">Monthly revenue generated per customer by segment</p>
+
+            <div style="max-width: 1200px; width: 100%;">
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 50px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px;">
+
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 16px;">💎</div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 600;">Diamond</div>
+                            <div style="font-size: 36px; font-weight: 900; color: #60A5FA; margin-bottom: 8px;">$30.60</div>
+                            <div style="font-size: 12px; color: #999;">per month</div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 16px;">💚</div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 600;">Emerald</div>
+                            <div style="font-size: 36px; font-weight: 900; color: #34D399; margin-bottom: 8px;">$13.96</div>
+                            <div style="font-size: 12px; color: #999;">per month</div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 16px;">💙</div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 600;">Sapphire</div>
+                            <div style="font-size: 36px; font-weight: 900; color: #F87171; margin-bottom: 8px;">$6.18</div>
+                            <div style="font-size: 12px; color: #999;">per month</div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 16px;">🔷</div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 600;">Ruby</div>
+                            <div style="font-size: 36px; font-weight: 900; color: #38BDF8; margin-bottom: 8px;">$3.12</div>
+                            <div style="font-size: 12px; color: #999;">per month</div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 16px;">⚪</div>
+                            <div style="font-size: 14px; color: #666; margin-bottom: 12px; font-weight: 600;">Pearl</div>
+                            <div style="font-size: 36px; font-weight: 900; color: #4ADE80; margin-bottom: 8px;">$2.08</div>
+                            <div style="font-size: 12px; color: #999;">per month</div>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #e5e7eb; text-align: center;">
+                        <div style="font-size: 14px; color: #666; margin-bottom: 8px; font-weight: 600;">Weighted Average</div>
+                        <div style="font-size: 48px; font-weight: 900; color: #27FB6B;">$9.06</div>
+                        <div style="font-size: 16px; color: #999;">revenue per customer per month</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Product Bundling & Stickiness -->
+        <div class="slide light-slide">
+            <h2><span class="highlight-green">Product Bundling</span> Drives Stickiness</h2>
+            <p style="font-size: 18px; margin-bottom: 50px; color: #666; max-width: 900px; text-align: center;">
+                Customers using multiple products stay active significantly longer
+            </p>
+
+            <div style="max-width: 1200px; width: 100%;">
+                <!-- Product Adoption Stats -->
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                    <h3 style="color: #00052E; margin-bottom: 32px; text-align: center; font-size: 28px;">Product Adoption Rates</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                        <div style="text-align: center; padding: 24px; background: rgba(39, 251, 107, 0.1); border-radius: 16px;">
+                            <div style="font-size: 48px; font-weight: 900; color: #27FB6B; margin-bottom: 8px;">56.0%</div>
+                            <div style="font-size: 16px; color: #00052E; font-weight: 700;">Card + Cash Loads</div>
+                            <div style="font-size: 13px; color: #666; margin-top: 8px;">128,498 users</div>
+                        </div>
+                        <div style="text-align: center; padding: 24px; background: rgba(96, 165, 250, 0.1); border-radius: 16px;">
+                            <div style="font-size: 48px; font-weight: 900; color: #60A5FA; margin-bottom: 8px;">31.04%</div>
+                            <div style="font-size: 16px; color: #00052E; font-weight: 700;">Card + Intl Transfers</div>
+                            <div style="font-size: 13px; color: #666; margin-top: 8px;">71,272 users</div>
+                        </div>
+                        <div style="text-align: center; padding: 24px; background: rgba(248, 113, 113, 0.1); border-radius: 16px;">
+                            <div style="font-size: 48px; font-weight: 900; color: #F87171; margin-bottom: 8px;">22.5%</div>
+                            <div style="font-size: 16px; color: #00052E; font-weight: 700;">Card + Top-Ups</div>
+                            <div style="font-size: 13px; color: #666; margin-top: 8px;">51,744 users</div>
+                        </div>
+                        <div style="text-align: center; padding: 24px; background: rgba(52, 211, 153, 0.1); border-radius: 16px;">
+                            <div style="font-size: 48px; font-weight: 900; color: #34D399; margin-bottom: 8px;">20.64%</div>
+                            <div style="font-size: 16px; color: #00052E; font-weight: 700;">Card + Direct Deposit</div>
+                            <div style="font-size: 13px; color: #666; margin-top: 8px;">47,403 users</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stickiness by Product Combo -->
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+                    <h3 style="color: #00052E; margin-bottom: 32px; text-align: center; font-size: 28px;">Retention by Product Bundle</h3>
+
+                    <div style="display: grid; gap: 20px;">
+                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center; padding: 20px; background: #f8fafc; border-radius: 12px; border-left: 4px solid #27FB6B;">
+                            <div style="font-weight: 700; color: #00052E; font-size: 16px;">Card + Cash Loads</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #00052E;">13</div>
+                                <div style="font-size: 12px; color: #666;">Max Months</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #60A5FA;">28.5%</div>
+                                <div style="font-size: 12px; color: #666;">6+ Months</div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center; padding: 20px; background: #f8fafc; border-radius: 12px; border-left: 4px solid #60A5FA;">
+                            <div style="font-weight: 700; color: #00052E; font-size: 16px;">Card + Intl Transfers</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #00052E;">13</div>
+                                <div style="font-size: 12px; color: #666;">Max Months</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #60A5FA;">29.4%</div>
+                                <div style="font-size: 12px; color: #666;">6+ Months</div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center; padding: 20px; background: #f8fafc; border-radius: 12px; border-left: 4px solid #34D399;">
+                            <div style="font-weight: 700; color: #00052E; font-size: 16px;">Card + Direct Deposit</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #00052E;">13</div>
+                                <div style="font-size: 12px; color: #666;">Max Months</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #60A5FA;">20.0%</div>
+                                <div style="font-size: 12px; color: #666;">6+ Months</div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; align-items: center; padding: 20px; background: #f8fafc; border-radius: 12px; border-left: 4px solid #F87171;">
+                            <div style="font-weight: 700; color: #00052E; font-size: 16px;">Card + Top-Ups</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #00052E;">13</div>
+                                <div style="font-size: 12px; color: #666;">Max Months</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 24px; font-weight: 900; color: #60A5FA;">15.9%</div>
+                                <div style="font-size: 12px; color: #666;">6+ Months</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 32px; padding: 24px; background: rgba(39, 251, 107, 0.1); border-radius: 16px; border: 2px solid #27FB6B;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 20px; font-weight: 700; color: #00052E; margin-bottom: 12px;">💡 Key Insight</div>
+                            <p style="font-size: 16px; color: #00052E; line-height: 1.8;">
+                                Customers using <strong>Card + International Transfers</strong> show the highest retention at <strong>29.4% staying 6+ months</strong>. Product bundling is a critical driver of customer lifetime value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Key Takeaways -->
+        <div class="slide green-slide">
+            <h2 style="color: #00052E;">Key <span style="color: white;">Takeaways</span></h2>
+
+            <div style="max-width: 1000px; display: grid; gap: 24px; margin-top: 60px;">
+
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 32px; border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);">
+                    <div style="display: flex; align-items: start; gap: 20px;">
+                        <div style="font-size: 48px;">🎯</div>
+                        <div>
+                            <h3 style="color: #00052E; margin-bottom: 12px; font-size: 24px;">Exceptional Retention</h3>
+                            <p style="color: #666; font-size: 16px; line-height: 1.8;">
+                                8.37 month average retention with top-tier Diamond customers staying <strong>13.51 months</strong> - demonstrating deep product-market fit and customer satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 32px; border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);">
+                    <div style="display: flex; align-items: start; gap: 20px;">
+                        <div style="font-size: 48px;">📈</div>
+                        <div>
+                            <h3 style="color: #00052E; margin-bottom: 12px; font-size: 24px;">High-Value Customers</h3>
+                            <p style="color: #666; font-size: 16px; line-height: 1.8;">
+                                Top 25% of customers (Diamond + Emerald) generate <strong>$1,977 monthly funding</strong> and drive <strong>3.4x higher revenue</strong> than average customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 32px; border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);">
+                    <div style="display: flex; align-items: start; gap: 20px;">
+                        <div style="font-size: 48px;">💪</div>
+                        <div>
+                            <h3 style="color: #00052E; margin-bottom: 12px; font-size: 24px;">Strong Engagement</h3>
+                            <p style="color: #666; font-size: 16px; line-height: 1.8;">
+                                Diamond customers average <strong>44 transactions per month</strong>, showing daily active usage and deep integration into their financial lives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255, 255, 255, 0.95); padding: 32px; border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);">
+                    <div style="display: flex; align-items: start; gap: 20px;">
+                        <div style="font-size: 48px;">🚀</div>
+                        <div>
+                            <h3 style="color: #00052E; margin-bottom: 12px; font-size: 24px;">Upgrade Potential</h3>
+                            <p style="color: #666; font-size: 16px; line-height: 1.8;">
+                                With <strong>71,415 Pearl customers</strong> (33% of base), significant opportunity exists to move users up-market through enhanced engagement and product features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        const slideContainer = document.getElementById('slideContainer');
+        const progressBar = document.getElementById('progressBar');
+        const slideNum = document.getElementById('slideNum');
+        const totalSlides = 9;
+        let currentSlide = 0;
+
+        // Update progress and slide number on scroll
+        slideContainer.addEventListener('scroll', () => {
+            const scrollTop = slideContainer.scrollTop;
+            const scrollHeight = slideContainer.scrollHeight - slideContainer.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+
+            progressBar.style.width = progress + '%';
+
+            // Calculate current slide
+            const slides = document.querySelectorAll('.slide');
+            let newSlide = 0;
+            slides.forEach((slide, index) => {
+                const rect = slide.getBoundingClientRect();
+                if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+                    newSlide = index + 1;
+                }
+            });
+
+            if (newSlide !== currentSlide) {
+                currentSlide = newSlide;
+                slideNum.textContent = `Slide ${currentSlide} of ${totalSlides}`;
+            }
+        });
+
+        // Re-initialize icons periodically
+        setInterval(() => {
+            lucide.createIcons();
+        }, 500);
+    </script>
+</body>
+</html>
